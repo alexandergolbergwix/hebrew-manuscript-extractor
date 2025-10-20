@@ -1,0 +1,16 @@
+# Core dependencies
+pandas>=2.0.0
+openpyxl>=3.1.0  # For Excel file support
+rdflib>=7.0.0    # RDF/Ontology support
+requests>=2.31.0 # For Grok API calls
+
+# Optional but recommended
+tqdm>=4.66.0     # Progress bars
+python-dotenv>=1.0.0  # Environment variable management
+
+# Development dependencies (optional)
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.0.0
+mypy>=1.5.0
+ruff>=0.0.290

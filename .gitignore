@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Secrets (NEVER commit API keys!)
+secrets.txt
+src/secrets.txt
+*.key
+*.pem
+
+# Data files (large, excluded)
+data/input/*.gz
+data/input/NLI_AUTHORITY_XML/*.xml
+data/input/NLI_AUTHORITY_XML/*.gz
+
+# Output directories (generated)
+output/
+output_kima/
+ai_fallback_responses/
+
+# Logs
+*.log
+extraction_*.log
+test_*.log
+
+# OS
+.DS_Store
+Thumbs.db
+*.bak
+
+# Temporary files
+*.tmp
+*.temp
+
+# Test files
+test_*.py
+debug_*.py
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
