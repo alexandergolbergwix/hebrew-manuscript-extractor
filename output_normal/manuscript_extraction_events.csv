@@ -1,0 +1,105 @@
+manuscript_id,event_type,event_class,date,place,actor,has_temporal_info,has_spatial_info
+"""990001188700205171""",traveled to,E7_Activity,,דמשק,,False,True
+"""990001188700205171""",traveled to,E7_Activity,,ירושלים,,False,True
+"""990001780340205171""",production place,E12_Production,,תימן,,False,True
+"""990001780340205171""",preserved,E7_Activity,,מונטריאול,,False,True
+"""990001343040205171""",production place,E12_Production,,תימן,,False,True
+"""990001343040205171""",preserved,E7_Activity,,לונדון,,False,True
+"""990001273190205171""",preserved,E7_Activity,,אפגניסטן,,False,True
+"""990000533850205171""",mentioned place,E7_Activity,,הנובר,,False,True
+"""990000958680205171""",print,E7_Activity,1569,,,True,False
+"""990000958680205171""",censorship,E7_Activity,1597,,,True,False
+"""990000958680205171""",production place,E12_Production,,אורבינו,,False,True
+"""990001313900205171""",preserved,E7_Activity,,ירושלים,,False,True
+"""990001078470205171""",censorship,E7_Activity,שנת 1620,,,True,False
+"""990001078470205171""",censorship,E7_Activity,1620,,,True,False
+"""990001078470205171""",preserved,E7_Activity,,ניו יורק,,False,True
+"""990002078620205171""",production place,E12_Production,,תימן,,False,True
+"""990000792030205171""",traveled to,E7_Activity,,הולנד,,False,True
+"""990000792030205171""",production place,E12_Production,,פראג,,False,True
+"""990000792030205171""",mentioned place,E7_Activity,,וינה,,False,True
+"""990001625570205171""",production place,E12_Production,,אופנהיים,,False,True
+"""990000943910205171""",intellectual creation,E7_Activity,1600,,,True,False
+"""990000856010205171""",cited place,E7_Activity,,חברון,,False,True
+"""990000856010205171""",active,E7_Activity,,מצרים,,False,True
+"""990001086690205171""",production place,E12_Production,,ליאון,,False,True
+"""990001827620205171""",annotation,E11_Modification,1802,,,True,False
+"""990001827620205171""",colophon completion,E7_Activity,1644,,,True,False
+"""990001827620205171""",sale,E8_Acquisition,1771,,,True,False
+"""990001399370205171""",colophon,E7_Activity,1652,,,True,False
+"""990001775480205171""",colophon,E7_Activity,שנת 1653,,,True,False
+"""990026973440205171""",production place,E12_Production,,דמשק,,False,True
+"""990001761840205171""",colophon,E7_Activity,1670,,,True,False
+"""990025630180205171""",production place,E12_Production,,תימן,,False,True
+"""990025630180205171""",preserved,E7_Activity,,אלוני,,False,True
+"""990001831070205171""",worked,E7_Activity,,עמנואל,,False,True
+"""990000463570205171""",preserved,E7_Activity,,ירושלים,,False,True
+"""990001121720205171""",colophon,E7_Activity,1662,,,True,False
+"""990000463550205171""",production place,E12_Production,,פרנקפורט דמיין,,False,True
+"""990000463550205171""",preserved,E7_Activity,,ירושלים,,False,True
+"""990000463550205171""",active,E7_Activity,,פולין,,False,True
+"""990036191450205171""",sale,E8_Acquisition,1662,,,True,False
+"""990036191450205171""",production place,E12_Production,,סאלם,,False,True
+"""990036191450205171""",preserved,E7_Activity,,ניו יורק,,False,True
+"""990001114420205171""",production place,E12_Production,,תימן,,False,True
+"""990001022440205171""",production place,E12_Production,,קאלי,,False,True
+"""990025934540205171""",publication,E7_Activity,1886,,,True,False
+"""990025934540205171""",active,E7_Activity,,איטליה,,False,True
+"""990001219470205171""",production place,E12_Production,,תימן,,False,True
+"""990000913260205171""",resided,E7_Activity,,פראג,,False,True
+"""990000885660205171""",mentioned place,E7_Activity,,ארץ ישראל,,False,True
+"""990000885660205171""",preserved,E7_Activity,,לונדון,,False,True
+"""990000885660205171""",mentioned place,E7_Activity,,צרפת,,False,True
+"""990000885660205171""",mentioned place,E7_Activity,,אירופה,,False,True
+"""990000885660205171""",worked,E7_Activity,,קליווא,,False,True
+"""990035802410205171""",transfer of custody,E10_Transfer_of_Custody,1964,,,True,False
+"""990035802410205171""",production place,E12_Production,,תימן,,False,True
+"""990035802410205171""",preserved,E7_Activity,,ירושלים,,False,True
+"""990027840460205171""",resided,E7_Activity,,רדומסק,,False,True
+"""990027840460205171""",mentioned place,E7_Activity,,דורא,,False,True
+"""990027840460205171""",worked,E7_Activity,,ירושלים,,False,True
+"""990027840460205171""",worked,E7_Activity,,חברון,,False,True
+"""990000831830205171""",active,E7_Activity,,פורלי,,False,True
+"""990000831830205171""",production place,E12_Production,,מנטובה,,False,True
+"""990001022860205171""",acquisition,E8_Acquisition,1676,,,True,False
+"""990001510630205171""",transfer of custody,E10_Transfer_of_Custody,1905,,,True,False
+"""990001510630205171""",birth,E67_Birth,1698,,,True,False
+"""990001510630205171""",birth,E67_Birth,1707-1698,,,True,False
+"""990001510630205171""",birth,E67_Birth,1707,,,True,False
+"""990001510630205171""",birth,E67_Birth,1698-1707,,,True,False
+"""990001510630205171""",mentioned place,E7_Activity,,ויטוריה,,False,True
+"""990001510630205171""",mentioned place,E7_Activity,,עמנואל,,False,True
+"""990032575610205171""",colophon,E7_Activity,1690,,,True,False
+"""990001326670205171""",censorship,E7_Activity,שנת 1618,,,True,False
+"""990001326670205171""",censorship,E7_Activity,1618,,,True,False
+"""990001855990205171""",repository,E7_Activity,,סינסינטי,,False,True
+"""990001855990205171""",preserved,E7_Activity,,עמנואל,,False,True
+"""990000568160205171""",production place,E12_Production,,תימן,,False,True
+"""990000788440205171""",published,E7_Activity,,ירושלים,,False,True
+"""990001065130205171""",mentioned place,E7_Activity,,עמנואל,,False,True
+"""990001800810205171""",preserved,E7_Activity,,ירושלים,,False,True
+"""990001709250205171""",published,E7_Activity,,זולצבך,,False,True
+"""990001124870205171""",died,E69_Death,,מצרים,,False,True
+"""990035044030205171""",preserved,E7_Activity,,לונדון,,False,True
+"""990035044030205171""",preserved,E7_Activity,,אנקונה,,False,True
+"""990035044030205171""",preserved,E7_Activity,,ויטרבו,,False,True
+"""990000738230205171""",censorship,E7_Activity,1618,,,True,False
+"""990000667860205171""",preserved,E7_Activity,,לונדון,,False,True
+"""990000563980205171""",colophon,E7_Activity,1670,,,True,False
+"""990000563980205171""",mentioned place,E7_Activity,,פטרה,,False,True
+"""990000563980205171""",production place,E12_Production,,תימן,,False,True
+"""990001022280205171""",mentioned place,E7_Activity,,מוטול,,False,True
+"""990001402040205171""",mentioned place,E7_Activity,,סאלם,,False,True
+"""990001361140205171""",production place,E12_Production,,תימן,,False,True
+"""990000632200205171""",production place,E12_Production,,תימן,,False,True
+"""990001878130205171""",colophon,E7_Activity,1607,,,True,False
+"""990000634000205171""",mentioned place,E7_Activity,,תימן,,False,True
+"""990000666370205171""",work creation,E7_Activity,1417,,,True,False
+"""990000666370205171""",preserved,E7_Activity,,אוקספורד,,False,True
+"""990000666370205171""",production place,E12_Production,,מנטובה,,False,True
+"""990001679060205171""",production place,E12_Production,,בגדאד,,False,True
+"""990001679060205171""",production place,E12_Production,,ספרד,,False,True
+"""990000653720205171""",production place,E12_Production,,אליקים,,False,True
+"""990000653720205171""",production place,E12_Production,,פראג,,False,True
+"""990001189730205171""",mentioned place,E7_Activity,,סאלם,,False,True
+"""990001039990205171""",citation,E7_Activity,1731,,,True,False

@@ -697,7 +697,7 @@ class GrokClassifier:
         # Deduplicate entity values
         unique_values = list({e.value for e in entities})
         
-        # Create entity lookup
+        # Create entity lookup (includes metadata with original matched phrases)
         entity_map = {e.value: e for e in entities}
         
         # ========== STEP 1: Try Hebrew Patterns (for PERSONS only) ==========
@@ -727,7 +727,7 @@ class GrokClassifier:
                 futures = [
                     executor.submit(
                         self._classify_chunk,
-                        text, chunk, entity_type.value, labels
+                        text, chunk, entity_type.value, labels, entity_map
                     )
                     for chunk in chunks
                 ]
@@ -765,7 +765,8 @@ class GrokClassifier:
         text: str,
         items: List[str],
         item_kind: str,
-        labels: List[str]
+        labels: List[str],
+        entity_map: Dict[str, ExtractedEntity] = None
     ) -> Dict[str, str]:
         """Make API call for one chunk - isolated side effect"""
         
@@ -775,12 +776,28 @@ class GrokClassifier:
             print("Warning: requests library not available")
             return {}
         
+        # IMPORTANT: Send FULL text for proper context (like AI-only mode)
+        # Grok can handle long inputs, and location context might be anywhere in the text
+        
+        # Build entity information including original matched forms (for Kima locations)
+        entity_info = []
+        for item in items:
+            entity_data = {"name": item}
+            
+            # Add original matched phrase if available (for Kima gazetteer matches)
+            if entity_map and item in entity_map:
+                entity = entity_map[item]
+                if entity.metadata and 'matched_phrase' in entity.metadata:
+                    entity_data["original_form"] = entity.metadata['matched_phrase']
+            
+            entity_info.append(entity_data)
+        
         prompt = {
-            "text": text[:4000],
-            "items": items,
+            "text": text,  # FULL TEXT - no truncation!
+            "entities": entity_info,  # Entity info with original forms
             "item_kind": item_kind,
             "labels": labels,
-            "instruction": self._get_instruction(item_kind)
+            "instruction": self._get_instruction_v2(item_kind)  # Enhanced instruction
         }
         
         for attempt in range(self.retries):
@@ -855,7 +872,8 @@ class GrokClassifier:
             "A colophon DESCRIBES events - classify by EVENT TYPE, not 'colophon place':\n\n"
             "• PRODUCTION place (E12_Production → P7_took_place_at):\n"
             "  Where manuscript physically created - נכתב ב, הועתק ב, נשלם ב, נעשה ב\n"
-            "  Examples: 'נשלם בקנדיה' → production place (Candia)\n\n"
+            "  Examples: 'נשלם בקנדיה' → production place (Candia)\n"
+            "  DEFAULT for most manuscripts - if context unclear, assume production place\n\n"
             "• PUBLISHED in (F30_Manifestation_Creation → P7_took_place_at):\n"
             "  Press/print location - נדפס ב, הודפס ב, דפוס\n\n"
             "• RESIDED in (P74_has_current_or_former_residence):\n"
@@ -866,7 +884,11 @@ class GrokClassifier:
             "• PRESERVED in (P55_has_current_location):\n"
             "  Current repository - נמצא ב, שמור ב, ספריית, באוסף\n\n"
             "• TRANSFERRED to (E10_Transfer_of_Custody): הועבר ל, נמכר ל\n\n"
-            "• MENTIONED place: LAST RESORT - only if no event relationship identified\n\n"
+            "• OWNED in: Location of ownership - בידי, בבעלות\n\n"
+            "• ACTIVE in: General activity location\n\n"
+            "IMPORTANT: Do NOT use 'mentioned place' unless absolutely no other option fits!\n"
+            "When uncertain, choose the MOST LIKELY event-based role based on context.\n"
+            "Default to 'production place' for most manuscripts, 'preserved in' for repositories.\n\n"
             
             "========== PERSON CLASSIFICATION (Fallback for Ambiguous Cases) ==========\n"
             "NOTE: You are classifying ONLY ambiguous persons that regex patterns couldn't identify.\n"
@@ -883,13 +905,16 @@ class GrokClassifier:
             "Only assign specific role if CONFIDENT from context\n\n"
             
             "========== INSTRUCTIONS ==========\n"
-            "1. Read the Hebrew text carefully\n"
-            "2. For each entity, look for Hebrew marker words nearby\n"
-            "3. Match marker to label from the list provided\n"
-            "4. If no marker found: use default (unclassified/mentioned person)\n"
-            "5. Return valid JSON mapping: {\"entity\": \"label\"}\n\n"
+            "1. Read the Hebrew text carefully to understand the CONTEXT\n"
+            "2. For each entity, look for Hebrew marker words and context clues\n"
+            "3. Choose the MOST LIKELY event-based label from the list\n"
+            "4. If no clear marker: infer from context (manuscript? repository? person's city?)\n"
+            "5. Use defaults: 'production place' for most locations, 'preserved in' for repositories\n"
+            "6. Return valid JSON mapping: {\"entity\": \"label\"}\n\n"
             
-            "BE PRECISE: Use the exact label text from the provided list."
+            "BE ASSERTIVE: Choose the most appropriate event-based role even if not 100% certain.\n"
+            "AVOID 'mentioned place' - only use it if truly ambiguous with no context at all.\n"
+            "Use the exact label text from the provided list."
         )
     
     @staticmethod
@@ -899,6 +924,26 @@ class GrokClassifier:
             f"Classify each {item_kind} using Hebrew context clues from the text. "
             f"Match to ONE label from 'labels' list. "
             f"Return JSON: {{\"item\": \"label\"}}"
+        )
+    
+    @staticmethod
+    def _get_instruction_v2(item_kind: str) -> str:
+        """Enhanced instruction with support for original_form"""
+        return (
+            f"Classify each {item_kind} using Hebrew context clues from the text.\n\n"
+            f"IMPORTANT: Each entity may have TWO forms:\n"
+            f"1. 'name' - The canonical/normalized form (e.g., 'סדיגורה (צ'רנוביץ, אוקראינה)')\n"
+            f"2. 'original_form' - The form as it appears in the text (e.g., 'מסאדאגורא')\n\n"
+            f"When searching for context:\n"
+            f"- FIRST look for the 'original_form' if provided (this is what's actually in the text!)\n"
+            f"- Then look for the base name without country suffix (e.g., 'סדיגורה' from 'סדיגורה (צ'רנוביץ, אוקראינה)')\n"
+            f"- Also check with common Hebrew prefixes: ב, ל, מ (e.g., 'בסדיגורה', 'מסדיגורה')\n\n"
+            f"CLASSIFICATION STRATEGY for {item_kind}:\n"
+            f"- Choose the MOST LIKELY event-based role from context\n"
+            f"- If context is unclear but entity appears in manuscript notes → assume 'production place'\n"
+            f"- If entity is clearly a repository/library name → use 'preserved in'\n"
+            f"- AVOID 'mentioned place' - only use if absolutely no context and no reasonable inference\n\n"
+            f"Return JSON mapping canonical names to labels: {{\"canonical_name\": \"label\"}}"
         )
     
     @staticmethod

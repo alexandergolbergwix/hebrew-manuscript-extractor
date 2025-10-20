@@ -309,53 +309,58 @@ def validate_location_extraction(
 
 def get_location_confidence(word: str, text: str) -> float:
     """
-    Calculate confidence score for location extraction
+    Calculate confidence that extracted entity is really a location
     
-    Args:
-        word: Potential location
-        text: Full context
-        
+    Based on:
+    - Blacklist membership
+    - Context analysis (date/person/location contexts)
+    - Word characteristics (country suffix, multi-word)
+    
     Returns:
-        Confidence score 0.0-1.0
+        Float 0.0-1.0 representing confidence
     """
-    word_base = re.sub(r'\s*\([^)]+\)\s*$', '', word).strip()
+    word_base = word.split()[0] if ' ' in word else word
     
-    # ABSOLUTE VETO: Blacklisted words get zero confidence
+    # CRITICAL: Blacklist check
     if is_blacklisted(word_base):
         return 0.0
     
-    # ABSOLUTE VETO: Too short
-    if len(word_base) <= 2:
-        return 0.0
+    # Start with base confidence
+    confidence = 0.7  # Default moderate confidence
     
-    confidence = 0.3  # Base score (neutral)
+    # BOOST confidence for multi-word places (more likely real locations)
+    if ' ' in word:
+        confidence += 0.15
     
-    # Find word position for context analysis
-    match = re.search(re.escape(word_base), text)
-    if not match:
-        # Try with ב prefix
-        match = re.search(r'ב' + re.escape(word_base), text)
+    # BOOST confidence for places with country suffix
+    if re.search(r'\([^)]+\)', word):  # Has (Country) notation
+        confidence += 0.20
     
-    if match:
-        position = match.start()
-        
-        # STRONG PENALTY: In date/person context (likely false positive)
-        if is_in_date_context(text, position):
-            confidence *= 0.1  # 90% penalty
-        if is_in_person_name_context(text, position):
-            confidence *= 0.15  # 85% penalty
+    # CHECK FOR PERSON NAME FALSE POSITIVES
+    # Pattern: "Name [בן|בר|בת] Patronymic"
+    # If we see שם בן/בר pattern near our location, likely a person name match
+    person_name_pattern = r'(?:יוסף|משה|דוד|יעקב|שמואל|עזרא|שלמה|יהודה|אברהם|אלעזר|יצחק|לוי|בנימין)\s+(?:בן|בר|בת)\s+\w+'
+    if re.search(person_name_pattern, text, re.IGNORECASE):
+        # Check if our word appears near a known person name
+        for match in re.finditer(person_name_pattern, text, re.IGNORECASE):
+            person_context = text[max(0, match.start()-30):match.end()+30]
+            if word_base.lower() in person_context.lower():
+                # Word appears in person name context - likely false positive!
+                confidence *= 0.2  # Massive penalty
+                break
     
-    # BOOST: Has country suffix (structured data from MARC fields)
-    if re.search(r'\s*\([^)]+\)\s*$', word):
-        confidence += 0.35
+    # PENALIZE if in date context
+    if is_in_date_context(text, text.find(word_base)):
+        confidence *= 0.1
     
-    # BOOST: Has location context indicators (verbs like נכתב ב, etc.)
+    # PENALIZE if in person name context (but different pattern)
+    if is_in_person_name_context(text, text.find(word_base)):
+        confidence *= 0.15
+    
+    # BOOST if has location context indicator nearby
     if has_location_context_indicator(text, word):
-        confidence += 0.4
+        confidence *= 1.3
+        confidence = min(confidence, 1.0)  # Cap at 1.0
     
-    # BOOST: Multi-word phrase (more specific, less ambiguous)
-    if ' ' in word_base:
-        confidence += 0.2
-    
-    return min(1.0, max(0.0, confidence))
+    return max(0.0, min(confidence, 1.0))  # Clamp to 0-1
 
