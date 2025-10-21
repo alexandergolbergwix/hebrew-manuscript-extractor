@@ -1,76 +1,76 @@
-manuscript_id,dates,locations,persons,dates_in_marc,locations_in_marc,persons_in_marc
-"""990001188700205171""",,"דמשק | traveled to, ירושלים | traveled to",,,,
-"""990001780340205171""",,"תימן | production place, מונטריאול | preserved in",,,,
-"""990001343040205171""",,"תימן | production place, לונדון | preserved in",,,,
-"""990001273190205171""",,אפגניסטן | preserved in,דוד | author,,,דוד: 700$a
-"""990000533850205171""",,הנובר | mentioned place,"ליב | owner, נתן | author, שמעון | scribe",,,"ליב: 700$a, נתן: 100$a; 700$a, שמעון: 700$a"
-"""990000655210205171""",,,משה | copyist,,,משה: 700$a
-"""990000958680205171""","1569 | print date, 1597 | censorship date",אורבינו | production place,ממשפחת | mentioned person,,,
-"""990001338440205171""",,,"משה | scribe, שלמה | scribe",,,"משה: 700$a, שלמה: 100$a"
-"""990025916610205171""",,,"אהרן | colophon scribe, אבא | colophon scribe",,,"אהרן: 700$a, אבא: 700$a"
-"""990000558270205171""",,,משה | scribe,,,משה: 700$a
-"""990001313900205171""",,ירושלים | preserved in,"זכריא | scribe, אברהם | scribe, יעקוב | scribe, שלמה | scribe",,,שלמה: 100$a
-"""990001078470205171""","שנת 1620 | censorship date, 1620 | censorship date",ניו יורק | preserved in,,,,
-"""990002078620205171""",,תימן | production place,,,,
-"""990000792030205171""",,"וינה | mentioned place, פראג | production place, הולנד | traveled to","של | author, ממנה | mentioned person",,,של: 100$a
-"""990001625570205171""",,אופנהיים | production place,"יעקב | scribe, אליעזר | owner",,,"יעקב: 700$a, אליעזר: 700$a"
-"""990000633510205171""",,,משה | scribe,,,משה: 100$a
-"""990000943910205171""",1600 | intellectual creation date,,,1600: 260$c; 008,,
-"""990000856010205171""",,"מצרים | active in, חברון | cited place, ירושלים | unclassified",,,,
-"""990001086690205171""",,ליאון | scribe,"ליאון | scribe, ליאון | scribe",,,
-"""990001827620205171""","1644 | colophon completion date, 1802 | annotation date, 1771 | sale date",,,1644: 260$c; 008,,
-"""990001399370205171""",1652 | colophon date,,סעדיא | scribe,1652: 260$c; 008,,
-"""990001775480205171""",שנת 1653 | colophon date,,,שנת 1653: 260$c; 008,,
-"""990000829170205171""",,,משה | author,,,משה: 100$a
-"""990026973440205171""",,דמשק | production place,שמואל | author,,,שמואל: 700$a
-"""990001761840205171""",1670 | colophon date,,"סלמון | owner, אברהם | owner",1670: 260$c; 008,,"סלמון: 100$a, אברהם: 700$a"
-"""990025630180205171""",,"תימן | production place, אלוני | preserved in",,,,
-"""990001831070205171""",,עמנואל | worked in,,,,
-"""990000463570205171""",,ירושלים | preserved in,אליעזר | author,,,אליעזר: 100$a
-"""990001901770205171""",,,"עמרם | scribe, זכריא | scribe",,,עמרם: 700$a
-"""990001121720205171""",1662 | colophon date,,,1662: 260$c; 008,,
-"""990000463550205171""",,"פרנקפורט דמיין | production place, פולין | active in, ירושלים | preserved in",,,,
-"""990036191450205171""",1662 | sale date,"ניו יורק | preserved in, סאלם | production place",,1662: 260$c; 008,,
-"""990001114420205171""",,תימן | production place,,,,
-"""990001022440205171""",,קאלי | production place,ידידיה | owner,,,ידידיה: 100$a
-"""990025934540205171""",1886 | publication date,איטליה | active in,"משה | scribe, מרדכי | patron",,,"משה: 700$a, מרדכי: 700$a"
-"""990001219470205171""",,תימן | production place,,,,
-"""990000913260205171""",,פראג | resided in,,,,
-"""990000885660205171""",,"ארץ ישראל | mentioned place, קליווא | worked in, צרפת | mentioned place, לונדון | preserved in, אירופה | mentioned place","אברהם | scribe, אהרן | author",,,"אברהם: 100$a, אהרן: 700$a"
-"""990035802410205171""",1964 | transfer of custody date,"תימן | production place, ירושלים | preserved in",שלמה | owner,,,שלמה: 700$a
-"""990027840460205171""",,"ירושלים | worked in, חברון | worked in, דורא | mentioned place, רדומסק | resided in","יוסף | author, יוסף | author, מאיר | scribe",,,"יוסף: 700$a, יוסף: 700$a, מאיר: 700$a"
-"""990001238680205171""",,,יוסף | scribe,,,יוסף: 700$a
-"""990000831830205171""",,"מנטובה | production place, פורלי | active in",,,,
-"""990001022860205171""",1676 | acquisition date,,"אברהם | colophon scribe, תנצבה | mentioned person, שלמה | owner",,,"אברהם: 700$a, שלמה: 100$a"
-"""990001510630205171""","1707-1698 | birth date, 1698-1707 | birth date, 1707 | birth date, 1698 | birth date, 1905 | transfer of custody date","עמנואל | mentioned place, ויטוריה | mentioned place",,,,
-"""990032575610205171""",1690 | colophon date,,,1690: 260$c; 008,,
-"""990001326670205171""","1618 | censorship date, שנת 1618 | censorship date",,יצחק | scribe,"1618: 260$c, שנת 1618: 260$c",,יצחק: 100$a
-"""990001855990205171""",,"עמנואל | preserved in, סינסינטי | repository",,,,
-"""990000568160205171""",,תימן | production place,,,,
-"""990000828230205171""",,,זלמן | owner,,,זלמן: 700$a
-"""990001209890205171""",,,"זכריה | scribe, סעדיה | owner, דוד | owner",,,"זכריה: 700$a, סעדיה: 700$a, דוד: 100$a; 700$a"
-"""990001022880205171""",,,"משה | scribe, שלמה | commentator",,,"משה: 700$a, שלמה: 100$a"
-"""990000788440205171""",,ירושלים | published in,למאיר | translator,,,
-"""990001065130205171""",,עמנואל | mentioned place,,,,
-"""990001800810205171""",,ירושלים | preserved in,,,,
-"""990001709250205171""",,זולצבך | published in,,,,
-"""990001124870205171""",,מצרים | died in,,,,
-"""990035044030205171""",,"לונדון | preserved in, ויטרבו | preserved in, אנקונה | preserved in",,,,
-"""990000738230205171""",1618 | censorship date,,משה | scribe,,,משה: 100$a
-"""990000825080205171""",,,"אהרן | author, יוסף | author, שמחה | author, יהויכין | owner",,,"אהרן: 100$a; 700$a, יוסף: 100$a; 700$a, שמחה: 700$a, יהויכין: 700$a"
-"""990000667860205171""",,לונדון | preserved in,"מאת | scribe, ואני | scribe, חותמת | owner",,,
-"""990000563980205171""",1670 | colophon date,"פטרה | mentioned place, תימן | production place",,1670: 260$c; 008,,
-"""990001022280205171""",,מוטול | mentioned place,,,,
-"""990000798880205171""",,,שלמה | owner,,,שלמה: 100$a
-"""990001402040205171""",,סאלם | mentioned place,"חזמק | author, חזמק | author, סעיד | scribe, סעיד | scribe, סעדיה | translator",,,"סעיד: 700$a, סעיד: 700$a, סעדיה: 700$a"
-"""990001361140205171""",,תימן | production place,"זכריה | scribe, סעדיה | scribe, סעדיה | scribe",,,זכריה: 700$a
-"""990000632200205171""",,תימן | production place,"יוסף | scribe, זכריא | scribe",,,יוסף: 700$a
-"""990001878130205171""",1607 | colophon date,,"משה | scribe, ויהודה | scribe",1607: 260$c; 008,,משה: 700$a
-"""990000634000205171""",,תימן | mentioned place,"סעדיה | colophon scribe, יוסף | scribe, אלעזר | author",,,"סעדיה: 700$a, יוסף: 700$a, אלעזר: 700$a"
-"""990000666370205171""",1417 | work creation date,"מנטובה | production place, אוקספורד | preserved in",,,,
-"""990001679060205171""",,"בגדאד | production place, ספרד | production place",,,,
-"""990000653720205171""",,"אליקים | production place, פראג | production place",,,,
-"""990001189730205171""",,סאלם | mentioned place,"סעדיא | scribe, משה | scribe, אברהם | commentator",,,"משה: 700$a, אברהם: 700$a"
-"""990001022920205171""",,,שלמה | scribe,,,שלמה: 100$a; 700$a
-"""990001983850205171""",,,מרדכי | scribe,,,מרדכי: 700$a
-"""990001039990205171""",1731 | citation date,,,,,
+manuscript_id,dates,locations,persons
+"""990001188700205171""",,"דמשק | resided in | new data, ירושלים | moved from | new data",
+"""990001780340205171""",,"תימן | mentioned place | new data, מונטריאול | unclassified | new data",
+"""990001343040205171""",,"תימן | production place | new data, לונדון | preserved in | new data",
+"""990001273190205171""",,אפגניסטן | production place | new data,דוד | author | 700$a
+"""990000533850205171""",,הנובר | mentioned place | new data,"ליב | owner | 700$a, נתן | author | 700$a; 100$a, שמעון | scribe | 700$a"
+"""990000655210205171""",,,משה | commentator | 700$a
+"""990000958680205171""","1569 | printing date | new data, 1597 | censorship date | new data",אורבינו | brought from | new data,ממשפחת | mentioned person | new data
+"""990001338440205171""",,,"משה | scribe | 700$a, שלמה | scribe | 100$a"
+"""990025916610205171""",,,"אהרן | colophon scribe | 700$a, אבא | colophon scribe | 700$a"
+"""990000558270205171""",,,משה | scribe | 700$a
+"""990001313900205171""",,ירושלים | preserved in | new data,"זכריא | scribe | new data, אברהם | scribe | new data, יעקוב | scribe | new data, שלמה | scribe | 100$a"
+"""990001078470205171""","שנת 1620 | censorship date | new data, 1620 | censorship date | new data",ניו יורק | preserved in | new data,
+"""990002078620205171""",,תימן | production place | new data,
+"""990000792030205171""",,"וינה | production place | new data, פראג | production place | new data, הולנד | resided in | new data","של | author | 100$a, ממנה | mentioned person | new data"
+"""990001625570205171""",,אופנהיים | mentioned place | new data,"יעקב | scribe | 700$a, אליעזר | owner | 700$a"
+"""990000633510205171""",,,משה | scribe | 100$a
+"""990000943910205171""",1600 | work creation date | 260$c; 008,,
+"""990000856010205171""",,"מצרים | active in | new data, חברון | mentioned place | new data, ירושלים | mentioned place | new data",
+"""990001086690205171""",,ליאון | scribe | new data,"ליאון | scribe | new data, ליאון | scribe | new data"
+"""990001827620205171""","1644 | colophon completion date | 260$c; 008, 1802 | annotation date | new data, 1771 | purchase date | new data",,
+"""990001399370205171""",1652 | colophon completion date | 260$c; 008,,סעדיא | scribe | new data
+"""990001775480205171""",שנת 1653 | colophon date | 260$c; 008,,
+"""990000829170205171""",,,משה | author | 100$a
+"""990026973440205171""",,דמשק | production place | new data,שמואל | author | 700$a
+"""990001761840205171""",1670 | colophon date | 260$c; 008,,"סלמון | owner | 100$a, אברהם | owner | 700$a"
+"""990025630180205171""",,"תימן | mentioned place | new data, אלוני | collection location | new data",
+"""990001831070205171""",,עמנואל | mentioned place | new data,
+"""990000463570205171""",,ירושלים | preserved in | new data,אליעזר | author | 100$a
+"""990001901770205171""",,,"עמרם | scribe | 700$a, זכריא | scribe | new data"
+"""990001121720205171""",1662 | colophon date | 260$c; 008,,
+"""990000463550205171""",,"פרנקפורט דמיין | resided in | new data, פולין | production place | new data, ירושלים | preserved in | new data",
+"""990036191450205171""",1662 | purchase date | 260$c; 008,"ניו יורק | preserved in | new data, סאלם | production place | new data",
+"""990001114420205171""",,תימן | production place | new data,
+"""990001022440205171""",,קאלי | production place | new data,ידידיה | owner | 100$a
+"""990025934540205171""",1886 | citation date | new data,איטליה | mentioned place | new data,"משה | scribe | 700$a, מרדכי | dedicatee | 700$a"
+"""990001219470205171""",,תימן | production place | new data,
+"""990000913260205171""",,פראג | resided in | new data,
+"""990000885660205171""",,"ארץ ישראל | mentioned place | new data, קליווא | worked in | new data, צרפת | mentioned place | new data, לונדון | preserved in | new data, אירופה | mentioned place | new data","אברהם | scribe | 100$a, אהרן | author | 700$a"
+"""990035802410205171""",1964 | transfer of custody date | new data,"תימן | production place | new data, ירושלים | preserved in | new data",שלמה | owner | 700$a
+"""990027840460205171""",,"ירושלים | preserved in | new data, חברון | active in | new data, דורא | mentioned place | new data, רדומסק | preserved in | new data","יוסף | author | 700$a, יוסף | author | 700$a, מאיר | scribe | 700$a"
+"""990001238680205171""",,,יוסף | scribe | 700$a
+"""990000831830205171""",,"מנטובה | production place | new data, פורלי | mentioned place | new data",
+"""990001022860205171""",1676 | purchase date | new data,,"אברהם | colophon scribe | 700$a, תנצבה | mentioned person | new data, שלמה | owner | 100$a"
+"""990001510630205171""","1707-1698 | birth date | new data, 1698-1707 | birth date | new data, 1707 | birth date | new data, 1698 | birth date | new data, 1905 | transfer of custody date | new data","עמנואל | production place | new data, ויטוריה | mentioned place | new data",
+"""990032575610205171""",1690 | colophon date | 260$c; 008,,
+"""990001326670205171""","1618 | censorship date | 260$c, שנת 1618 | censorship date | 260$c",,יצחק | scribe | 100$a
+"""990001855990205171""",,"עמנואל | resided in | new data, סינסינטי | preserved in | new data",
+"""990000568160205171""",,תימן | production place | new data,
+"""990000828230205171""",,,זלמן | owner | 700$a
+"""990001209890205171""",,,"זכריה | scribe | 700$a, סעדיה | owner | 700$a, דוד | owner | 700$a; 100$a"
+"""990001022880205171""",,,"משה | scribe | 700$a, שלמה | commentator | 100$a"
+"""990000788440205171""",,ירושלים | published in | new data,למאיר | translator | new data
+"""990001065130205171""",,עמנואל | mentioned place | new data,
+"""990001800810205171""",,ירושלים | preserved in | new data,
+"""990001709250205171""",,זולצבך | press location | new data,
+"""990001124870205171""",,מצרים | death place | new data,
+"""990035044030205171""",,"לונדון | preserved in | new data, ויטרבו | possession in | new data, אנקונה | preserved in | new data",
+"""990000738230205171""",1618 | censorship date | new data,,משה | scribe | 100$a
+"""990000825080205171""",,,"אהרן | author | 700$a; 100$a, יוסף | author | 700$a; 100$a, שמחה | author | 700$a, יהויכין | previous owner | 700$a"
+"""990000667860205171""",,לונדון | preserved in | new data,"מאת | scribe | new data, ואני | scribe | new data, חותמת | owner | new data"
+"""990000563980205171""",1670 | colophon date | 260$c; 008,"פטרה | mentioned place | new data, תימן | production place | new data",
+"""990001022280205171""",,מוטול | mentioned place | new data,
+"""990000798880205171""",,,שלמה | owner | 100$a
+"""990001402040205171""",,סאלם | mentioned place | new data,"חזמק | author | new data, חזמק | author | new data, סעיד | scribe | 700$a, סעיד | scribe | 700$a, סעדיה | translator | 700$a"
+"""990001361140205171""",,תימן | production place | new data,"זכריה | scribe | 700$a, סעדיה | scribe | new data, סעדיה | scribe | new data"
+"""990000632200205171""",,תימן | production place | new data,"יוסף | scribe | 700$a, זכריא | scribe | new data"
+"""990001878130205171""",1607 | colophon date | 260$c; 008,,"משה | scribe | 700$a, ויהודה | scribe | new data"
+"""990000634000205171""",,תימן | mentioned place | new data,"סעדיה | colophon scribe | 700$a, יוסף | scribe | 700$a, אלעזר | author | 700$a"
+"""990000666370205171""",1417 | work creation date | new data,"מנטובה | production place | new data, אוקספורד | press location | new data",
+"""990001679060205171""",,"בגדאד | production place | new data, ספרד | mentioned place | new data",
+"""990000653720205171""",,"אליקים | mentioned place | new data, פראג | production place | new data",
+"""990001189730205171""",,סאלם | mentioned place | new data,"סעדיא | scribe | new data, משה | scribe | 700$a, אברהם | commentator | 700$a"
+"""990001022920205171""",,,שלמה | scribe | 700$a; 100$a
+"""990001983850205171""",,,מרדכי | scribe | 700$a
+"""990001039990205171""",1731 | cataloging date | new data,,

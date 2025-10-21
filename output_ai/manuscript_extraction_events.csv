@@ -4,49 +4,51 @@ manuscript_id,event_type,event_class,date,place,actor,has_temporal_info,has_spat
 """990001188700205171""",active,E7_Activity,,דמשק,,False,True
 """990001188700205171""",active,E7_Activity,,ירושלים,,False,True
 """990001188700205171""",resided,E7_Activity,,סאדאגורא,,False,True
-"""990001780340205171""",calendar tables for years,E7_Activity,"ת""ה-תצ""א",,,True,False
-"""990001780340205171""",manuscript production,E7_Activity,"אתתקנ""ד",,,True,False
+"""990001780340205171""",calendar coverage,E7_Activity,"ת""ה",,,True,False
+"""990001780340205171""",calendar coverage,E7_Activity,"תצ""א",,,True,False
+"""990001780340205171""",calendar coverage,E7_Activity,"אתתקנ""ד",,,True,False
 """990001780340205171""",manuscript production,E7_Activity,"ת""ג",,,True,False
-"""990001780340205171""",calendar tables for years,E7_Activity,"תנ""ב-תקכ""ט",,,True,False
-"""990001780340205171""",previously owned,E7_Activity,,מונטריאול,,False,True
-"""990001343040205171""",table start,E7_Activity,"תכ""א",,,True,False
-"""990001343040205171""",table start,E7_Activity,"תרמ""ד",,,True,False
-"""990001343040205171""",previous ownership location,E7_Activity,,לונדון,,False,True
+"""990001780340205171""",calendar coverage,E7_Activity,"תנ""ב",,,True,False
+"""990001780340205171""",calendar coverage,E7_Activity,"תקכ""ט",,,True,False
+"""990001780340205171""",owned,E7_Activity,,מונטריאול,,False,True
+"""990001780340205171""",acquired,E7_Activity,,ואטיקן,,False,True
+"""990001343040205171""",manuscript production,E7_Activity,"תכ""א",,,True,False
+"""990001343040205171""",manuscript production,E7_Activity,"תרמ""ד",,,True,False
+"""990001343040205171""",owned,E7_Activity,,לונדון,,False,True
 """990001084690205171""",manuscript production,E7_Activity,"תנ""ב",,,True,False
 """990001084690205171""",produced,E7_Activity,,קרפנטרץ,,False,True
-"""990001084690205171""",written,E7_Activity,,קרפינטראץ,,False,True
 """990001273190205171""",custom of,E7_Activity,,אפגניסטן,,False,True
 """990000688750205171""",manuscript production,E7_Activity,נ'ש'ב'ע'ה',,,True,False
 """990000688750205171""",donation,E7_Activity,"כה""י",,,True,False
 """990000688750205171""",donated,E7_Activity,,ספרית אוניברסיטת בר אילן,,False,True
 """990000533850205171""",manuscript production,E7_Activity,ה' אלול תלד,,,True,False
-"""990000533850205171""",manuscript production,E7_Activity,"כ""ד אלול תל""ד",,,True,False
-"""990000533850205171""",donation,E7_Activity,"תקל""ח",,,True,False
-"""990000533850205171""",active,E7_Activity,,ממיץ,,False,True
+"""990000533850205171""",manuscript production,E7_Activity,כד אלול תלד,,,True,False
+"""990000533850205171""",acquisition,E7_Activity,"תקל""ח",,,True,False
+"""990000533850205171""",active,E7_Activity,,מץ,,False,True
 """990000655210205171""",manuscript production,E7_Activity,"תתי""ב",,,True,False
-"""990000655210205171""",manuscript production,E7_Activity,טבת,,,True,False
+"""990000655210205171""",manuscript production,E7_Activity,טבת'א,,,True,False
 """990000655210205171""",produced,E7_Activity,,ויניציאה,,False,True
 """990000958680205171""",printing,E7_Activity,1569,,,True,False
-"""990000958680205171""",printing,E7_Activity,1539,,,True,False
+"""990000958680205171""",printing,E7_Activity,1540,,,True,False
 """990000958680205171""",manuscript production,E7_Activity,1294,,,True,False
 """990000958680205171""",censoring,E7_Activity,1597,,,True,False
 """990000958680205171""",printed,E7_Activity,,אנטוורפן,,False,True
 """990000958680205171""",printed,E7_Activity,,באשיליאה,,False,True
 """990000958680205171""",produced,E7_Activity,,אורבינו,,False,True
 """990000958680205171""",resided,E7_Activity,,ויניציאה,,False,True
+"""990000958680205171""",owned,E7_Activity,,וולטירא,,False,True
 """990025916610205171""",manuscript production,E7_Activity,"אתתק""ל",,,True,False
-"""990025916610205171""",resided,E7_Activity,,תנעם,,False,True
-"""990000558270205171""",manuscript production,E7_Activity,"ת""מ",,,True,False
+"""990025916610205171""",active,E7_Activity,,תנעם,,False,True
 """990001313900205171""",manuscript production,E7_Activity,"אתתקפ""ז",,,True,False
-"""990001313900205171""",produced,E7_Activity,,קנדעל בירא דמיא,,False,True
+"""990001313900205171""",produced,E7_Activity,,בירא דמיא,,False,True
 """990001313900205171""",acquired,E7_Activity,,ירושלים,,False,True
-"""990000893610205171""",manuscript production,E7_Activity,שמעה,,,True,False
+"""990000893610205171""",manuscript production,E7_Activity,"תט""ו",,,True,False
 """990000893610205171""",produced,E7_Activity,,רייו,,False,True
 """990001078470205171""",censoring,E7_Activity,1620,,,True,False
 """990001078470205171""",manuscript production,E7_Activity,שעז,,,True,False
 """990001078470205171""",mentioned,E7_Activity,,מודינא,,False,True
 """990001078470205171""",owned,E7_Activity,,ניו יורק,,False,True
-"""990002078620205171""",manuscript production,E7_Activity,"ת""י-ת""ג",,,True,False
+"""990002078620205171""",manuscript production,E7_Activity,"ת""י-תנ""ג",,,True,False
 """990000792030205171""",manuscript production,E7_Activity,טו למנחם צ'ה'ל'י' ו'ר'נ'י' ה' ושבת ציון,,,True,False
 """990000792030205171""",produced,E7_Activity,,עיר ברזל הקרובה לעיר וינה שבמדינת הגריאה,,False,True
 """990000792030205171""",active,E7_Activity,,קנדיה,,False,True
@@ -59,16 +61,15 @@ manuscript_id,event_type,event_class,date,place,actor,has_temporal_info,has_spat
 """990001625570205171""",manuscript production,E7_Activity,"אב שס""ד",,,True,False
 """990001625570205171""",active,E7_Activity,,וורמיזא,,False,True
 """990000633510205171""",unclassified,E7_Activity,,גאליפולי,,False,True
-"""990000633510205171""",unclassified,E7_Activity,,קושטאנדינה,,False,True
 """990000633510205171""",unclassified,E7_Activity,,מרודיש,,False,True
+"""990000633510205171""",unclassified,E7_Activity,,קושטאנדינה,,False,True
 """990001785380205171""",manuscript production,E7_Activity,"תמ""ו",,,True,False
-"""990001785380205171""",written,E7_Activity,,פוסאנו,,False,True
+"""990001785380205171""",produced,E7_Activity,,פוסאנו,,False,True
 """990001785380205171""",owned,E7_Activity,,מנטובה,,False,True
 """990000943910205171""",work creation,E7_Activity,1600,,,True,False
 """990001119980205171""",manuscript production,E7_Activity,5453,,,True,False
 """990001119980205171""",produced,E7_Activity,,Amsterdam,,False,True
 """990000856010205171""",manuscript production,E7_Activity,"שצ""ו",,,True,False
-"""990000856010205171""",publication,E7_Activity,"תש""ג",,,True,False
 """990000856010205171""",produced,E7_Activity,,קנדיאה,,False,True
 """990000856010205171""",mentioned,E7_Activity,,חברון,,False,True
 """990000856010205171""",mentioned,E7_Activity,,צפת,,False,True
@@ -85,19 +86,22 @@ manuscript_id,event_type,event_class,date,place,actor,has_temporal_info,has_spat
 """990000767700205171""",produced,E7_Activity,,בעיר גדול,,False,True
 """990001399370205171""",manuscript production,E7_Activity,1652,,,True,False
 """990001775480205171""",manuscript production,E7_Activity,1653,,,True,False
-"""990000829170205171""",manuscript production,E7_Activity,"התנ""ט",,,True,False
+"""990000829170205171""",manuscript production,E7_Activity,5519,,,True,False
+"""990000829170205171""",active,E7_Activity,,קורטובה,,False,True
 """990001625330205171""",manuscript production,E7_Activity,1347,,,True,False
 """990026973440205171""",publication,E7_Activity,תטז,,,True,False
 """990026973440205171""",published,E7_Activity,,דמשק,,False,True
 """990000696290205171""",manuscript production,E7_Activity,"אתתקל""ד",,,True,False
 """990001761840205171""",manuscript production,E7_Activity,1670,,,True,False
 """990001831070205171""",manuscript production,E7_Activity,5455,,,True,False
-"""990000463570205171""",manuscript production,E7_Activity,"ער""ה ת""ם",,,True,False
-"""990000463570205171""",owned,E7_Activity,,ירושלים,,False,True
+"""990001831070205171""",active,E7_Activity,,מילייאב,,False,True
+"""990000463570205171""",manuscript production,E7_Activity,"ת""ם לפ""ק",,,True,False
+"""990000463570205171""",acquired,E7_Activity,,ירושלים,,False,True
 """990001901770205171""",manuscript production,E7_Activity,"א'תתקס""ב",,,True,False
 """990001901770205171""",manuscript production,E7_Activity,"א'תתקס""ב",,,True,False
 """990001901770205171""",produced,E7_Activity,,מדינת עמראן,,False,True
 """990001121720205171""",manuscript production,E7_Activity,1662,,,True,False
+"""990001121720205171""",cataloging,E7_Activity,1663,,,True,False
 """990000463550205171""",manuscript production,E7_Activity,שפט,,,True,False
 """990000463550205171""",publication,E7_Activity,"תשס""ח",,,True,False
 """990000463550205171""",resided,E7_Activity,,פרנקפורט דמיין,,False,True
@@ -106,12 +110,12 @@ manuscript_id,event_type,event_class,date,place,actor,has_temporal_info,has_spat
 """990036191450205171""",manuscript production,E7_Activity,א'תתקעג,,,True,False
 """990036191450205171""",resided,E7_Activity,,קרית סדם,,False,True
 """990036191450205171""",owned,E7_Activity,,ניו יורק,,False,True
-"""990001022440205171""",manuscript production,E7_Activity,"ט אדר השצ""ז",,,True,False
+"""990001022440205171""",manuscript production,E7_Activity,"שצ""ז",,,True,False
 """990001022440205171""",produced,E7_Activity,,קאליי,,False,True
 """990001022440205171""",owned,E7_Activity,,קאלי,,False,True
 """990025934540205171""",manuscript production,E7_Activity,ש'ע'ז',,,True,False
 """990025934540205171""",produced,E7_Activity,,קרית פירארה,,False,True
-"""990025934540205171""",commissioned for,E7_Activity,,בריסילו,,False,True
+"""990025934540205171""",commissioned for owner from,E7_Activity,,בריסילו,,False,True
 """990001376840205171""",manuscript production,E7_Activity,תכג,,,True,False
 """990001376840205171""",produced,E7_Activity,,בלאא כהר,,False,True
 """990000913260205171""",unclassified,E7_Activity,,הילדסום,,False,True
@@ -121,8 +125,8 @@ manuscript_id,event_type,event_class,date,place,actor,has_temporal_info,has_spat
 """990000885660205171""",unclassified,E7_Activity,,קליווא,,False,True
 """990000885660205171""",unclassified,E7_Activity,,פפאלץ,,False,True
 """990000885660205171""",unclassified,E7_Activity,,פינטשב,,False,True
-"""990000885660205171""",unclassified,E7_Activity,,סביוניטה,,False,True
-"""990035802410205171""",manuscript production,E7_Activity,אתתקלג,,,True,False
+"""990000885660205171""",unclassified,E7_Activity,,לונדון,,False,True
+"""990035802410205171""",manuscript production,E7_Activity,אתתקל,,,True,False
 """990035802410205171""",return,E7_Activity,10.08.1964,,,True,False
 """990035802410205171""",produced,E7_Activity,,כפר אלאעדאן,,False,True
 """990035802410205171""",owned,E7_Activity,,ירושלים,,False,True
@@ -143,38 +147,40 @@ manuscript_id,event_type,event_class,date,place,actor,has_temporal_info,has_spat
 """990027840460205171""",owned,E7_Activity,,ראבינווצר,,False,True
 """990001238680205171""",manuscript production,E7_Activity,5454,,,True,False
 """990000831830205171""",manuscript production,E7_Activity,"תמ""ז",,,True,False
-"""990000831830205171""",permission issuance,E7_Activity,"שע""ה",,,True,False
-"""990000831830205171""",permission issuance,E7_Activity,"שפ""ד",,,True,False
+"""990000831830205171""",document issuance,E7_Activity,"שע""ה",,,True,False
+"""990000831830205171""",document issuance,E7_Activity,"שפ""ד",,,True,False
 """990000831830205171""",produced,E7_Activity,,בוסיטו,,False,True
 """990000831830205171""",produced,E7_Activity,,מנטובה,,False,True
 """990000831830205171""",produced,E7_Activity,,מנטובה,,False,True
+"""990000831830205171""",resided,E7_Activity,,פורלי,,False,True
 """990001022860205171""",manuscript production,E7_Activity,אתתקנו,,,True,False
 """990001022860205171""",acquisition,E7_Activity,1676,,,True,False
 """990001022860205171""",produced,E7_Activity,,בלאד סנחאן,,False,True
 """990001510630205171""",manuscript production,E7_Activity,5435,,,True,False
 """990001510630205171""",birth,E7_Activity,1698-1707,,,True,False
-"""990001510630205171""",donation,E7_Activity,1905,,,True,False
-"""990001510630205171""",resided,E7_Activity,,מיליאב,,False,True
-"""990001510630205171""",active,E7_Activity,,אויגניון,,False,True
+"""990001510630205171""",purchase,E7_Activity,17,,,True,False
+"""990001510630205171""",acquisition,E7_Activity,1905,,,True,False
+"""990001510630205171""",produced,E7_Activity,,לשלאה דויניזו ממחוז אויגניון,,False,True
 """990001510630205171""",active,E7_Activity,,מודינה,,False,True
-"""990001510630205171""",owned,E7_Activity,,צ'ינגולי,,False,True
+"""990001510630205171""",owned,E7_Activity,,CINGOLI,,False,True
 """990000559760205171""",manuscript production,E7_Activity,"ת""י",,,True,False
 """990000559760205171""",owned,E7_Activity,,פירנצה-לורנציאנה,,False,True
 """990032575610205171""",manuscript production,E7_Activity,1690,,,True,False
 """990032575610205171""",produced,E7_Activity,,Amsterdam,,False,True
 """990001326670205171""",unclassified,E7_Activity,1618,,,True,False
+"""990001326670205171""",unclassified,E7_Activity,1618,,,True,False
 """990001248200205171""",manuscript production,E7_Activity,5459,,,True,False
 """990001248200205171""",manuscript production,E7_Activity,"תנ""ט",,,True,False
 """990001248200205171""",produced,E7_Activity,,ANCONA,,False,True
-"""990001855990205171""",manuscript production,E7_Activity,5403,,,True,False
-"""990001855990205171""",manuscript production,E7_Activity,"תרע""ז",,,True,False
+"""990001855990205171""",manuscript production,E7_Activity,שנת חמשת אלפים ארבע מאות שלשה ושלים ליצירה,,,True,False
+"""990001855990205171""",prayer composition,E7_Activity,"תרע""ז",,,True,False
 """990001855990205171""",resided,E7_Activity,,לישלאה דיווניצו,,False,True
-"""990001855990205171""",origin of people,E7_Activity,,באליציען,,False,True
-"""990001855990205171""",origin of people,E7_Activity,,בוקאווינא,,False,True
-"""990001855990205171""",origin of people,E7_Activity,,עסטרייך,,False,True
-"""990001855990205171""",origin of people,E7_Activity,,אונגארין,,False,True
-"""990001855990205171""",exile location,E7_Activity,,איטאליא,,False,True
-"""990001855990205171""",resided,E7_Activity,,פאססאנו,,False,True
+"""990001855990205171""",origin of captives,E7_Activity,,באליציען,,False,True
+"""990001855990205171""",origin of captives,E7_Activity,,בוקאווינא,,False,True
+"""990001855990205171""",origin of captives,E7_Activity,,עסטרייך,,False,True
+"""990001855990205171""",origin of captives,E7_Activity,,אונגארין,,False,True
+"""990001855990205171""",captivity location,E7_Activity,,איטאליא,,False,True
+"""990001855990205171""",residence of captives,E7_Activity,,פאססאנו,,False,True
 """990001855990205171""",mentioned,E7_Activity,,פוצאנו,,False,True
 """990000568160205171""",calendar coverage,E7_Activity,"ת""ט-תל""ד",,,True,False
 """990000828230205171""",manuscript production,E7_Activity,5361,,,True,False
@@ -183,47 +189,49 @@ manuscript_id,event_type,event_class,date,place,actor,has_temporal_info,has_spat
 """990000828230205171""",owned,E7_Activity,,בודפשט,,False,True
 """990001209890205171""",manuscript production,E7_Activity,אתתקי,,,True,False
 """990001022880205171""",manuscript production,E7_Activity,אתתקסח,,,True,False
+"""990001022880205171""",produced,E7_Activity,,אלאסי,,False,True
+"""990001022880205171""",produced,E7_Activity,,אלאשרסי,,False,True
 """990000788440205171""",publication,E7_Activity,"תש""ל",,,True,False
 """990000788440205171""",published,E7_Activity,,ירושלים,,False,True
-"""990001065130205171""",manuscript production,E7_Activity,5460,,,True,False
-"""990001065130205171""",manuscript production,E7_Activity,5 תשרי,,,True,False
+"""990001065130205171""",manuscript production,E7_Activity,חמשה לחדש תשרי שנת חמשת אלפים ארבע מאות וששים לבריאת עולם,,,True,False
 """990001065130205171""",produced,E7_Activity,,אויגניון,,False,True
 """990001065130205171""",custom of,E7_Activity,,קרפנטרץ,,False,True
 """990001800810205171""",manuscript production,E7_Activity,"תכ""ב",,,True,False
 """990001800810205171""",acquisition,E7_Activity,168,,,True,False
 """990001800810205171""",produced,E7_Activity,,פירארה,,False,True
+"""990001800810205171""",active,E7_Activity,,מונציליסי,,False,True
 """990001800810205171""",acquired,E7_Activity,,ירושלים,,False,True
+"""990001876060205171""",current location,E7_Activity,,לא ידוע,,False,True
 """990001709250205171""",printing,E7_Activity,"תמ""ה",,,True,False
 """990001709250205171""",printed,E7_Activity,,זולצבך,,False,True
 """990001709250205171""",resided,E7_Activity,,פירדא,,False,True
 """990001124870205171""",work creation,E7_Activity,5419,,,True,False
-"""990001124870205171""",manuscript production,E7_Activity,תלה-תלו,,,True,False
-"""990001124870205171""",death,E7_Activity,תכיט,,,True,False
-"""990001124870205171""",manuscript production,E7_Activity,תכיט,,,True,False
+"""990001124870205171""",additions,E7_Activity,תלה-תלו,,,True,False
+"""990001124870205171""",death,E7_Activity,תכט,,,True,False
+"""990001124870205171""",manuscript production,E7_Activity,תכטי,,,True,False
 """990001124870205171""",death location,E7_Activity,,מצרים,,False,True
 """990001124870205171""",active,E7_Activity,,שאלוניקי,,False,True
 """990001124870205171""",active,E7_Activity,,קוסטנטינה,,False,True
-"""990001085960205171""",donation,E7_Activity,"תכ""ו",,,True,False
-"""990001085960205171""",donated,E7_Activity,,ריגיו,,False,True
-"""990035044030205171""",manuscript production,E7_Activity,הת''ב,,,True,False
-"""990035044030205171""",publication,E7_Activity,"תשכ""ו",,,True,False
-"""990035044030205171""",current location,E7_Activity,,ניו-יורק,,False,True
-"""990035044030205171""",former location,E7_Activity,,לונדון,,False,True
-"""990035044030205171""",compared manuscript location,E7_Activity,,בודפשט,,False,True
-"""990035044030205171""",former location,E7_Activity,,אנקונה,,False,True
+"""990001085960205171""",manuscript production,E7_Activity,"תכ""ו",,,True,False
+"""990001085960205171""",produced,E7_Activity,,ריגיו,,False,True
+"""990035044030205171""",unclassified,E7_Activity,,ניו-יורק,,False,True
+"""990035044030205171""",unclassified,E7_Activity,,לונדון,,False,True
+"""990035044030205171""",unclassified,E7_Activity,,בודפשט,,False,True
+"""990035044030205171""",unclassified,E7_Activity,,אנקונה,,False,True
 """990000738230205171""",manuscript production,E7_Activity,"שע""ד",,,True,False
 """990000738230205171""",censoring,E7_Activity,1618,,,True,False
-"""990000738230205171""",written,E7_Activity,,גווסטאלה,,False,True
-"""990001642250205171""",manuscript production,E7_Activity,1368,,,True,False
+"""990000738230205171""",produced,E7_Activity,,גווסטאלה,,False,True
+"""990001642250205171""",manuscript production,E7_Activity,1364,,,True,False
 """990000825080205171""",manuscript production,E7_Activity,5436,,,True,False
 """990000825080205171""",ownership transfer,E7_Activity,5595,,,True,False
-"""990000825080205171""",loan,E7_Activity,5555,,,True,False
-"""990000825080205171""",loan,E7_Activity,5556,,,True,False
-"""990000825080205171""",ownership transfer,E7_Activity,5600,,,True,False
+"""990000825080205171""",ownership transfer,E7_Activity,5596,,,True,False
+"""990000825080205171""",acquisition,E7_Activity,5587,,,True,False
+"""990000825080205171""",sale,E7_Activity,5600,,,True,False
 """990000825080205171""",produced,E7_Activity,,עיר חדש,,False,True
+"""990000825080205171""",active,E7_Activity,,טטרית,,False,True
 """990000667860205171""",manuscript production,E7_Activity,"שצ""ו",,,True,False
 """990000667860205171""",manuscript production,E7_Activity,"שצ""ו",,,True,False
-"""990000667860205171""",death,E7_Activity,שנה אחת,,,True,False
+"""990000667860205171""",death,E7_Activity,"שצ""ו",,,True,False
 """990000667860205171""",written,E7_Activity,,קצנטינא,,False,True
 """990000667860205171""",owned,E7_Activity,,פירארה,,False,True
 """990000667860205171""",owned,E7_Activity,,לונדון,,False,True
@@ -231,14 +239,14 @@ manuscript_id,event_type,event_class,date,place,actor,has_temporal_info,has_spat
 """990001022280205171""",manuscript production,E7_Activity,"שס""ג",,,True,False
 """990001022280205171""",produced,E7_Activity,,ס' מריני,,False,True
 """990001022280205171""",resided,E7_Activity,,מסיניגאלייא,,False,True
-"""990000798880205171""",manuscript production,E7_Activity,"השצ""ה",,,True,False
+"""990000798880205171""",manuscript production,E7_Activity,1635,,,True,False
 """990001911540205171""",manuscript production,E7_Activity,"התמ""ז",,,True,False
-"""990001911540205171""",manuscript production,E7_Activity,"כ""ה למנחם",,,True,False
+"""990001911540205171""",manuscript production,E7_Activity,"התמ""ז",,,True,False
 """990001911540205171""",produced,E7_Activity,,ריגייו,,False,True
-"""990000584490205171""",manuscript production,E7_Activity,"שפ""ט",,,True,False
+"""990000584490205171""",manuscript production,E7_Activity,שנת ו'ל'ש'מ'ח'ה' לפ''ק [=שפ''ט],,,True,False
 """990001402040205171""",manuscript production,E7_Activity,1368,,,True,False
 """990001402040205171""",produced,E7_Activity,,דמייא,,False,True
-"""990001361140205171""",manuscript production,E7_Activity,"תתקנ""ו",,,True,False
+"""990001361140205171""",manuscript production,E7_Activity,"א'תתקנ""ו",,,True,False
 """990001361140205171""",manuscript production,E7_Activity,"ת""ה",,,True,False
 """990001361140205171""",acquisition,E7_Activity,"תקנ""א",,,True,False
 """990001361140205171""",divorce,E7_Activity,"תרנ""ה",,,True,False
@@ -247,8 +255,7 @@ manuscript_id,event_type,event_class,date,place,actor,has_temporal_info,has_spat
 """990001361140205171""",death,E7_Activity,"תרס""ו",,,True,False
 """990001361140205171""",death,E7_Activity,"תרס""ו",,,True,False
 """990001361140205171""",death,E7_Activity,"תרס""ו",,,True,False
-"""990001361140205171""",divorce,E7_Activity,"תר""ו",,,True,False
-"""990001361140205171""",calendar range,E7_Activity,"ת""ה-תק""י",,,True,False
+"""990001361140205171""",calendar end,E7_Activity,"תק""י",,,True,False
 """990001361140205171""",produced,E7_Activity,,מאתא דאר עמר,,False,True
 """990000632200205171""",manuscript production,E7_Activity,"התל""א",,,True,False
 """990000632200205171""",manuscript production,E7_Activity,"התל""ה",,,True,False
@@ -261,14 +268,17 @@ manuscript_id,event_type,event_class,date,place,actor,has_temporal_info,has_spat
 """990000666370205171""",manuscript production,E7_Activity,"שפ""א",,,True,False
 """990000666370205171""",work creation,E7_Activity,1417,,,True,False
 """990000666370205171""",produced,E7_Activity,,מנטובה,,False,True
-"""990000666370205171""",published,E7_Activity,,אוקספורד,,False,True
-"""990001679060205171""",manuscript production,E7_Activity,ת'ב'נ'ה,,,True,False
+"""990000666370205171""",owned,E7_Activity,,אופנהים,,False,True
+"""990001679060205171""",manuscript production,E7_Activity,ת'ב'נ'ה',,,True,False
 """990001679060205171""",written,E7_Activity,,"ק""ק בגדאד",,False,True
-"""990000653720205171""",manuscript production,E7_Activity,כו טבת,,,True,False
+"""990000653720205171""",manuscript production,E7_Activity,כו לחדש טבת,,,True,False
 """990000653720205171""",produced,E7_Activity,,מפראג,,False,True
 """990001189730205171""",manuscript production,E7_Activity,"תמ""ז",,,True,False
-"""990001022920205171""",manuscript production,E7_Activity,1549,,,True,False
-"""990001022920205171""",produced,E7_Activity,,קריית דהשן אלקיון,,False,True
+"""990001189730205171""",active,E7_Activity,,עלקטיעי,,False,True
+"""990001189730205171""",active,E7_Activity,,עראקי,,False,True
+"""990001189730205171""",active,E7_Activity,,עלקראי,,False,True
+"""990001022920205171""",manuscript production,E7_Activity,1349,,,True,False
+"""990001022920205171""",produced,E7_Activity,,קרית דהשן אלקיון,,False,True
 """990001197830205171""",manuscript production,E7_Activity,"ה'תכ""א",,,True,False
 """990001197830205171""",purchase,E7_Activity,"ה'תר""ט",,,True,False
 """990001197830205171""",manuscript production,E7_Activity,"ה'תנ""ח",,,True,False
@@ -277,9 +287,9 @@ manuscript_id,event_type,event_class,date,place,actor,has_temporal_info,has_spat
 """990001197830205171""",active,E7_Activity,,ירושלם,,False,True
 """990001197830205171""",resided,E7_Activity,,ריקאנאטי,,False,True
 """990001197830205171""",owned,E7_Activity,,תל אביב,,False,True
-"""990001983850205171""",manuscript production,E7_Activity,תמוז באמ''ת לפ''ק,,,True,False
+"""990001983850205171""",manuscript production,E7_Activity,תמוז באמ''ת,,,True,False
 """990001983850205171""",death,E7_Activity,תל''א,,,True,False
-"""990001983850205171""",death,E7_Activity,תשי''ג,,,True,False
+"""990001983850205171""",death,E7_Activity,ה'תקי''ג,,,True,False
 """990001983850205171""",produced,E7_Activity,,קרפנטרץ,,False,True
 """990001003390205171""",manuscript production,E7_Activity,"תר""ח",,,True,False
 """990001252810205171""",manuscript production,E7_Activity,"תט""ו",,,True,False

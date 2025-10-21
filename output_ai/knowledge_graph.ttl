@@ -25,25 +25,25 @@ base:MS_990000463550205171_resided_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990000463550205171 ;
     crm:P7_took_place_at base:Place_%D7%A4%D7%A8%D7%A0%D7%A7%D7%A4%D7%95%D7%A8%D7%98_%D7%93%D7%9E%D7%99%D7%99%D7%9F .
 
+base:MS_990000463570205171_acquired_Event a crm:E7_Activity ;
+    rdfs:label "acquired of MS \"990000463570205171\""@en ;
+    crm:P16_used_specific_object base:MS_990000463570205171 ;
+    crm:P7_took_place_at base:Place_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D .
+
 base:MS_990000463570205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990000463570205171\""@en ;
     crm:P16_used_specific_object base:MS_990000463570205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%A2%D7%A8%D7%94_%D7%AA%D7%9D .
+    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%9D_%D7%9C%D7%A4%D7%A7 .
 
-base:MS_990000463570205171_owned_Event a crm:E7_Activity ;
-    rdfs:label "owned of MS \"990000463570205171\""@en ;
-    crm:P16_used_specific_object base:MS_990000463570205171 ;
-    crm:P7_took_place_at base:Place_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D .
+base:MS_990000533850205171_acquisition_Event a crm:E7_Activity ;
+    rdfs:label "acquisition of MS \"990000533850205171\""@en ;
+    crm:P16_used_specific_object base:MS_990000533850205171 ;
+    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A7%D7%9C%D7%97 .
 
 base:MS_990000533850205171_active_Event a crm:E7_Activity ;
     rdfs:label "active of MS \"990000533850205171\""@en ;
     crm:P16_used_specific_object base:MS_990000533850205171 ;
-    crm:P7_took_place_at base:Place_%D7%9E%D7%9E%D7%99%D7%A5 .
-
-base:MS_990000533850205171_donation_Event a crm:E7_Activity ;
-    rdfs:label "donation of MS \"990000533850205171\""@en ;
-    crm:P16_used_specific_object base:MS_990000533850205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A7%D7%9C%D7%97 .
+    crm:P7_took_place_at base:Place_%D7%9E%D7%A5 .
 
 base:MS_990000533850205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990000533850205171\""@en ;
@@ -55,10 +55,13 @@ base:MS_990000533850205171_manuscript_production_Event_1 a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990000533850205171 ;
     crm:P4_has_time_span base:TimeSpan_%D7%9B%D7%93_%D7%90%D7%9C%D7%95%D7%9C_%D7%AA%D7%9C%D7%93 .
 
-base:MS_990000558270205171_manuscript_production_Event a crm:E7_Activity ;
-    rdfs:label "manuscript production of MS \"990000558270205171\""@en ;
-    crm:P16_used_specific_object base:MS_990000558270205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%9E .
+base:MS_990000558270205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990000558270205171\""@en,
+        "כתב יד \"990000558270205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%9E%D7%92%D7%99%D7%93_%D7%9E%D7%99%D7%A9%D7%A8%D7%99%D7%9D_MS_990000558270205171 ;
+    crm:P1_is_identified_by "\"990000558270205171\""^^xsd:string ;
+    hm:has_colophon base:MS_990000558270205171_Colophon .
 
 base:MS_990000559760205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990000559760205171\""@en ;
@@ -83,7 +86,7 @@ base:MS_990000568160205171_calendar_coverage_Event a crm:E7_Activity ;
 base:MS_990000584490205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990000584490205171\""@en ;
     crm:P16_used_specific_object base:MS_990000584490205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A4%D7%98 .
+    crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A0%D7%AA_%D7%95%D7%9C%D7%A9%D7%9E%D7%97%D7%94_%D7%9C%D7%A4%D7%A7_%5B%3D%D7%A9%D7%A4%D7%98%5D .
 
 base:MS_990000632200205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990000632200205171\""@en ;
@@ -103,12 +106,12 @@ base:MS_990000633510205171_unclassified_Event a crm:E7_Activity ;
 base:MS_990000633510205171_unclassified_Event_1 a crm:E7_Activity ;
     rdfs:label "unclassified of MS \"990000633510205171\""@en ;
     crm:P16_used_specific_object base:MS_990000633510205171 ;
-    crm:P7_took_place_at base:Place_%D7%A7%D7%95%D7%A9%D7%98%D7%90%D7%A0%D7%93%D7%99%D7%A0%D7%94 .
+    crm:P7_took_place_at base:Place_%D7%9E%D7%A8%D7%95%D7%93%D7%99%D7%A9 .
 
 base:MS_990000633510205171_unclassified_Event_2 a crm:E7_Activity ;
     rdfs:label "unclassified of MS \"990000633510205171\""@en ;
     crm:P16_used_specific_object base:MS_990000633510205171 ;
-    crm:P7_took_place_at base:Place_%D7%9E%D7%A8%D7%95%D7%93%D7%99%D7%A9 .
+    crm:P7_took_place_at base:Place_%D7%A7%D7%95%D7%A9%D7%98%D7%90%D7%A0%D7%93%D7%99%D7%A0%D7%94 .
 
 base:MS_990000634000205171_active_Event a crm:E7_Activity ;
     rdfs:label "active of MS \"990000634000205171\""@en ;
@@ -133,7 +136,7 @@ base:MS_990000634000205171_written_Event a crm:E7_Activity ;
 base:MS_990000653720205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990000653720205171\""@en ;
     crm:P16_used_specific_object base:MS_990000653720205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%9B%D7%95_%D7%98%D7%91%D7%AA .
+    crm:P4_has_time_span base:TimeSpan_%D7%9B%D7%95_%D7%9C%D7%97%D7%93%D7%A9_%D7%98%D7%91%D7%AA .
 
 base:MS_990000653720205171_produced_Event a crm:E7_Activity ;
     rdfs:label "produced of MS \"990000653720205171\""@en ;
@@ -148,7 +151,7 @@ base:MS_990000655210205171_manuscript_production_Event a crm:E7_Activity ;
 base:MS_990000655210205171_manuscript_production_Event_1 a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990000655210205171\""@en ;
     crm:P16_used_specific_object base:MS_990000655210205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%98%D7%91%D7%AA .
+    crm:P4_has_time_span base:TimeSpan_%D7%98%D7%91%D7%AA%D7%90 .
 
 base:MS_990000655210205171_produced_Event a crm:E7_Activity ;
     rdfs:label "produced of MS \"990000655210205171\""@en ;
@@ -165,15 +168,15 @@ base:MS_990000666370205171_manuscript_production_Event_1 a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990000666370205171 ;
     crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A4%D7%90 .
 
+base:MS_990000666370205171_owned_Event a crm:E7_Activity ;
+    rdfs:label "owned of MS \"990000666370205171\""@en ;
+    crm:P16_used_specific_object base:MS_990000666370205171 ;
+    crm:P7_took_place_at base:Place_%D7%90%D7%95%D7%A4%D7%A0%D7%94%D7%99%D7%9D .
+
 base:MS_990000666370205171_produced_Event a crm:E7_Activity ;
     rdfs:label "produced of MS \"990000666370205171\""@en ;
     crm:P16_used_specific_object base:MS_990000666370205171 ;
     crm:P7_took_place_at base:Place_%D7%9E%D7%A0%D7%98%D7%95%D7%91%D7%94 .
-
-base:MS_990000666370205171_published_Event a crm:E7_Activity ;
-    rdfs:label "published of MS \"990000666370205171\""@en ;
-    crm:P16_used_specific_object base:MS_990000666370205171 ;
-    crm:P7_took_place_at base:Place_%D7%90%D7%95%D7%A7%D7%A1%D7%A4%D7%95%D7%A8%D7%93 .
 
 base:MS_990000666370205171_work_creation_Event a crm:E7_Activity ;
     rdfs:label "work creation of MS \"990000666370205171\""@en ;
@@ -183,7 +186,7 @@ base:MS_990000666370205171_work_creation_Event a crm:E7_Activity ;
 base:MS_990000667860205171_death_Event a crm:E7_Activity ;
     rdfs:label "death of MS \"990000667860205171\""@en ;
     crm:P16_used_specific_object base:MS_990000667860205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A0%D7%94_%D7%90%D7%97%D7%AA .
+    crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A6%D7%95 .
 
 base:MS_990000667860205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990000667860205171\""@en ;
@@ -240,8 +243,8 @@ base:MS_990000738230205171_manuscript_production_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990000738230205171 ;
     crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A2%D7%93 .
 
-base:MS_990000738230205171_written_Event a crm:E7_Activity ;
-    rdfs:label "written of MS \"990000738230205171\""@en ;
+base:MS_990000738230205171_produced_Event a crm:E7_Activity ;
+    rdfs:label "produced of MS \"990000738230205171\""@en ;
     crm:P16_used_specific_object base:MS_990000738230205171 ;
     crm:P7_took_place_at base:Place_%D7%92%D7%95%D7%95%D7%A1%D7%98%D7%90%D7%9C%D7%94 .
 
@@ -308,17 +311,17 @@ base:MS_990000792030205171_resided_Event_1 a crm:E7_Activity ;
 base:MS_990000798880205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990000798880205171\""@en ;
     crm:P16_used_specific_object base:MS_990000798880205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%94%D7%A9%D7%A6%D7%94 .
+    crm:P4_has_time_span base:TimeSpan_1635 .
 
-base:MS_990000825080205171_loan_Event a crm:E7_Activity ;
-    rdfs:label "loan of MS \"990000825080205171\""@en ;
+base:MS_990000825080205171_acquisition_Event a crm:E7_Activity ;
+    rdfs:label "acquisition of MS \"990000825080205171\""@en ;
     crm:P16_used_specific_object base:MS_990000825080205171 ;
-    crm:P4_has_time_span base:TimeSpan_5555 .
+    crm:P4_has_time_span base:TimeSpan_5587 .
 
-base:MS_990000825080205171_loan_Event_1 a crm:E7_Activity ;
-    rdfs:label "loan of MS \"990000825080205171\""@en ;
+base:MS_990000825080205171_active_Event a crm:E7_Activity ;
+    rdfs:label "active of MS \"990000825080205171\""@en ;
     crm:P16_used_specific_object base:MS_990000825080205171 ;
-    crm:P4_has_time_span base:TimeSpan_5556 .
+    crm:P7_took_place_at base:Place_%D7%98%D7%98%D7%A8%D7%99%D7%AA .
 
 base:MS_990000825080205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990000825080205171\""@en ;
@@ -333,12 +336,17 @@ base:MS_990000825080205171_ownership_transfer_Event a crm:E7_Activity ;
 base:MS_990000825080205171_ownership_transfer_Event_1 a crm:E7_Activity ;
     rdfs:label "ownership transfer of MS \"990000825080205171\""@en ;
     crm:P16_used_specific_object base:MS_990000825080205171 ;
-    crm:P4_has_time_span base:TimeSpan_5600 .
+    crm:P4_has_time_span base:TimeSpan_5596 .
 
 base:MS_990000825080205171_produced_Event a crm:E7_Activity ;
     rdfs:label "produced of MS \"990000825080205171\""@en ;
     crm:P16_used_specific_object base:MS_990000825080205171 ;
     crm:P7_took_place_at base:Place_%D7%A2%D7%99%D7%A8_%D7%97%D7%93%D7%A9 .
+
+base:MS_990000825080205171_sale_Event a crm:E7_Activity ;
+    rdfs:label "sale of MS \"990000825080205171\""@en ;
+    crm:P16_used_specific_object base:MS_990000825080205171 ;
+    crm:P4_has_time_span base:TimeSpan_5600 .
 
 base:MS_990000828230205171_active_period_Event a crm:E7_Activity ;
     rdfs:label "active period of MS \"990000828230205171\""@en ;
@@ -360,25 +368,30 @@ base:MS_990000828230205171_produced_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990000828230205171 ;
     crm:P7_took_place_at base:Place_%D7%A4%D7%99%D7%A8%D7%90%D7%A8%D7%90 .
 
+base:MS_990000829170205171_active_Event a crm:E7_Activity ;
+    rdfs:label "active of MS \"990000829170205171\""@en ;
+    crm:P16_used_specific_object base:MS_990000829170205171 ;
+    crm:P7_took_place_at base:Place_%D7%A7%D7%95%D7%A8%D7%98%D7%95%D7%91%D7%94 .
+
 base:MS_990000829170205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990000829170205171\""@en ;
     crm:P16_used_specific_object base:MS_990000829170205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%94%D7%AA%D7%A0%D7%98 .
+    crm:P4_has_time_span base:TimeSpan_5519 .
+
+base:MS_990000831830205171_document_issuance_Event a crm:E7_Activity ;
+    rdfs:label "document issuance of MS \"990000831830205171\""@en ;
+    crm:P16_used_specific_object base:MS_990000831830205171 ;
+    crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A2%D7%94 .
+
+base:MS_990000831830205171_document_issuance_Event_1 a crm:E7_Activity ;
+    rdfs:label "document issuance of MS \"990000831830205171\""@en ;
+    crm:P16_used_specific_object base:MS_990000831830205171 ;
+    crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A4%D7%93 .
 
 base:MS_990000831830205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990000831830205171\""@en ;
     crm:P16_used_specific_object base:MS_990000831830205171 ;
     crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%9E%D7%96 .
-
-base:MS_990000831830205171_permission_issuance_Event a crm:E7_Activity ;
-    rdfs:label "permission issuance of MS \"990000831830205171\""@en ;
-    crm:P16_used_specific_object base:MS_990000831830205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A2%D7%94 .
-
-base:MS_990000831830205171_permission_issuance_Event_1 a crm:E7_Activity ;
-    rdfs:label "permission issuance of MS \"990000831830205171\""@en ;
-    crm:P16_used_specific_object base:MS_990000831830205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A4%D7%93 .
 
 base:MS_990000831830205171_produced_Event a crm:E7_Activity ;
     rdfs:label "produced of MS \"990000831830205171\""@en ;
@@ -394,6 +407,11 @@ base:MS_990000831830205171_produced_Event_2 a crm:E7_Activity ;
     rdfs:label "produced of MS \"990000831830205171\""@en ;
     crm:P16_used_specific_object base:MS_990000831830205171 ;
     crm:P7_took_place_at base:Place_%D7%9E%D7%A0%D7%98%D7%95%D7%91%D7%94 .
+
+base:MS_990000831830205171_resided_Event a crm:E7_Activity ;
+    rdfs:label "resided of MS \"990000831830205171\""@en ;
+    crm:P16_used_specific_object base:MS_990000831830205171 ;
+    crm:P7_took_place_at base:Place_%D7%A4%D7%95%D7%A8%D7%9C%D7%99 .
 
 base:MS_990000856010205171_active_Event a crm:E7_Activity ;
     rdfs:label "active of MS \"990000856010205171\""@en ;
@@ -425,11 +443,6 @@ base:MS_990000856010205171_produced_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990000856010205171 ;
     crm:P7_took_place_at base:Place_%D7%A7%D7%A0%D7%93%D7%99%D7%90%D7%94 .
 
-base:MS_990000856010205171_publication_Event a crm:E7_Activity ;
-    rdfs:label "publication of MS \"990000856010205171\""@en ;
-    crm:P16_used_specific_object base:MS_990000856010205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A9%D7%92 .
-
 base:MS_990000885660205171_unclassified_Event a crm:E7_Activity ;
     rdfs:label "unclassified of MS \"990000885660205171\""@en ;
     crm:P16_used_specific_object base:MS_990000885660205171 ;
@@ -458,12 +471,12 @@ base:MS_990000885660205171_unclassified_Event_4 a crm:E7_Activity ;
 base:MS_990000885660205171_unclassified_Event_5 a crm:E7_Activity ;
     rdfs:label "unclassified of MS \"990000885660205171\""@en ;
     crm:P16_used_specific_object base:MS_990000885660205171 ;
-    crm:P7_took_place_at base:Place_%D7%A1%D7%91%D7%99%D7%95%D7%A0%D7%99%D7%98%D7%94 .
+    crm:P7_took_place_at base:Place_%D7%9C%D7%95%D7%A0%D7%93%D7%95%D7%9F .
 
 base:MS_990000893610205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990000893610205171\""@en ;
     crm:P16_used_specific_object base:MS_990000893610205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%9E%D7%A2%D7%94 .
+    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%98%D7%95 .
 
 base:MS_990000893610205171_produced_Event a crm:E7_Activity ;
     rdfs:label "produced of MS \"990000893610205171\""@en ;
@@ -495,6 +508,11 @@ base:MS_990000958680205171_manuscript_production_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990000958680205171 ;
     crm:P4_has_time_span base:TimeSpan_1294 .
 
+base:MS_990000958680205171_owned_Event a crm:E7_Activity ;
+    rdfs:label "owned of MS \"990000958680205171\""@en ;
+    crm:P16_used_specific_object base:MS_990000958680205171 ;
+    crm:P7_took_place_at base:Place_%D7%95%D7%95%D7%9C%D7%98%D7%99%D7%A8%D7%90 .
+
 base:MS_990000958680205171_printed_Event a crm:E7_Activity ;
     rdfs:label "printed of MS \"990000958680205171\""@en ;
     crm:P16_used_specific_object base:MS_990000958680205171 ;
@@ -513,7 +531,7 @@ base:MS_990000958680205171_printing_Event a crm:E7_Activity ;
 base:MS_990000958680205171_printing_Event_1 a crm:E7_Activity ;
     rdfs:label "printing of MS \"990000958680205171\""@en ;
     crm:P16_used_specific_object base:MS_990000958680205171 ;
-    crm:P4_has_time_span base:TimeSpan_1539 .
+    crm:P4_has_time_span base:TimeSpan_1540 .
 
 base:MS_990000958680205171_produced_Event a crm:E7_Activity ;
     rdfs:label "produced of MS \"990000958680205171\""@en ;
@@ -548,7 +566,7 @@ base:MS_990001022280205171_resided_Event a crm:E7_Activity ;
 base:MS_990001022440205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001022440205171\""@en ;
     crm:P16_used_specific_object base:MS_990001022440205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%98_%D7%90%D7%93%D7%A8_%D7%94%D7%A9%D7%A6%D7%96 .
+    crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A6%D7%96 .
 
 base:MS_990001022440205171_owned_Event a crm:E7_Activity ;
     rdfs:label "owned of MS \"990001022440205171\""@en ;
@@ -580,15 +598,25 @@ base:MS_990001022880205171_manuscript_production_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990001022880205171 ;
     crm:P4_has_time_span base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%A1%D7%97 .
 
+base:MS_990001022880205171_produced_Event a crm:E7_Activity ;
+    rdfs:label "produced of MS \"990001022880205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001022880205171 ;
+    crm:P7_took_place_at base:Place_%D7%90%D7%9C%D7%90%D7%A1%D7%99 .
+
+base:MS_990001022880205171_produced_Event_1 a crm:E7_Activity ;
+    rdfs:label "produced of MS \"990001022880205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001022880205171 ;
+    crm:P7_took_place_at base:Place_%D7%90%D7%9C%D7%90%D7%A9%D7%A8%D7%A1%D7%99 .
+
 base:MS_990001022920205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001022920205171\""@en ;
     crm:P16_used_specific_object base:MS_990001022920205171 ;
-    crm:P4_has_time_span base:TimeSpan_1549 .
+    crm:P4_has_time_span base:TimeSpan_1349 .
 
 base:MS_990001022920205171_produced_Event a crm:E7_Activity ;
     rdfs:label "produced of MS \"990001022920205171\""@en ;
     crm:P16_used_specific_object base:MS_990001022920205171 ;
-    crm:P7_took_place_at base:Place_%D7%A7%D7%A8%D7%99%D7%99%D7%AA_%D7%93%D7%94%D7%A9%D7%9F_%D7%90%D7%9C%D7%A7%D7%99%D7%95%D7%9F .
+    crm:P7_took_place_at base:Place_%D7%A7%D7%A8%D7%99%D7%AA_%D7%93%D7%94%D7%A9%D7%9F_%D7%90%D7%9C%D7%A7%D7%99%D7%95%D7%9F .
 
 base:MS_990001039990205171_cataloging_Event a crm:E7_Activity ;
     rdfs:label "cataloging of MS \"990001039990205171\""@en ;
@@ -615,12 +643,7 @@ base:MS_990001065130205171_custom_of_Event a crm:E7_Activity ;
 base:MS_990001065130205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001065130205171\""@en ;
     crm:P16_used_specific_object base:MS_990001065130205171 ;
-    crm:P4_has_time_span base:TimeSpan_5460 .
-
-base:MS_990001065130205171_manuscript_production_Event_1 a crm:E7_Activity ;
-    rdfs:label "manuscript production of MS \"990001065130205171\""@en ;
-    crm:P16_used_specific_object base:MS_990001065130205171 ;
-    crm:P4_has_time_span base:TimeSpan_5_%D7%AA%D7%A9%D7%A8%D7%99 .
+    crm:P4_has_time_span base:TimeSpan_%D7%97%D7%9E%D7%A9%D7%94_%D7%9C%D7%97%D7%93%D7%A9_%D7%AA%D7%A9%D7%A8%D7%99_%D7%A9%D7%A0%D7%AA_%D7%97%D7%9E%D7%A9%D7%AA_%D7%90%D7%9C%D7%A4%D7%99%D7%9D_%D7%90%D7%A8%D7%91%D7%A2_%D7%9E%D7%90%D7%95%D7%AA_%D7%95%D7%A9%D7%A9%D7%99%D7%9D_%D7%9C%D7%91%D7%A8%D7%99%D7%90%D7%AA_%D7%A2%D7%95%D7%9C%D7%9D .
 
 base:MS_990001065130205171_produced_Event a crm:E7_Activity ;
     rdfs:label "produced of MS \"990001065130205171\""@en ;
@@ -657,20 +680,15 @@ base:MS_990001084690205171_produced_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990001084690205171 ;
     crm:P7_took_place_at base:Place_%D7%A7%D7%A8%D7%A4%D7%A0%D7%98%D7%A8%D7%A5 .
 
-base:MS_990001084690205171_written_Event a crm:E7_Activity ;
-    rdfs:label "written of MS \"990001084690205171\""@en ;
-    crm:P16_used_specific_object base:MS_990001084690205171 ;
-    crm:P7_took_place_at base:Place_%D7%A7%D7%A8%D7%A4%D7%99%D7%A0%D7%98%D7%A8%D7%90%D7%A5 .
-
-base:MS_990001085960205171_donated_Event a crm:E7_Activity ;
-    rdfs:label "donated of MS \"990001085960205171\""@en ;
-    crm:P16_used_specific_object base:MS_990001085960205171 ;
-    crm:P7_took_place_at base:Place_%D7%A8%D7%99%D7%92%D7%99%D7%95 .
-
-base:MS_990001085960205171_donation_Event a crm:E7_Activity ;
-    rdfs:label "donation of MS \"990001085960205171\""@en ;
+base:MS_990001085960205171_manuscript_production_Event a crm:E7_Activity ;
+    rdfs:label "manuscript production of MS \"990001085960205171\""@en ;
     crm:P16_used_specific_object base:MS_990001085960205171 ;
     crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%9B%D7%95 .
+
+base:MS_990001085960205171_produced_Event a crm:E7_Activity ;
+    rdfs:label "produced of MS \"990001085960205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001085960205171 ;
+    crm:P7_took_place_at base:Place_%D7%A8%D7%99%D7%92%D7%99%D7%95 .
 
 base:MS_990001086690205171_custom_of_Event a crm:E7_Activity ;
     rdfs:label "custom of of MS \"990001086690205171\""@en ;
@@ -699,6 +717,11 @@ base:MS_990001119980205171_produced_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990001119980205171 ;
     crm:P7_took_place_at base:Place_Amsterdam .
 
+base:MS_990001121720205171_cataloging_Event a crm:E7_Activity ;
+    rdfs:label "cataloging of MS \"990001121720205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001121720205171 ;
+    crm:P4_has_time_span base:TimeSpan_1663 .
+
 base:MS_990001121720205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001121720205171\""@en ;
     crm:P16_used_specific_object base:MS_990001121720205171 ;
@@ -714,10 +737,15 @@ base:MS_990001124870205171_active_Event_1 a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990001124870205171 ;
     crm:P7_took_place_at base:Place_%D7%A7%D7%95%D7%A1%D7%98%D7%A0%D7%98%D7%99%D7%A0%D7%94 .
 
+base:MS_990001124870205171_additions_Event a crm:E7_Activity ;
+    rdfs:label "additions of MS \"990001124870205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001124870205171 ;
+    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%9C%D7%94_%D7%AA%D7%9C%D7%95 .
+
 base:MS_990001124870205171_death_Event a crm:E7_Activity ;
     rdfs:label "death of MS \"990001124870205171\""@en ;
     crm:P16_used_specific_object base:MS_990001124870205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%9B%D7%99%D7%98 .
+    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%9B%D7%98 .
 
 base:MS_990001124870205171_death_location_Event a crm:E7_Activity ;
     rdfs:label "death location of MS \"990001124870205171\""@en ;
@@ -727,12 +755,7 @@ base:MS_990001124870205171_death_location_Event a crm:E7_Activity ;
 base:MS_990001124870205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001124870205171\""@en ;
     crm:P16_used_specific_object base:MS_990001124870205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%9C%D7%94_%D7%AA%D7%9C%D7%95 .
-
-base:MS_990001124870205171_manuscript_production_Event_1 a crm:E7_Activity ;
-    rdfs:label "manuscript production of MS \"990001124870205171\""@en ;
-    crm:P16_used_specific_object base:MS_990001124870205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%9B%D7%99%D7%98 .
+    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%9B%D7%98%D7%99 .
 
 base:MS_990001124870205171_work_creation_Event a crm:E7_Activity ;
     rdfs:label "work creation of MS \"990001124870205171\""@en ;
@@ -769,6 +792,21 @@ base:MS_990001188700205171_resided_Event a crm:E7_Activity ;
     rdfs:label "resided of MS \"990001188700205171\""@en ;
     crm:P16_used_specific_object base:MS_990001188700205171 ;
     crm:P7_took_place_at base:Place_%D7%A1%D7%90%D7%93%D7%90%D7%92%D7%95%D7%A8%D7%90 .
+
+base:MS_990001189730205171_active_Event a crm:E7_Activity ;
+    rdfs:label "active of MS \"990001189730205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001189730205171 ;
+    crm:P7_took_place_at base:Place_%D7%A2%D7%9C%D7%A7%D7%98%D7%99%D7%A2%D7%99 .
+
+base:MS_990001189730205171_active_Event_1 a crm:E7_Activity ;
+    rdfs:label "active of MS \"990001189730205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001189730205171 ;
+    crm:P7_took_place_at base:Place_%D7%A2%D7%A8%D7%90%D7%A7%D7%99 .
+
+base:MS_990001189730205171_active_Event_2 a crm:E7_Activity ;
+    rdfs:label "active of MS \"990001189730205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001189730205171 ;
+    crm:P7_took_place_at base:Place_%D7%A2%D7%9C%D7%A7%D7%A8%D7%90%D7%99 .
 
 base:MS_990001189730205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001189730205171\""@en ;
@@ -870,9 +908,14 @@ base:MS_990001313900205171_manuscript_production_Event a crm:E7_Activity ;
 base:MS_990001313900205171_produced_Event a crm:E7_Activity ;
     rdfs:label "produced of MS \"990001313900205171\""@en ;
     crm:P16_used_specific_object base:MS_990001313900205171 ;
-    crm:P7_took_place_at base:Place_%D7%A7%D7%A0%D7%93%D7%A2%D7%9C_%D7%91%D7%99%D7%A8%D7%90_%D7%93%D7%9E%D7%99%D7%90 .
+    crm:P7_took_place_at base:Place_%D7%91%D7%99%D7%A8%D7%90_%D7%93%D7%9E%D7%99%D7%90 .
 
 base:MS_990001326670205171_unclassified_Event a crm:E7_Activity ;
+    rdfs:label "unclassified of MS \"990001326670205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001326670205171 ;
+    crm:P4_has_time_span base:TimeSpan_1618 .
+
+base:MS_990001326670205171_unclassified_Event_1 a crm:E7_Activity ;
     rdfs:label "unclassified of MS \"990001326670205171\""@en ;
     crm:P16_used_specific_object base:MS_990001326670205171 ;
     crm:P4_has_time_span base:TimeSpan_1618 .
@@ -884,20 +927,20 @@ base:MS_990001338440205171 a lrmoo:F4_Manifestation_Singleton,
     lrmoo:R4_embodies base:Expression_%D7%9E%D7%A7%D7%A8%D7%90_%D7%A4%D7%A8%D7%A9%D7%A0%D7%95%D7%AA_%D7%A0%D7%91%D7%99%D7%90%D7%99%D7%9D_MS_990001338440205171 ;
     crm:P1_is_identified_by "\"990001338440205171\""^^xsd:string .
 
-base:MS_990001343040205171_previous_ownership_location_Event a crm:E7_Activity ;
-    rdfs:label "previous ownership location of MS \"990001343040205171\""@en ;
-    crm:P16_used_specific_object base:MS_990001343040205171 ;
-    crm:P7_took_place_at base:Place_%D7%9C%D7%95%D7%A0%D7%93%D7%95%D7%9F .
-
-base:MS_990001343040205171_table_start_Event a crm:E7_Activity ;
-    rdfs:label "table start of MS \"990001343040205171\""@en ;
+base:MS_990001343040205171_manuscript_production_Event a crm:E7_Activity ;
+    rdfs:label "manuscript production of MS \"990001343040205171\""@en ;
     crm:P16_used_specific_object base:MS_990001343040205171 ;
     crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%9B%D7%90 .
 
-base:MS_990001343040205171_table_start_Event_1 a crm:E7_Activity ;
-    rdfs:label "table start of MS \"990001343040205171\""@en ;
+base:MS_990001343040205171_manuscript_production_Event_1 a crm:E7_Activity ;
+    rdfs:label "manuscript production of MS \"990001343040205171\""@en ;
     crm:P16_used_specific_object base:MS_990001343040205171 ;
     crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A8%D7%9E%D7%93 .
+
+base:MS_990001343040205171_owned_Event a crm:E7_Activity ;
+    rdfs:label "owned of MS \"990001343040205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001343040205171 ;
+    crm:P7_took_place_at base:Place_%D7%9C%D7%95%D7%A0%D7%93%D7%95%D7%9F .
 
 base:MS_990001353590205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -921,10 +964,10 @@ base:MS_990001361140205171_calendar_end_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990001361140205171 ;
     crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A8%D7%A4%D7%91 .
 
-base:MS_990001361140205171_calendar_range_Event a crm:E7_Activity ;
-    rdfs:label "calendar range of MS \"990001361140205171\""@en ;
+base:MS_990001361140205171_calendar_end_Event_1 a crm:E7_Activity ;
+    rdfs:label "calendar end of MS \"990001361140205171\""@en ;
     crm:P16_used_specific_object base:MS_990001361140205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%94_%D7%AA%D7%A7%D7%99 .
+    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A7%D7%99 .
 
 base:MS_990001361140205171_death_Event a crm:E7_Activity ;
     rdfs:label "death of MS \"990001361140205171\""@en ;
@@ -946,15 +989,10 @@ base:MS_990001361140205171_divorce_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990001361140205171 ;
     crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A8%D7%A0%D7%94 .
 
-base:MS_990001361140205171_divorce_Event_1 a crm:E7_Activity ;
-    rdfs:label "divorce of MS \"990001361140205171\""@en ;
-    crm:P16_used_specific_object base:MS_990001361140205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A8%D7%95 .
-
 base:MS_990001361140205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001361140205171\""@en ;
     crm:P16_used_specific_object base:MS_990001361140205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%AA%D7%A7%D7%A0%D7%95 .
+    crm:P4_has_time_span base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%A0%D7%95 .
 
 base:MS_990001361140205171_manuscript_production_Event_1 a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001361140205171\""@en ;
@@ -998,12 +1036,12 @@ base:MS_990001404380205171 a lrmoo:F4_Manifestation_Singleton,
     lrmoo:R4_embodies base:Expression_%D7%9E%D7%A7%D7%A8%D7%90_%D7%AA%D7%95%D7%A8%D7%94_%D7%A9%D7%9E%D7%95%D7%AA_MS_990001404380205171 ;
     crm:P1_is_identified_by "\"990001404380205171\""^^xsd:string .
 
-base:MS_990001510630205171_active_Event a crm:E7_Activity ;
-    rdfs:label "active of MS \"990001510630205171\""@en ;
+base:MS_990001510630205171_acquisition_Event a crm:E7_Activity ;
+    rdfs:label "acquisition of MS \"990001510630205171\""@en ;
     crm:P16_used_specific_object base:MS_990001510630205171 ;
-    crm:P7_took_place_at base:Place_%D7%90%D7%95%D7%99%D7%92%D7%A0%D7%99%D7%95%D7%9F .
+    crm:P4_has_time_span base:TimeSpan_1905 .
 
-base:MS_990001510630205171_active_Event_1 a crm:E7_Activity ;
+base:MS_990001510630205171_active_Event a crm:E7_Activity ;
     rdfs:label "active of MS \"990001510630205171\""@en ;
     crm:P16_used_specific_object base:MS_990001510630205171 ;
     crm:P7_took_place_at base:Place_%D7%9E%D7%95%D7%93%D7%99%D7%A0%D7%94 .
@@ -1013,11 +1051,6 @@ base:MS_990001510630205171_birth_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990001510630205171 ;
     crm:P4_has_time_span base:TimeSpan_1698_1707 .
 
-base:MS_990001510630205171_donation_Event a crm:E7_Activity ;
-    rdfs:label "donation of MS \"990001510630205171\""@en ;
-    crm:P16_used_specific_object base:MS_990001510630205171 ;
-    crm:P4_has_time_span base:TimeSpan_1905 .
-
 base:MS_990001510630205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001510630205171\""@en ;
     crm:P16_used_specific_object base:MS_990001510630205171 ;
@@ -1026,12 +1059,17 @@ base:MS_990001510630205171_manuscript_production_Event a crm:E7_Activity ;
 base:MS_990001510630205171_owned_Event a crm:E7_Activity ;
     rdfs:label "owned of MS \"990001510630205171\""@en ;
     crm:P16_used_specific_object base:MS_990001510630205171 ;
-    crm:P7_took_place_at base:Place_%D7%A6%D7%99%D7%A0%D7%92%D7%95%D7%9C%D7%99 .
+    crm:P7_took_place_at base:Place_CINGOLI .
 
-base:MS_990001510630205171_resided_Event a crm:E7_Activity ;
-    rdfs:label "resided of MS \"990001510630205171\""@en ;
+base:MS_990001510630205171_produced_Event a crm:E7_Activity ;
+    rdfs:label "produced of MS \"990001510630205171\""@en ;
     crm:P16_used_specific_object base:MS_990001510630205171 ;
-    crm:P7_took_place_at base:Place_%D7%9E%D7%99%D7%9C%D7%99%D7%90%D7%91 .
+    crm:P7_took_place_at base:Place_%D7%9C%D7%A9%D7%9C%D7%90%D7%94_%D7%93%D7%95%D7%99%D7%A0%D7%99%D7%96%D7%95_%D7%9E%D7%9E%D7%97%D7%95%D7%96_%D7%90%D7%95%D7%99%D7%92%D7%A0%D7%99%D7%95%D7%9F .
+
+base:MS_990001510630205171_purchase_Event a crm:E7_Activity ;
+    rdfs:label "purchase of MS \"990001510630205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001510630205171 ;
+    crm:P4_has_time_span base:TimeSpan_17 .
 
 base:MS_990001515400205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -1062,7 +1100,7 @@ base:MS_990001625570205171_manuscript_production_Event_1 a crm:E7_Activity ;
 base:MS_990001642250205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001642250205171\""@en ;
     crm:P16_used_specific_object base:MS_990001642250205171 ;
-    crm:P4_has_time_span base:TimeSpan_1368 .
+    crm:P4_has_time_span base:TimeSpan_1364 .
 
 base:MS_990001679060205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001679060205171\""@en ;
@@ -1106,28 +1144,43 @@ base:MS_990001775480205171_manuscript_production_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990001775480205171 ;
     crm:P4_has_time_span base:TimeSpan_1653 .
 
-base:MS_990001780340205171_calendar_tables_for_years_Event a crm:E7_Activity ;
-    rdfs:label "calendar tables for years of MS \"990001780340205171\""@en ;
+base:MS_990001780340205171_acquired_Event a crm:E7_Activity ;
+    rdfs:label "acquired of MS \"990001780340205171\""@en ;
     crm:P16_used_specific_object base:MS_990001780340205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%94_%D7%AA%D7%A6%D7%90 .
+    crm:P7_took_place_at base:Place_%D7%95%D7%90%D7%98%D7%99%D7%A7%D7%9F .
 
-base:MS_990001780340205171_calendar_tables_for_years_Event_1 a crm:E7_Activity ;
-    rdfs:label "calendar tables for years of MS \"990001780340205171\""@en ;
+base:MS_990001780340205171_calendar_coverage_Event a crm:E7_Activity ;
+    rdfs:label "calendar coverage of MS \"990001780340205171\""@en ;
     crm:P16_used_specific_object base:MS_990001780340205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A0%D7%91_%D7%AA%D7%A7%D7%9B%D7%98 .
+    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%94 .
+
+base:MS_990001780340205171_calendar_coverage_Event_1 a crm:E7_Activity ;
+    rdfs:label "calendar coverage of MS \"990001780340205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001780340205171 ;
+    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A6%D7%90 .
+
+base:MS_990001780340205171_calendar_coverage_Event_2 a crm:E7_Activity ;
+    rdfs:label "calendar coverage of MS \"990001780340205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001780340205171 ;
+    crm:P4_has_time_span base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%A0%D7%93 .
+
+base:MS_990001780340205171_calendar_coverage_Event_3 a crm:E7_Activity ;
+    rdfs:label "calendar coverage of MS \"990001780340205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001780340205171 ;
+    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A0%D7%91 .
+
+base:MS_990001780340205171_calendar_coverage_Event_4 a crm:E7_Activity ;
+    rdfs:label "calendar coverage of MS \"990001780340205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001780340205171 ;
+    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A7%D7%9B%D7%98 .
 
 base:MS_990001780340205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001780340205171\""@en ;
     crm:P16_used_specific_object base:MS_990001780340205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%A0%D7%93 .
-
-base:MS_990001780340205171_manuscript_production_Event_1 a crm:E7_Activity ;
-    rdfs:label "manuscript production of MS \"990001780340205171\""@en ;
-    crm:P16_used_specific_object base:MS_990001780340205171 ;
     crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%92 .
 
-base:MS_990001780340205171_previously_owned_Event a crm:E7_Activity ;
-    rdfs:label "previously owned of MS \"990001780340205171\""@en ;
+base:MS_990001780340205171_owned_Event a crm:E7_Activity ;
+    rdfs:label "owned of MS \"990001780340205171\""@en ;
     crm:P16_used_specific_object base:MS_990001780340205171 ;
     crm:P7_took_place_at base:Place_%D7%9E%D7%95%D7%A0%D7%98%D7%A8%D7%99%D7%90%D7%95%D7%9C .
 
@@ -1141,8 +1194,8 @@ base:MS_990001785380205171_owned_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990001785380205171 ;
     crm:P7_took_place_at base:Place_%D7%9E%D7%A0%D7%98%D7%95%D7%91%D7%94 .
 
-base:MS_990001785380205171_written_Event a crm:E7_Activity ;
-    rdfs:label "written of MS \"990001785380205171\""@en ;
+base:MS_990001785380205171_produced_Event a crm:E7_Activity ;
+    rdfs:label "produced of MS \"990001785380205171\""@en ;
     crm:P16_used_specific_object base:MS_990001785380205171 ;
     crm:P7_took_place_at base:Place_%D7%A4%D7%95%D7%A1%D7%90%D7%A0%D7%95 .
 
@@ -1155,6 +1208,11 @@ base:MS_990001800810205171_acquisition_Event a crm:E7_Activity ;
     rdfs:label "acquisition of MS \"990001800810205171\""@en ;
     crm:P16_used_specific_object base:MS_990001800810205171 ;
     crm:P4_has_time_span base:TimeSpan_168 .
+
+base:MS_990001800810205171_active_Event a crm:E7_Activity ;
+    rdfs:label "active of MS \"990001800810205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001800810205171 ;
+    crm:P7_took_place_at base:Place_%D7%9E%D7%95%D7%A0%D7%A6%D7%99%D7%9C%D7%99%D7%A1%D7%99 .
 
 base:MS_990001800810205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001800810205171\""@en ;
@@ -1191,66 +1249,70 @@ base:MS_990001827620205171_sale_location_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990001827620205171 ;
     crm:P7_took_place_at base:Place_%D7%9E%D7%AA%D7%90_%5B...%5D_%5B%D7%A9%5D%D7%A2%D7%95%D7%91_%D7%90%D7%9C%D7%90%D7%A2%D7%9C%D7%90 .
 
+base:MS_990001831070205171_active_Event a crm:E7_Activity ;
+    rdfs:label "active of MS \"990001831070205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001831070205171 ;
+    crm:P7_took_place_at base:Place_%D7%9E%D7%99%D7%9C%D7%99%D7%99%D7%90%D7%91 .
+
 base:MS_990001831070205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001831070205171\""@en ;
     crm:P16_used_specific_object base:MS_990001831070205171 ;
     crm:P4_has_time_span base:TimeSpan_5455 .
 
-base:MS_990001855990205171_exile_location_Event a crm:E7_Activity ;
-    rdfs:label "exile location of MS \"990001855990205171\""@en ;
+base:MS_990001855990205171_captivity_location_Event a crm:E7_Activity ;
+    rdfs:label "captivity location of MS \"990001855990205171\""@en ;
     crm:P16_used_specific_object base:MS_990001855990205171 ;
     crm:P7_took_place_at base:Place_%D7%90%D7%99%D7%98%D7%90%D7%9C%D7%99%D7%90 .
 
 base:MS_990001855990205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001855990205171\""@en ;
     crm:P16_used_specific_object base:MS_990001855990205171 ;
-    crm:P4_has_time_span base:TimeSpan_5403 .
-
-base:MS_990001855990205171_manuscript_production_Event_1 a crm:E7_Activity ;
-    rdfs:label "manuscript production of MS \"990001855990205171\""@en ;
-    crm:P16_used_specific_object base:MS_990001855990205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A8%D7%A2%D7%96 .
+    crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A0%D7%AA_%D7%97%D7%9E%D7%A9%D7%AA_%D7%90%D7%9C%D7%A4%D7%99%D7%9D_%D7%90%D7%A8%D7%91%D7%A2_%D7%9E%D7%90%D7%95%D7%AA_%D7%A9%D7%9C%D7%A9%D7%94_%D7%95%D7%A9%D7%9C%D7%99%D7%9D_%D7%9C%D7%99%D7%A6%D7%99%D7%A8%D7%94 .
 
 base:MS_990001855990205171_mentioned_Event a crm:E7_Activity ;
     rdfs:label "mentioned of MS \"990001855990205171\""@en ;
     crm:P16_used_specific_object base:MS_990001855990205171 ;
     crm:P7_took_place_at base:Place_%D7%A4%D7%95%D7%A6%D7%90%D7%A0%D7%95 .
 
-base:MS_990001855990205171_origin_of_people_Event a crm:E7_Activity ;
-    rdfs:label "origin of people of MS \"990001855990205171\""@en ;
+base:MS_990001855990205171_origin_of_captives_Event a crm:E7_Activity ;
+    rdfs:label "origin of captives of MS \"990001855990205171\""@en ;
     crm:P16_used_specific_object base:MS_990001855990205171 ;
     crm:P7_took_place_at base:Place_%D7%91%D7%90%D7%9C%D7%99%D7%A6%D7%99%D7%A2%D7%9F .
 
-base:MS_990001855990205171_origin_of_people_Event_1 a crm:E7_Activity ;
-    rdfs:label "origin of people of MS \"990001855990205171\""@en ;
+base:MS_990001855990205171_origin_of_captives_Event_1 a crm:E7_Activity ;
+    rdfs:label "origin of captives of MS \"990001855990205171\""@en ;
     crm:P16_used_specific_object base:MS_990001855990205171 ;
     crm:P7_took_place_at base:Place_%D7%91%D7%95%D7%A7%D7%90%D7%95%D7%95%D7%99%D7%A0%D7%90 .
 
-base:MS_990001855990205171_origin_of_people_Event_2 a crm:E7_Activity ;
-    rdfs:label "origin of people of MS \"990001855990205171\""@en ;
+base:MS_990001855990205171_origin_of_captives_Event_2 a crm:E7_Activity ;
+    rdfs:label "origin of captives of MS \"990001855990205171\""@en ;
     crm:P16_used_specific_object base:MS_990001855990205171 ;
     crm:P7_took_place_at base:Place_%D7%A2%D7%A1%D7%98%D7%A8%D7%99%D7%99%D7%9A .
 
-base:MS_990001855990205171_origin_of_people_Event_3 a crm:E7_Activity ;
-    rdfs:label "origin of people of MS \"990001855990205171\""@en ;
+base:MS_990001855990205171_origin_of_captives_Event_3 a crm:E7_Activity ;
+    rdfs:label "origin of captives of MS \"990001855990205171\""@en ;
     crm:P16_used_specific_object base:MS_990001855990205171 ;
     crm:P7_took_place_at base:Place_%D7%90%D7%95%D7%A0%D7%92%D7%90%D7%A8%D7%99%D7%9F .
+
+base:MS_990001855990205171_prayer_composition_Event a crm:E7_Activity ;
+    rdfs:label "prayer composition of MS \"990001855990205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001855990205171 ;
+    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A8%D7%A2%D7%96 .
 
 base:MS_990001855990205171_resided_Event a crm:E7_Activity ;
     rdfs:label "resided of MS \"990001855990205171\""@en ;
     crm:P16_used_specific_object base:MS_990001855990205171 ;
     crm:P7_took_place_at base:Place_%D7%9C%D7%99%D7%A9%D7%9C%D7%90%D7%94_%D7%93%D7%99%D7%95%D7%95%D7%A0%D7%99%D7%A6%D7%95 .
 
-base:MS_990001855990205171_resided_Event_1 a crm:E7_Activity ;
-    rdfs:label "resided of MS \"990001855990205171\""@en ;
+base:MS_990001855990205171_residence_of_captives_Event a crm:E7_Activity ;
+    rdfs:label "residence of captives of MS \"990001855990205171\""@en ;
     crm:P16_used_specific_object base:MS_990001855990205171 ;
     crm:P7_took_place_at base:Place_%D7%A4%D7%90%D7%A1%D7%A1%D7%90%D7%A0%D7%95 .
 
-base:MS_990001876060205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990001876060205171\""@en,
-        "כתב יד \"990001876060205171\""@he ;
-    crm:P1_is_identified_by "\"990001876060205171\""^^xsd:string .
+base:MS_990001876060205171_current_location_Event a crm:E7_Activity ;
+    rdfs:label "current location of MS \"990001876060205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001876060205171 ;
+    crm:P7_took_place_at base:Place_%D7%9C%D7%90_%D7%99%D7%93%D7%95%D7%A2 .
 
 base:MS_990001878130205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001878130205171\""@en ;
@@ -1280,7 +1342,7 @@ base:MS_990001911540205171_manuscript_production_Event a crm:E7_Activity ;
 base:MS_990001911540205171_manuscript_production_Event_1 a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001911540205171\""@en ;
     crm:P16_used_specific_object base:MS_990001911540205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%9B%D7%94_%D7%9C%D7%9E%D7%A0%D7%97%D7%9D .
+    crm:P4_has_time_span base:TimeSpan_%D7%94%D7%AA%D7%9E%D7%96 .
 
 base:MS_990001911540205171_produced_Event a crm:E7_Activity ;
     rdfs:label "produced of MS \"990001911540205171\""@en ;
@@ -1295,12 +1357,12 @@ base:MS_990001983850205171_death_Event a crm:E7_Activity ;
 base:MS_990001983850205171_death_Event_1 a crm:E7_Activity ;
     rdfs:label "death of MS \"990001983850205171\""@en ;
     crm:P16_used_specific_object base:MS_990001983850205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A9%D7%99%D7%92 .
+    crm:P4_has_time_span base:TimeSpan_%D7%94%D7%AA%D7%A7%D7%99%D7%92 .
 
 base:MS_990001983850205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990001983850205171\""@en ;
     crm:P16_used_specific_object base:MS_990001983850205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%9E%D7%95%D7%96_%D7%91%D7%90%D7%9E%D7%AA_%D7%9C%D7%A4%D7%A7 .
+    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%9E%D7%95%D7%96_%D7%91%D7%90%D7%9E%D7%AA .
 
 base:MS_990001983850205171_produced_Event a crm:E7_Activity ;
     rdfs:label "produced of MS \"990001983850205171\""@en ;
@@ -1310,7 +1372,7 @@ base:MS_990001983850205171_produced_Event a crm:E7_Activity ;
 base:MS_990002078620205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990002078620205171\""@en ;
     crm:P16_used_specific_object base:MS_990002078620205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%99_%D7%AA%D7%92 .
+    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%99_%D7%AA%D7%A0%D7%92 .
 
 base:MS_990025630180205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -1318,18 +1380,18 @@ base:MS_990025630180205171 a lrmoo:F4_Manifestation_Singleton,
         "כתב יד \"990025630180205171\""@he ;
     crm:P1_is_identified_by "\"990025630180205171\""^^xsd:string .
 
+base:MS_990025916610205171_active_Event a crm:E7_Activity ;
+    rdfs:label "active of MS \"990025916610205171\""@en ;
+    crm:P16_used_specific_object base:MS_990025916610205171 ;
+    crm:P7_took_place_at base:Place_%D7%AA%D7%A0%D7%A2%D7%9D .
+
 base:MS_990025916610205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990025916610205171\""@en ;
     crm:P16_used_specific_object base:MS_990025916610205171 ;
     crm:P4_has_time_span base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%9C .
 
-base:MS_990025916610205171_resided_Event a crm:E7_Activity ;
-    rdfs:label "resided of MS \"990025916610205171\""@en ;
-    crm:P16_used_specific_object base:MS_990025916610205171 ;
-    crm:P7_took_place_at base:Place_%D7%AA%D7%A0%D7%A2%D7%9D .
-
-base:MS_990025934540205171_commissioned_for_Event a crm:E7_Activity ;
-    rdfs:label "commissioned for of MS \"990025934540205171\""@en ;
+base:MS_990025934540205171_commissioned_for_owner_from_Event a crm:E7_Activity ;
+    rdfs:label "commissioned for owner from of MS \"990025934540205171\""@en ;
     crm:P16_used_specific_object base:MS_990025934540205171 ;
     crm:P7_took_place_at base:Place_%D7%91%D7%A8%D7%99%D7%A1%D7%99%D7%9C%D7%95 .
 
@@ -1438,40 +1500,30 @@ base:MS_990032575610205171_produced_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990032575610205171 ;
     crm:P7_took_place_at base:Place_Amsterdam .
 
-base:MS_990035044030205171_compared_manuscript_location_Event a crm:E7_Activity ;
-    rdfs:label "compared manuscript location of MS \"990035044030205171\""@en ;
-    crm:P16_used_specific_object base:MS_990035044030205171 ;
-    crm:P7_took_place_at base:Place_%D7%91%D7%95%D7%93%D7%A4%D7%A9%D7%98 .
-
-base:MS_990035044030205171_current_location_Event a crm:E7_Activity ;
-    rdfs:label "current location of MS \"990035044030205171\""@en ;
+base:MS_990035044030205171_unclassified_Event a crm:E7_Activity ;
+    rdfs:label "unclassified of MS \"990035044030205171\""@en ;
     crm:P16_used_specific_object base:MS_990035044030205171 ;
     crm:P7_took_place_at base:Place_%D7%A0%D7%99%D7%95-%D7%99%D7%95%D7%A8%D7%A7 .
 
-base:MS_990035044030205171_former_location_Event a crm:E7_Activity ;
-    rdfs:label "former location of MS \"990035044030205171\""@en ;
+base:MS_990035044030205171_unclassified_Event_1 a crm:E7_Activity ;
+    rdfs:label "unclassified of MS \"990035044030205171\""@en ;
     crm:P16_used_specific_object base:MS_990035044030205171 ;
     crm:P7_took_place_at base:Place_%D7%9C%D7%95%D7%A0%D7%93%D7%95%D7%9F .
 
-base:MS_990035044030205171_former_location_Event_1 a crm:E7_Activity ;
-    rdfs:label "former location of MS \"990035044030205171\""@en ;
+base:MS_990035044030205171_unclassified_Event_2 a crm:E7_Activity ;
+    rdfs:label "unclassified of MS \"990035044030205171\""@en ;
+    crm:P16_used_specific_object base:MS_990035044030205171 ;
+    crm:P7_took_place_at base:Place_%D7%91%D7%95%D7%93%D7%A4%D7%A9%D7%98 .
+
+base:MS_990035044030205171_unclassified_Event_3 a crm:E7_Activity ;
+    rdfs:label "unclassified of MS \"990035044030205171\""@en ;
     crm:P16_used_specific_object base:MS_990035044030205171 ;
     crm:P7_took_place_at base:Place_%D7%90%D7%A0%D7%A7%D7%95%D7%A0%D7%94 .
-
-base:MS_990035044030205171_manuscript_production_Event a crm:E7_Activity ;
-    rdfs:label "manuscript production of MS \"990035044030205171\""@en ;
-    crm:P16_used_specific_object base:MS_990035044030205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%94%D7%AA%D7%91 .
-
-base:MS_990035044030205171_publication_Event a crm:E7_Activity ;
-    rdfs:label "publication of MS \"990035044030205171\""@en ;
-    crm:P16_used_specific_object base:MS_990035044030205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%AA%D7%A9%D7%9B%D7%95 .
 
 base:MS_990035802410205171_manuscript_production_Event a crm:E7_Activity ;
     rdfs:label "manuscript production of MS \"990035802410205171\""@en ;
     crm:P16_used_specific_object base:MS_990035802410205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%9C%D7%92 .
+    crm:P4_has_time_span base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%9C .
 
 base:MS_990035802410205171_owned_Event a crm:E7_Activity ;
     rdfs:label "owned of MS \"990035802410205171\""@en ;
@@ -1533,9 +1585,9 @@ base:Expression_%D7%93%D7%A8%D7%A9%D7%95%D7%AA_%D7%A8%D7%91%D7%99%D7%A0%D7%95_%D
     lrmoo:R3_is_realised_in base:Work_%D7%93%D7%A8%D7%A9%D7%95%D7%AA_%D7%A8%D7%91%D7%99%D7%A0%D7%95_%D7%A9%D7%9C%D7%9E%D7%94_%D7%9E%D7%95%D7%9C%D7%9B%D7%95 ;
     crm:P72_has_language hm:Hebrew .
 
-base:Expression_%D7%94%D7%9C%D7%9B%D7%95%D7%AA_%D7%94%D7%A9%D7%99%D7%99%D7%9B%D7%95%D7%AA_%D7%9C%D7%97%D7%9C%D7%A7_%D7%90%D7%94_%D7%A2_%D7%9B%D7%95%D7%9C%D7%9C_%D7%94%D7%95%D7%A1%D7%A4%D7%95%D7%AA_MS_990001124870205171 a lrmoo:F2_Expression ;
-    rdfs:label "הלכות השייכות לחלק אה ע כולל הוספות - Expression in MS \"990001124870205171\""@en ;
-    lrmoo:R3_is_realised_in base:Work_%D7%94%D7%9C%D7%9B%D7%95%D7%AA_%D7%94%D7%A9%D7%99%D7%99%D7%9B%D7%95%D7%AA_%D7%9C%D7%97%D7%9C%D7%A7_%D7%90%D7%94_%D7%A2_%D7%9B%D7%95%D7%9C%D7%9C_%D7%94%D7%95%D7%A1%D7%A4%D7%95%D7%AA ;
+base:Expression_%D7%94%D7%9C%D7%9B%D7%95%D7%AA_%D7%94%D7%A9%D7%99%D7%99%D7%9B%D7%95%D7%AA_%D7%9C%D7%97%D7%9C%D7%A7_%D7%90%D7%94_%D7%A2_MS_990001124870205171 a lrmoo:F2_Expression ;
+    rdfs:label "הלכות השייכות לחלק אה ע - Expression in MS \"990001124870205171\""@en ;
+    lrmoo:R3_is_realised_in base:Work_%D7%94%D7%9C%D7%9B%D7%95%D7%AA_%D7%94%D7%A9%D7%99%D7%99%D7%9B%D7%95%D7%AA_%D7%9C%D7%97%D7%9C%D7%A7_%D7%90%D7%94_%D7%A2 ;
     crm:P72_has_language hm:Hebrew .
 
 base:Expression_%D7%94%D7%9C%D7%9B%D7%95%D7%AA_%D7%9E%D7%AA%D7%A0%D7%AA_%D7%A2%D7%A0%D7%99%D7%99%D7%9D_MS_990001901770205171 a lrmoo:F2_Expression ;
@@ -1608,6 +1660,11 @@ base:Expression_%D7%9B%D7%AA%D7%A0%D7%95%D7%AA_%D7%90%D7%95%D7%A8_MS_99000046357
     lrmoo:R3_is_realised_in base:Work_%D7%9B%D7%AA%D7%A0%D7%95%D7%AA_%D7%90%D7%95%D7%A8 ;
     crm:P72_has_language hm:Hebrew .
 
+base:Expression_%D7%9C%D7%99%D7%95%D7%9D_%D7%90_%D7%A9%D7%9C_%D7%A1%D7%95%D7%9B%D7%95%D7%AA_%D7%94%D7%A9%D7%A6%D7%94_MS_990000798880205171 a lrmoo:F2_Expression ;
+    rdfs:label "ליום א' של סוכות השצ\"ה - Expression in MS \"990000798880205171\""@en ;
+    lrmoo:R3_is_realised_in base:Work_%D7%9C%D7%99%D7%95%D7%9D_%D7%90_%D7%A9%D7%9C_%D7%A1%D7%95%D7%9B%D7%95%D7%AA_%D7%94%D7%A9%D7%A6%D7%94 ;
+    crm:P72_has_language hm:Hebrew .
+
 base:Expression_%D7%9E%D7%92%D7%99%D7%93_%D7%9E%D7%99%D7%A9%D7%A8%D7%99%D7%9D_MS_990000558270205171 a lrmoo:F2_Expression ;
     rdfs:label "מגיד מישרים - Expression in MS \"990000558270205171\""@en ;
     lrmoo:R3_is_realised_in base:Work_%D7%9E%D7%92%D7%99%D7%93_%D7%9E%D7%99%D7%A9%D7%A8%D7%99%D7%9D ;
@@ -1633,9 +1690,19 @@ base:Expression_%D7%9E%D7%92%D7%99%D7%9C%D7%AA_%D7%A9%D7%99%D7%A8_%D7%94%D7%A9%D
     lrmoo:R3_is_realised_in base:Work_%D7%9E%D7%92%D7%99%D7%9C%D7%AA_%D7%A9%D7%99%D7%A8_%D7%94%D7%A9%D7%99%D7%A8%D7%99%D7%9D ;
     crm:P72_has_language hm:Hebrew .
 
+base:Expression_%D7%9E%D7%92%D7%9C%D7%95%D7%AA_%D7%90%D7%99%D7%9B%D7%94_MS_990001761840205171 a lrmoo:F2_Expression ;
+    rdfs:label "מגלות איכה - Expression in MS \"990001761840205171\""@en ;
+    lrmoo:R3_is_realised_in base:Work_%D7%9E%D7%92%D7%9C%D7%95%D7%AA_%D7%90%D7%99%D7%9B%D7%94 ;
+    crm:P72_has_language hm:Hebrew .
+
 base:Expression_%D7%9E%D7%92%D7%9C%D7%AA_%D7%A8%D7%95%D7%AA_MS_990001197830205171 a lrmoo:F2_Expression ;
     rdfs:label "מגלת רות - Expression in MS \"990001197830205171\""@en ;
     lrmoo:R3_is_realised_in base:Work_%D7%9E%D7%92%D7%9C%D7%AA_%D7%A8%D7%95%D7%AA ;
+    crm:P72_has_language hm:Hebrew .
+
+base:Expression_%D7%9E%D7%93%D7%A8%D7%A9_%D7%90%D7%92%D7%93%D7%94_MS_990001121720205171 a lrmoo:F2_Expression ;
+    rdfs:label "מדרש אגדה - Expression in MS \"990001121720205171\""@en ;
+    lrmoo:R3_is_realised_in base:Work_%D7%9E%D7%93%D7%A8%D7%A9_%D7%90%D7%92%D7%93%D7%94 ;
     crm:P72_has_language hm:Hebrew .
 
 base:Expression_%D7%9E%D7%93%D7%A8%D7%A9_%D7%94%D7%92%D7%93%D7%95%D7%9C_MS_990001827620205171 a lrmoo:F2_Expression ;
@@ -1663,9 +1730,9 @@ base:Expression_%D7%9E%D7%96%D7%9B%D7%94_%D7%94%D7%A8%D7%91%D7%99%D7%9D_MS_99000
     lrmoo:R3_is_realised_in base:Work_%D7%9E%D7%96%D7%9B%D7%94_%D7%94%D7%A8%D7%91%D7%99%D7%9D ;
     crm:P72_has_language hm:Hebrew .
 
-base:Expression_%D7%9E%D7%97%D7%96%D7%95%D7%A8%D7%99%D7%9D_MS_990001855990205171 a lrmoo:F2_Expression ;
-    rdfs:label "מחזורים - Expression in MS \"990001855990205171\""@en ;
-    lrmoo:R3_is_realised_in base:Work_%D7%9E%D7%97%D7%96%D7%95%D7%A8%D7%99%D7%9D ;
+base:Expression_%D7%9E%D7%9C%D7%95%D7%9F_%D7%9C%D7%97%D7%A8%D7%95%D7%96%D7%99%D7%9D_MS_990001252810205171 a lrmoo:F2_Expression ;
+    rdfs:label "מלון לחרוזים - Expression in MS \"990001252810205171\""@en ;
+    lrmoo:R3_is_realised_in base:Work_%D7%9E%D7%9C%D7%95%D7%9F_%D7%9C%D7%97%D7%A8%D7%95%D7%96%D7%99%D7%9D ;
     crm:P72_has_language hm:Hebrew .
 
 base:Expression_%D7%9E%D7%9C%D7%95%D7%9F_%D7%A2%D7%91%D7%A8%D7%99-%D7%90%D7%99%D7%98%D7%9C%D7%A7%D7%99_%D7%A9%D7%9C_%D7%9E%D7%9C%D7%99%D7%9D_%D7%9E%D7%A7%D7%A8%D7%90%D7%99%D7%95%D7%AA_MS_990001022440205171 a lrmoo:F2_Expression ;
@@ -1686,11 +1753,6 @@ base:Expression_%D7%9E%D7%A4%D7%AA%D7%97%D7%95%D7%AA_%D7%94%D7%96%D7%95%D7%94%D7
 base:Expression_%D7%9E%D7%A4%D7%AA%D7%97%D7%95%D7%AA_%D7%94%D7%96%D7%95%D7%94%D7%A8_MS_990001189730205171 a lrmoo:F2_Expression ;
     rdfs:label "מפתחות הזוהר - Expression in MS \"990001189730205171\""@en ;
     lrmoo:R3_is_realised_in base:Work_%D7%9E%D7%A4%D7%AA%D7%97%D7%95%D7%AA_%D7%94%D7%96%D7%95%D7%94%D7%A8 ;
-    crm:P72_has_language hm:Hebrew .
-
-base:Expression_%D7%9E%D7%A7%D7%A8%D7%90_%D7%A4%D7%A8%D7%A9%D7%A0%D7%95%D7%AA_%D7%9B%D7%AA%D7%95%D7%91%D7%99%D7%9D_%D7%9E%D7%92%D7%9C%D7%95%D7%AA_%D7%90%D7%99%D7%9B%D7%94_MS_990001761840205171 a lrmoo:F2_Expression ;
-    rdfs:label "מקרא פרשנות כתובים מגלות איכה - Expression in MS \"990001761840205171\""@en ;
-    lrmoo:R3_is_realised_in base:Work_%D7%9E%D7%A7%D7%A8%D7%90_%D7%A4%D7%A8%D7%A9%D7%A0%D7%95%D7%AA_%D7%9B%D7%AA%D7%95%D7%91%D7%99%D7%9D_%D7%9E%D7%92%D7%9C%D7%95%D7%AA_%D7%90%D7%99%D7%9B%D7%94 ;
     crm:P72_has_language hm:Hebrew .
 
 base:Expression_%D7%9E%D7%A7%D7%A8%D7%90_%D7%A4%D7%A8%D7%A9%D7%A0%D7%95%D7%AA_%D7%A0%D7%91%D7%99%D7%90%D7%99%D7%9D_MS_990001338440205171 a lrmoo:F2_Expression ;
@@ -1723,14 +1785,14 @@ base:Expression_%D7%A1%D7%93%D7%95%D7%A8_MS_990035802410205171 a lrmoo:F2_Expres
     lrmoo:R3_is_realised_in base:Work_%D7%A1%D7%93%D7%95%D7%A8 ;
     crm:P72_has_language hm:Hebrew .
 
-base:Expression_%D7%A1%D7%93%D7%A8_%D7%94%D7%90%D7%A9%D7%9E%D7%95%D7%A8%D7%95%D7%AA_%D7%9E%D7%9B%D7%9C_%D7%97%D7%93%D7%A9_%D7%90%D7%9C%D7%95%D7%9C_%D7%95%D7%A2%D7%A9%D7%A8%D7%AA_%D7%99%D7%9E%D7%99_%D7%AA%D7%A9%D7%95%D7%91%D7%94_MS_990001065130205171 a lrmoo:F2_Expression ;
-    rdfs:label "סדר האשמורות מכל חדש אלול ועשרת ימי תשובה - Expression in MS \"990001065130205171\""@en ;
-    lrmoo:R3_is_realised_in base:Work_%D7%A1%D7%93%D7%A8_%D7%94%D7%90%D7%A9%D7%9E%D7%95%D7%A8%D7%95%D7%AA_%D7%9E%D7%9B%D7%9C_%D7%97%D7%93%D7%A9_%D7%90%D7%9C%D7%95%D7%9C_%D7%95%D7%A2%D7%A9%D7%A8%D7%AA_%D7%99%D7%9E%D7%99_%D7%AA%D7%A9%D7%95%D7%91%D7%94 ;
-    crm:P72_has_language hm:Hebrew .
-
 base:Expression_%D7%A1%D7%93%D7%A8_%D7%94%D7%90%D7%A9%D7%9E%D7%95%D7%A8%D7%95%D7%AA_%D7%9E%D7%A2%D7%A9%D7%A8%D7%AA_%D7%99%D7%9E%D7%99_%D7%AA%D7%A9%D7%95%D7%91%D7%94_MS_990001831070205171 a lrmoo:F2_Expression ;
     rdfs:label "סדר האשמורות מעשרת ימי תשובה - Expression in MS \"990001831070205171\""@en ;
     lrmoo:R3_is_realised_in base:Work_%D7%A1%D7%93%D7%A8_%D7%94%D7%90%D7%A9%D7%9E%D7%95%D7%A8%D7%95%D7%AA_%D7%9E%D7%A2%D7%A9%D7%A8%D7%AA_%D7%99%D7%9E%D7%99_%D7%AA%D7%A9%D7%95%D7%91%D7%94 ;
+    crm:P72_has_language hm:Hebrew .
+
+base:Expression_%D7%A1%D7%93%D7%A8_%D7%94%D7%90%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%9E%D7%9B%D7%9C_%D7%97%D7%93%D7%A9_%D7%90%D7%9C%D7%95%D7%9C_%D7%95%D7%A2%D7%A9%D7%A8%D7%AA_%D7%99%D7%9E%D7%99_%D7%AA%D7%A9%D7%95%D7%91%D7%94_MS_990001065130205171 a lrmoo:F2_Expression ;
+    rdfs:label "סדר האשמורת מכל חדש אלול ועשרת ימי תשובה - Expression in MS \"990001065130205171\""@en ;
+    lrmoo:R3_is_realised_in base:Work_%D7%A1%D7%93%D7%A8_%D7%94%D7%90%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%9E%D7%9B%D7%9C_%D7%97%D7%93%D7%A9_%D7%90%D7%9C%D7%95%D7%9C_%D7%95%D7%A2%D7%A9%D7%A8%D7%AA_%D7%99%D7%9E%D7%99_%D7%AA%D7%A9%D7%95%D7%91%D7%94 ;
     crm:P72_has_language hm:Hebrew .
 
 base:Expression_%D7%A1%D7%93%D7%A8_%D7%94%D7%AA%D7%A4%D7%9C%D7%95%D7%AA_%D7%9B%D7%9E%D7%A0%D7%94%D7%92_%D7%94%D7%A1%D7%A4%D7%A8%D7%93%D7%99%D7%9D_MS_990001679060205171 a lrmoo:F2_Expression ;
@@ -1813,18 +1875,13 @@ base:Expression_%D7%A2%D7%A5_%D7%97%D7%99%D7%99%D7%9D_MS_990026973440205171 a lr
     lrmoo:R3_is_realised_in base:Work_%D7%A2%D7%A5_%D7%97%D7%99%D7%99%D7%9D ;
     crm:P72_has_language hm:Hebrew .
 
-base:Expression_%D7%A2%D7%A8%D7%9E%D7%AA_%D7%97%D7%98%D7%99%D7%9D_MS_990001252810205171 a lrmoo:F2_Expression ;
-    rdfs:label "ערמת חטים - Expression in MS \"990001252810205171\""@en ;
-    lrmoo:R3_is_realised_in base:Work_%D7%A2%D7%A8%D7%9E%D7%AA_%D7%97%D7%98%D7%99%D7%9D ;
-    crm:P72_has_language hm:Hebrew .
-
 base:Expression_%D7%A4%D7%99%D7%9C%D7%95%D7%A1%D7%95%D7%A4%D7%99%D7%94_%D7%99%D7%94%D7%95%D7%93%D7%99%D7%AA_MS_990001048690205171 a lrmoo:F2_Expression ;
     rdfs:label "פילוסופיה יהודית - Expression in MS \"990001048690205171\""@en ;
     lrmoo:R3_is_realised_in base:Work_%D7%A4%D7%99%D7%9C%D7%95%D7%A1%D7%95%D7%A4%D7%99%D7%94_%D7%99%D7%94%D7%95%D7%93%D7%99%D7%AA ;
     crm:P72_has_language hm:Hebrew .
 
 base:Expression_%D7%A4%D7%99%D7%A8%D7%95%D7%A9_%D7%A8%D7%A9%D7%99_%D7%A2%D7%9C_%D7%97%D7%9E%D7%A9%D7%94_%D7%97%D7%95%D7%9E%D7%A9%D7%99_%D7%AA%D7%95%D7%A8%D7%94_MS_990001022860205171 a lrmoo:F2_Expression ;
-    rdfs:label "פירוש רש\"י על חמשה חומשי תורה - Expression in MS \"990001022860205171\""@en ;
+    rdfs:label "פירוש רשי על חמשה חומשי תורה - Expression in MS \"990001022860205171\""@en ;
     lrmoo:R3_is_realised_in base:Work_%D7%A4%D7%99%D7%A8%D7%95%D7%A9_%D7%A8%D7%A9%D7%99_%D7%A2%D7%9C_%D7%97%D7%9E%D7%A9%D7%94_%D7%97%D7%95%D7%9E%D7%A9%D7%99_%D7%AA%D7%95%D7%A8%D7%94 ;
     crm:P72_has_language hm:Hebrew .
 
@@ -1851,11 +1908,6 @@ base:Expression_%D7%A4%D7%A8%D7%A9%D7%A0%D7%95%D7%AA_%D7%AA%D7%95%D7%A8%D7%94_%2
 base:Expression_%D7%A6%D7%9E%D7%97_%D7%93%D7%95%D7%93_MS_990000885660205171 a lrmoo:F2_Expression ;
     rdfs:label "צמח דוד - Expression in MS \"990000885660205171\""@en ;
     lrmoo:R3_is_realised_in base:Work_%D7%A6%D7%9E%D7%97_%D7%93%D7%95%D7%93 ;
-    crm:P72_has_language hm:Hebrew .
-
-base:Expression_%D7%A7%D7%91%D7%9C%D7%94_MS_990001709250205171 a lrmoo:F2_Expression ;
-    rdfs:label "קבלה - Expression in MS \"990001709250205171\""@en ;
-    lrmoo:R3_is_realised_in base:Work_%D7%A7%D7%91%D7%9C%D7%94 ;
     crm:P72_has_language hm:Hebrew .
 
 base:Expression_%D7%A9%D7%99%D7%A8_%D7%94%D7%99%D7%97%D7%95%D7%93_MS_990001376840205171 a lrmoo:F2_Expression ;
@@ -1926,22 +1978,13 @@ base:MS_990000533850205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
     hm:colophon_text "נכתב יום ג' כ\"ד אלול תל\"ד לפ\"ק"@he .
 
-base:MS_990000558270205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990000558270205171\""@en,
-        "כתב יד \"990000558270205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%9E%D7%92%D7%99%D7%93_%D7%9E%D7%99%D7%A9%D7%A8%D7%99%D7%9D_MS_990000558270205171 ;
-    crm:P1_is_identified_by "\"990000558270205171\""^^xsd:string ;
-    hm:has_colophon base:MS_990000558270205171_Colophon .
-
 base:MS_990000558270205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "שלים הדין ספרא בס\"ד בתרין בשבא שהוא כ' לירח אדר שנת מעטה ת'ה'ל'ה' [=ת\"מ] ... והכותב הצעיר משה בן סעדיא בן יהודה ן' דוד אלקטיעי"@he ;
-    hm:mentions_scribe base:Person_%D7%9E%D7%A9%D7%94 .
+    hm:colophon_text ""@he .
 
 base:MS_990000559760205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "כתב ידי אני הצעיר שמשון אבוקארא ס\"ט שנת א'ך' ב'ג'ו'ר'ל' י'ח'ל'ק' לפ\"ק [=ת\"י]"@he ;
+    hm:colophon_text "כתב ידי אני הצעיר שמשון אבוקארא ס\"\"ט שנת א'ך' ב'ג'ו'ר'ל' י'ח'ל'ק' לפ\"\"ק [=ת\"\"י]"@he ;
     hm:mentions_scribe base:Person_%D7%A9%D7%9E%D7%A9%D7%95%D7%9F_%D7%90%D7%91%D7%95%D7%A7%D7%90%D7%A8%D7%90 .
 
 base:MS_990000563980205171 a lrmoo:F4_Manifestation_Singleton,
@@ -1954,7 +1997,7 @@ base:MS_990000563980205171 a lrmoo:F4_Manifestation_Singleton,
 
 base:MS_990000563980205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "ספרא ... שלמה בירב אבא ישראל זלה\"ה ... ונכתבה ל... דוד בן סעיד מעוצ'ה אלגבלי ... שנת אתתקפא [=1670]"@he ;
+    hm:colophon_text "ספרא ... שלמה בירב אבא ישראל זלה\"ה ... ונכתבה ל... דוד בן סעיד מעוצ'ה אלגבלי שנת אתתקפא [=1670]"@he ;
     hm:mentions_scribe base:Person_%D7%A9%D7%9C%D7%9E%D7%94_%D7%91%D7%99%D7%A8%D7%91_%D7%90%D7%91%D7%90_%D7%99%D7%A9%D7%A8%D7%90%D7%9C .
 
 base:MS_990000568160205171 a lrmoo:F4_Manifestation_Singleton,
@@ -1974,7 +2017,7 @@ base:MS_990000584490205171 a lrmoo:F4_Manifestation_Singleton,
 
 base:MS_990000584490205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "תם ונשלם...יום ה' ח' ימים לשבט שנת ו'ל'ש'מ'ח'ה' לפ\"ק [=שפ\"ט]"@he .
+    hm:colophon_text "תם ונשלם...יום ה' ח' ימים לשבט שנת ו'ל'ש'מ'ח'ה' לפ''ק [=שפ''ט]"@he .
 
 base:MS_990000632200205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
@@ -1983,8 +2026,7 @@ base:MS_990000632200205171_Colophon a crm:E73_Information_Object,
 
 base:MS_990000634000205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "נשלם ביום ג' שהוא יום שמונה ועשרים לחדש אדר שנת התנה ליצירה ב\"ו לשטרות ונכתב על שם החבר ... סעדיה בן חיים בן חלפון הכהן נע\"ג ספרא ... יוסף בן סעדיה בא\"מ עמרם בא\"מ עודד הלוי"@he ;
-    hm:mentions_scribe base:Person_%D7%99%D7%95%D7%A1%D7%A3 .
+    hm:colophon_text "נשלם ביום ג' שהוא יום שמונה ועשרים לחדש אדר שנת התנה ליצירה ב\"ו לשטרות ונכתב על שם החבר ... סעדיה בן חיים בן חלפון הכהן נע\"ג ספרא ... יוסף בן סעדיה בא\"מ עמרם בא\"מ עודד הלוי"@he .
 
 base:MS_990000653720205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
@@ -1993,7 +2035,7 @@ base:MS_990000653720205171_Colophon a crm:E73_Information_Object,
 
 base:MS_990000655210205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "תם ונשלם ... היום יום ב' ב לחדש ניסן שנת י'ו'ם' כ'פ'ו'ר'י'ם' [=תי\"ב] ... אני הצעיר אהרן בכ\"\"ר משה ישראל מיזא יצ\"\"ו\"."@he ;
+    hm:colophon_text "תם ונשלם ... היום יום ב' ב לחדש ניסן שנת י'ו'ם' כ'פ'ו'ר'י'ם' [=תי\"ב] ... אני הצעיר אהרן בכ\"\"ר משה ישראל מיזא יצ\"\"ו\"\"."@he ;
     hm:mentions_scribe base:Person_%D7%90%D7%94%D7%A8%D7%9F .
 
 base:MS_990000666370205171_Colophon a crm:E73_Information_Object,
@@ -2002,7 +2044,7 @@ base:MS_990000666370205171_Colophon a crm:E73_Information_Object,
 
 base:MS_990000667860205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "והעתקתי אותו אני הצעיר יהודה שוואט שנת אורי ו'י'ש'ע'י' לפ\"\"ק [=שצ\"\"ו] והשלמתי העתקת זה הספר ... בחדש כסליו י\"\"ג בו שנת אורי ו'י'ש'ע'י' בקצנטינא מתא בישיבה של בית הכנסת הישנה בהיותי מלמד תינוקות"@he ;
+    hm:colophon_text "והעתקתי אותו אני הצעיר יהודה שוואט שנת אורי ו'י'ש'ע'י' לפ\"ק [=שצ\"\"ו] והשלמתי העתקת זה הספר ... בחדש כסליו י\"\"ג בו שנת אורי ו'י'ש'ע'י' בקצנטינא מתא בישיבה של בית הכנסת הישנה בהיותי מלמד תינוקות"@he ;
     hm:mentions_scribe base:Person_%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%A9%D7%95%D7%95%D7%90%D7%98 .
 
 base:MS_990000688750205171_Colophon a crm:E73_Information_Object,
@@ -2020,20 +2062,16 @@ base:MS_990000696290205171 a lrmoo:F4_Manifestation_Singleton,
 
 base:MS_990000696290205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "נשלם בארבעא בשבא דהוא בירח אלול שנת אתתקל\"ד שנין לשטרי במאתא דאר אלמנאמה ..."@he .
+    hm:colophon_text "נשלם בארבעא בשבא דהוא בירח אלול שנת אתתקל\"ד שנין לשטרי במאתא דאר אלמנאמה"@he .
 
 base:MS_990000738230205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "ואנכי ... יצחק אלישע דאיינה המעתיק פה גווסטאלה שנת שע\"ד לפ\"ק"@he ;
+    hm:colophon_text "ואנכי ... יצחק אלישע דאיינה המעתיק פה גווסטאלה שנת שע\"ד"@he ;
     hm:mentions_scribe base:Person_%D7%99%D7%A6%D7%97%D7%A7_%D7%90%D7%9C%D7%99%D7%A9%D7%A2_%D7%93%D7%90%D7%99%D7%99%D7%A0%D7%94 .
 
 base:MS_990000767700205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
     hm:colophon_text "בעיר גדול ... נכתב ביו' טו אב ... תחי לפ\"ק"@he .
-
-base:MS_990000788440205171_Colophon a crm:E73_Information_Object,
-        hm:Colophon ;
-    hm:colophon_text "וזה תרגומו שתרגם כמ\"ר נח יצ\"ו בכמה\"ר חיים יצ\"ו"@he .
 
 base:MS_990000792030205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
@@ -2043,27 +2081,21 @@ base:MS_990000798880205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
     rdfs:label "Manuscript \"990000798880205171\""@en,
         "כתב יד \"990000798880205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%9C%D7%99%D7%95%D7%9D_%D7%90_%D7%A9%D7%9C_%D7%A1%D7%95%D7%9B%D7%95%D7%AA_%D7%94%D7%A9%D7%A6%D7%94_MS_990000798880205171 ;
     crm:P1_is_identified_by "\"990000798880205171\""^^xsd:string .
 
 base:MS_990000825080205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "נכתב פה בק\"\"ק עיר חדש יום ג' לשבת ד' לר\"\"ח אדר הנהדר שנת חמשת אלפים וארבע מאות ושלשים וששה לפ\"\"ק"@he .
+    hm:colophon_text "נכתב פה בק''ק עיר חדש יום ג' לשבת ד' לר''ח אדר הנהדר שנת חמשת אלפים וארבע מאות ושלשים וששה לפ''ק"@he .
 
 base:MS_990000828230205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
     hm:colophon_text "ותשלם מלאכת המגלה הזאת היום יום ד ... לחדש סיון שנת חמשת אלפים ושלש מאות וששים ואחת לבריאת עולם פה פירארא מתא ... ובמצות האלוף הנשא כמהר יוסף זלמן יצו לשם בנו ... כמור זלמן יצו"@he .
 
-base:MS_990000829170205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990000829170205171\""@en,
-        "כתב יד \"990000829170205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%A4%D7%A8%D7%A7%D7%99_%D7%9E%D7%A9%D7%94_MS_990000829170205171 ;
-    crm:P1_is_identified_by "\"990000829170205171\""^^xsd:string ;
-    hm:has_colophon base:MS_990000829170205171_Colophon .
-
 base:MS_990000829170205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "סימתי אותו ליל ב' ס' ויגש ו' לחדש טבת שנת התנ\"ט ליצירה"@he .
+    hm:colophon_text "סימתי אותו ליל ב' ס' ויגש ו' לחדש טבת שנת התנ\"ט ליצירה"@he ;
+    hm:mentions_scribe base:Person_%D7%9E%D7%A9%D7%94 .
 
 base:MS_990000856010205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
@@ -2076,7 +2108,7 @@ base:MS_990000885660205171_Colophon a crm:E73_Information_Object,
 
 base:MS_990000893610205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "חזק הסופר ואמיץ הקורא. תם. זכיתי אני ישראל בכמ\"ר טוביה לינגו להשלים קיצור מהדרושים ... היום יום ששי לשבת ח' לחדש א'ני ל'דודי ו'דודי ל'י שנת ה' שמע\"ה תפלתי [=תט\"ו לפ\"ק] פה רייו תחת ממשלת ... הדוכס דון פרנציקו דאיסטי."@he ;
+    hm:colophon_text "חזק הסופר ואמיץ הקורא. תם. זכיתי אני ישראל בכמ\"ר טוביה לינגו להשלים קיצור מהדרושים ... היום יום ששי לשבת ח' לחדש א'ני ל'דודי ו'דודי ל'י שנת ה' שמע\"ה תפלתי [=תט\"\"ו לפ\"\"ק] פה רייו תחת ממשלת ... הדוכס דון פרנציקו דאיסטי"@he ;
     hm:mentions_scribe base:Person_%D7%99%D7%A9%D7%A8%D7%90%D7%9C .
 
 base:MS_990000913260205171_Colophon a crm:E73_Information_Object,
@@ -2093,7 +2125,7 @@ base:MS_990000943910205171 a lrmoo:F4_Manifestation_Singleton,
 base:MS_990000958680205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
     hm:colophon_text "ותשלם המלכה[!] בשנת הראשון לשבת על כסה מלכותו הכהן הגדול אינוצינצו י\"\"א ... והיה היום יום א' יום ראשון לחדש פיברארו שנת אתרע\"\"ז על יד ממני הצעיר ... גולייו מורושיני ששמו מלפנים ... שמואל ב\"\"ר דוד ממשפחת בן נחמיאש מעיר ויניציאה"@he ;
-    hm:mentions_scribe base:Person_%D7%92%D7%95%D7%9C%D7%99%D7%95_%D7%9E%D7%95%D7%A8%D7%95%D7%A9%D7%99%D7%A0%D7%95 .
+    hm:mentions_scribe base:Person_%D7%92%D7%95%D7%9C%D7%99%D7%95_%D7%9E%D7%95%D7%A8%D7%95%D7%A9%D7%99%D7%A0%D7%99 .
 
 base:MS_990001003390205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -2108,7 +2140,7 @@ base:MS_990001003390205171_Colophon a crm:E73_Information_Object,
 
 base:MS_990001022280205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "זכיתי להשלים ספר אלה הדברים, ועם זה נשלם חמשה חומשי תורה ... היום יח פיברארו שס\"\"ג פה ס' מריני"@he .
+    hm:colophon_text "זכיתי להשלים ספר אלה הדברים, ועם זה נשלם חמשה חומשי תורה ... היום יח פיברארו שס\"ג פה ס' מריני"@he .
 
 base:MS_990001022440205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
@@ -2119,14 +2151,6 @@ base:MS_990001022860205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
     hm:colophon_text "חסיל ... ביום ראשון ראש חדש אלול ... שנת אתתקנו שנין לשטרות ... בלאד סנחאן ... אברהם בן סעדיא תנצבה בן עמרם בן דוד נעג"@he ;
     hm:mentions_scribe base:Person_%D7%90%D7%91%D7%A8%D7%94%D7%9D .
-
-base:MS_990001022880205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990001022880205171\""@en,
-        "כתב יד \"990001022880205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%9E%D7%93%D7%A8%D7%A9_%D7%A8%D7%A9%D7%99_MS_990001022880205171 ;
-    crm:P1_is_identified_by "\"990001022880205171\""^^xsd:string ;
-    hm:has_colophon base:MS_990001022880205171_Colophon .
 
 base:MS_990001022880205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
@@ -2154,24 +2178,16 @@ base:MS_990001078470205171_Colophon a crm:E73_Information_Object,
 
 base:MS_990001084690205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "פה קארפינטראץ היום י\"ד לחדש אב שנת התנ\"ב ... ע\"י הצעיר מבי\"ז(?)\"."@he ;
-    hm:mentions_scribe base:Person_%D7%94%D7%A6%D7%A2%D7%99%D7%A8_%D7%9E%D7%91%D7%99%D7%96 .
+    hm:colophon_text "פה קארפינטראץ היום י\"ד לחדש אב שנת התנ\"ב ... ע\"י הצעיר מבי\"ז(?)\"."@he .
 
 base:MS_990001086690205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
     hm:colophon_text "אני הכותב יצחק ליאון בן מרדכי ליאון יצ''ו ... היום יום ראשון לחדש אלול שנת חמשת אלפים וארבע מאות וחמשים לבריאת עולם"@he ;
     hm:mentions_scribe base:Person_%D7%99%D7%A6%D7%97%D7%A7_%D7%9C%D7%99%D7%90%D7%95%D7%9F .
 
-base:MS_990001121720205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990001121720205171\""@en,
-        "כתב יד \"990001121720205171\""@he ;
-    crm:P1_is_identified_by "\"990001121720205171\""^^xsd:string ;
-    hm:has_colophon base:MS_990001121720205171_Colophon .
-
 base:MS_990001121720205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "ותהי התחלת מלאכת השם יום ד' יז באדר שנת קעג"@he .
+    hm:colophon_text "ותהי התחלת מלאכת השם יום ד' יז באדר שנת קעג [=א'תתקעג לשטרות=1662]"@he .
 
 base:MS_990001124870205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
@@ -2183,14 +2199,6 @@ base:MS_990001188700205171_Colophon a crm:E73_Information_Object,
     hm:colophon_text "תם ונשלם ... לפרט א'מור הננ'י' נות'ן לו א'ת ב'ריתי שלום"@he ;
     hm:mentions_scribe base:Person_%D7%A8%D7%A4%D7%90%D7%9C_%D7%A7%D7%90%D7%A4%D7%99%D7%95 .
 
-base:MS_990001189730205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990001189730205171\""@en,
-        "כתב יד \"990001189730205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%9E%D7%A4%D7%AA%D7%97%D7%95%D7%AA_%D7%94%D7%96%D7%95%D7%94%D7%A8_MS_990001189730205171 ;
-    crm:P1_is_identified_by "\"990001189730205171\""^^xsd:string ;
-    hm:has_colophon base:MS_990001189730205171_Colophon .
-
 base:MS_990001189730205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
     hm:colophon_text "כג ימים לחדש אלול שנת ה'תמ\"ז ... והכותב הצעיר משה ן'... סעדיא בן יהודה ן' כמ\"ר דוד אלקטיעי"@he ;
@@ -2198,7 +2206,7 @@ base:MS_990001189730205171_Colophon a crm:E73_Information_Object,
 
 base:MS_990001197830205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "נכתב ... שנת ה'תכ\"א למב\"י פה פיסארו בבית ... יורשי הזקן ... שמואל מוונדולפו[!] זצוק\"ל ע\"י"@he .
+    hm:colophon_text "נכתב ... שנת ה'תכ\"א למב\"י פה פיסארו בבית ... יורשי הזקן ... שמואל מוונדולפו"@he .
 
 base:MS_990001209890205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -2222,7 +2230,7 @@ base:MS_990001238680205171 a lrmoo:F4_Manifestation_Singleton,
 
 base:MS_990001238680205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "נשלם ביום ראש חדש אדר שנת חמשת אלפים וארבע מאות וחמשים וארבע ליצירה אני הצעיר הכותב יוסף בן כה''ר יעקוב יעיד[?] בן חיים"@he ;
+    hm:colophon_text "נשלם ביום ראש חדש אדר שנת חמשת אלפים וארבע מאות וחמשים וארבע ליצירה אני הצעיר הכותב יוסף בן כה\"ר יעקוב יעיד[?] בן חיים"@he ;
     hm:mentions_scribe base:Person_%D7%99%D7%95%D7%A1%D7%A3 .
 
 base:MS_990001248200205171_Colophon a crm:E73_Information_Object,
@@ -2233,7 +2241,7 @@ base:MS_990001252810205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
     rdfs:label "Manuscript \"990001252810205171\""@en,
         "כתב יד \"990001252810205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%A2%D7%A8%D7%9E%D7%AA_%D7%97%D7%98%D7%99%D7%9D_MS_990001252810205171 ;
+    lrmoo:R4_embodies base:Expression_%D7%9E%D7%9C%D7%95%D7%9F_%D7%9C%D7%97%D7%A8%D7%95%D7%96%D7%99%D7%9D_MS_990001252810205171 ;
     crm:P1_is_identified_by "\"990001252810205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001252810205171_Colophon .
 
@@ -2252,16 +2260,9 @@ base:MS_990001313900205171_Colophon a crm:E73_Information_Object,
     hm:colophon_text "השלמתי זה הספר ... בחמשא בשבא דהוא תלת עסר יומין לירח אב ... שנת אתתקפ\"ז שנין לשטרי במאתא קריה דנח דעל בירא דמיא ביר אלקבילה מותבה ... והכותב ... זכריא בן יוסף בן אברהם בן סעדיא בן עודד אלכ'לפי ... ונכתב על שם החבר הטוב ... יעקוב בן דוד בן שלמה אלחגבי"@he ;
     hm:mentions_scribe base:Person_%D7%96%D7%9B%D7%A8%D7%99%D7%90 .
 
-base:MS_990001326670205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990001326670205171\""@en,
-        "כתב יד \"990001326670205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%9B%D7%A0%D7%A3_%D7%A8%D7%A0%D7%A0%D7%99%D7%9D_%D7%A2%D7%9C_%D7%A9%D7%99%D7%A8_%D7%94%D7%A9%D7%99%D7%A8%D7%99%D7%9D_MS_990001326670205171 ;
-    crm:P1_is_identified_by "\"990001326670205171\""^^xsd:string .
-
 base:MS_990001343040205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "דף השלמה ובו לוח מתחיל בשנת תרמ\"ד"@he .
+    hm:colophon_text "דף השלמה"@he .
 
 base:MS_990001361140205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
@@ -2320,7 +2321,7 @@ base:MS_990001642250205171 a lrmoo:F4_Manifestation_Singleton,
 
 base:MS_990001642250205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "ותהי השלמת הספר הזה ביום ב' בשליש אמצעי לחדש טבת ... בשנת החכמה ת'ח'י'ה' בעליה לפ\"ג\" [=תי\"ח]."@he .
+    hm:colophon_text "ותהי השלמת הספר הזה ביום ב' בשליש אמצעי לחדש טבת ... בשנת החכמה ת'ח'י'ה' בעליה לפ\"\"ג\"\" [=תי\"\"ח]."@he .
 
 base:MS_990001679060205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
@@ -2331,7 +2332,7 @@ base:MS_990001761840205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
     rdfs:label "Manuscript \"990001761840205171\""@en,
         "כתב יד \"990001761840205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%9E%D7%A7%D7%A8%D7%90_%D7%A4%D7%A8%D7%A9%D7%A0%D7%95%D7%AA_%D7%9B%D7%AA%D7%95%D7%91%D7%99%D7%9D_%D7%9E%D7%92%D7%9C%D7%95%D7%AA_%D7%90%D7%99%D7%9B%D7%94_MS_990001761840205171 ;
+    lrmoo:R4_embodies base:Expression_%D7%9E%D7%92%D7%9C%D7%95%D7%AA_%D7%90%D7%99%D7%9B%D7%94_MS_990001761840205171 ;
     crm:P1_is_identified_by "\"990001761840205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001761840205171_Colophon .
 
@@ -2358,20 +2359,19 @@ base:MS_990001785380205171_Colophon a crm:E73_Information_Object,
 
 base:MS_990001827620205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "נשלם ... א'תתקנ\"ה שנין לשטרות [=1644] במאתר דור עמר מן בלאד ס[נח?]אן ... ספרא ... סעדיה יש\"\"ל בן מעודד תנצב\"\"ה בן סעדיה נע\"\"ג בן יוסף רי\"\"ת\"."@he ;
+    hm:colophon_text "נשלם ... א'תתקנ\"ה שנין לשטרות [=1644] במאתר דור עמר מן בלאד ס[נח?]אן ... ספרא ... סעדיה יש\"\"ל בן מעודד תנצב\"ה בן סעדיה נע\"\"ג בן יוסף רי\"\"ת"@he ;
     hm:mentions_scribe base:Person_%D7%A1%D7%A2%D7%93%D7%99%D7%94_%D7%99%D7%A9%D7%9C .
-
-base:MS_990001831070205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990001831070205171\""@en,
-        "כתב יד \"990001831070205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%A1%D7%93%D7%A8_%D7%94%D7%90%D7%A9%D7%9E%D7%95%D7%A8%D7%95%D7%AA_%D7%9E%D7%A2%D7%A9%D7%A8%D7%AA_%D7%99%D7%9E%D7%99_%D7%AA%D7%A9%D7%95%D7%91%D7%94_MS_990001831070205171 ;
-    crm:P1_is_identified_by "\"990001831070205171\""^^xsd:string .
 
 base:MS_990001855990205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "נשלמה ... שנת חמשת אלפים ארבע מאות שלשה ושלים ליצירה ... על ידי עמנואל ב\"ר גד דמילייאב תושב לישלאה דיווניצו"@he ;
+    hm:colophon_text "נשלמה ... שנת חמשת אלפים ארבע מאות שלשה ושלים ליצירה ... על ידי עמנואל ב\"\"ר גד דמילייאב תושב לישלאה דיווניצו"@he ;
     hm:mentions_scribe base:Person_%D7%A2%D7%9E%D7%A0%D7%95%D7%90%D7%9C .
+
+base:MS_990001876060205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990001876060205171\""@en,
+        "כתב יד \"990001876060205171\""@he ;
+    crm:P1_is_identified_by "\"990001876060205171\""^^xsd:string .
 
 base:MS_990001878130205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -2383,7 +2383,7 @@ base:MS_990001878130205171 a lrmoo:F4_Manifestation_Singleton,
 
 base:MS_990001878130205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "נשלם זה המדרש ... שנת אתתקי ח שנין לשטרי [=1607] במאתא דרב אלחנשאת ... ספרא ... יוסף בא מ יונה יש ל ... הידוע אלפתיחי ונכתב על שם האחים ... משה בן מסעוד ויהודה בן מסעוד"@he ;
+    hm:colophon_text "נשלם זה המדרש ... שנת אתתקי\"ח שנין לשטרי [=1607] במאתא דרב אלחנשאת ... ספרא ... יוסף בא\"\"מ יונה יש\"\"ל ... הידוע אלפתיחי ונכתב על שם האחים ... משה בן מסעוד ויהודה בן מסעוד"@he ;
     hm:mentions_scribe base:Person_%D7%99%D7%95%D7%A1%D7%A3 .
 
 base:MS_990001901770205171_Colophon a crm:E73_Information_Object,
@@ -2393,7 +2393,7 @@ base:MS_990001901770205171_Colophon a crm:E73_Information_Object,
 
 base:MS_990001911540205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "ותהי התחלת כתיבתו יום חמשי ראש חדש תמוז התמ\"ז ... וסיימתיו כ\"ה למנחם יום שלישי התמ\"ז ליצירה"@he ;
+    hm:colophon_text "ותהי התחלת כתיבתו יום חמשי ראש חדש תמוז התמ\"ז הצעיר שמואל דוד בכמ\"ר יחיאל אוטולינגו י\"ץ פב ק\"ק ריגייו. וסיימתיו כ\"ה למנחם יום שלישי התמ\"ז ליצירה."@he ;
     hm:mentions_scribe base:Person_%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%93%D7%95%D7%93 .
 
 base:MS_990001983850205171_Colophon a crm:E73_Information_Object,
@@ -2424,27 +2424,29 @@ base:MS_990027840460205171_Colophon a crm:E73_Information_Object,
 base:MS_990032575610205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
     hm:colophon_text "Feito por my Matatia desenhor Ishack Aboab em Amsterdam a 15 de Junho da anno de 1690"@he ;
-    hm:mentions_scribe base:Person_%D7%9E%D7%AA%D7%AA%D7%99%D7%94 .
+    hm:mentions_scribe base:Person_Matatia .
 
 base:MS_990035044030205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "תם ונשלם ערב ג', פ' בא אל פרעה, שנת הת''ב"@he ;
-    hm:mentions_scribe base:Person_%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%99%D7%96%D7%99%D7%99%D7%90 .
+    hm:colophon_text ""@he .
 
 base:MS_990035802410205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "נשלם זה הסדור ... ביום שני עשרה ימים לחדש ניסן של שנת אתתקלג שנין לשטרות בכפר אלאעדאן ... קטן הסופרים ... ישראל בירב אבא מרי יוסף בירב אבא מרי ישראל בא\"מ יוסף בירב א\"מ משה בא\"מ סעדיה בא\"מ דוד בא\"מ אברם בא\"מ מעודד זצ\"ל"@he ;
-    hm:mentions_scribe base:Person_%D7%99%D7%A9%D7%A8%D7%90%D7%9C_%D7%91%D7%99%D7%A8%D7%91_%D7%90%D7%91%D7%90_%D7%9E%D7%A8%D7%99_%D7%99%D7%95%D7%A1%D7%A3 .
+    hm:colophon_text "נשלם זה הסדור ... ביום שני עשרה ימים לחדש ניסן של שנת אתתקל\"ג שנין לשטרות בכפר אלאעדאן ... קטן הסופרים ... ישראל בירב אבא מרי יוסף בירב אבא מרי ישראל בא\"\"מ יוסף בירב א\"\"מ משה בא\"\"מ סעדיה בא\"\"מ דוד בא\"\"מ אברם בא\"\"מ מעודד זצ\"\"ל"@he ;
+    hm:mentions_scribe base:Person_%D7%99%D7%A9%D7%A8%D7%90%D7%9C_%D7%91%D7%99%D7%A8%D7%91_%D7%90%D7%91%D7%90_%D7%9E%D7%A8%D7%99 .
 
 base:MS_990036191450205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
-    hm:colophon_text "תנו רבנן לעולם יכתוב אדם שמו על ספרו ... לפיכך כתבתי שמי בזה הספר אנא מנצור ן' סאלם אללוי אלד'י מן קרית סדם, זיכני הב\"\"ה וקניתי אלו חמשה חומשי תורה ... הד'ה אלקטעה ואחדה מנהן ... מן מוסא ן' יחיא אלחמדי ... יום אלגמעה סאדס יום מן שהר תמוז שנת א'תתקעג ... ושהאדת סלימאן ן' מוסא שולמא ויצחאק ן' דאוד שלמה"@he .
+    hm:colophon_text "תנו רבנן לעולם יכתוב אדם שמו על ספרו ... לפיכך כתבתי שמי בזה הספר אנא מנצור ן' סאלם אללוי אלד'י מן קרית סדם, זיכני הב\"ה וקניתי אלו חמשה חומשי תורה ... הד'ה אלקטעה ואחדה מנהן ... מן מוסא ן' יחיא אלחמדי ... יום אלגמעה סאדס יום מן שהר תמוז שנת א'תתקעג ... ושהאדת סלימאן ן' מוסא שולמא ויצחאק ן' דאוד שלמה"@he .
+
+base:Place_%D7%90%D7%95%D7%99%D7%92%D7%A0%D7%99%D7%95%D7%9F a crm:E53_Place ;
+    rdfs:label "אויגניון"@he .
 
 base:Place_%D7%90%D7%95%D7%A0%D7%92%D7%90%D7%A8%D7%99%D7%9F a crm:E53_Place ;
     rdfs:label "אונגארין"@he .
 
-base:Place_%D7%90%D7%95%D7%A7%D7%A1%D7%A4%D7%95%D7%A8%D7%93 a crm:E53_Place ;
-    rdfs:label "אוקספורד"@he .
+base:Place_%D7%90%D7%95%D7%A4%D7%A0%D7%94%D7%99%D7%9D a crm:E53_Place ;
+    rdfs:label "אופנהים"@he .
 
 base:Place_%D7%90%D7%95%D7%A7%D7%A8%D7%99%D7%99%D7%A0%D7%90 a crm:E53_Place ;
     rdfs:label "אוקריינא"@he .
@@ -2454,6 +2456,12 @@ base:Place_%D7%90%D7%95%D7%A8%D7%91%D7%99%D7%A0%D7%95 a crm:E53_Place ;
 
 base:Place_%D7%90%D7%99%D7%98%D7%90%D7%9C%D7%99%D7%90 a crm:E53_Place ;
     rdfs:label "איטאליא"@he .
+
+base:Place_%D7%90%D7%9C%D7%90%D7%A1%D7%99 a crm:E53_Place ;
+    rdfs:label "אלאסי"@he .
+
+base:Place_%D7%90%D7%9C%D7%90%D7%A9%D7%A8%D7%A1%D7%99 a crm:E53_Place ;
+    rdfs:label "אלאשרסי"@he .
 
 base:Place_%D7%90%D7%9E%D7%A9%D7%98%D7%A8%D7%93%D7%9D a crm:E53_Place ;
     rdfs:label "אמשטרדם"@he .
@@ -2478,6 +2486,9 @@ base:Place_%D7%91%D7%95%D7%A1%D7%99%D7%98%D7%95 a crm:E53_Place ;
 
 base:Place_%D7%91%D7%95%D7%A7%D7%90%D7%95%D7%95%D7%99%D7%A0%D7%90 a crm:E53_Place ;
     rdfs:label "בוקאווינא"@he .
+
+base:Place_%D7%91%D7%99%D7%A8%D7%90_%D7%93%D7%9E%D7%99%D7%90 a crm:E53_Place ;
+    rdfs:label "בירא דמיא"@he .
 
 base:Place_%D7%91%D7%9C%D7%90%D7%90_%D7%9B%D7%94%D7%A8 a crm:E53_Place ;
     rdfs:label "בלאא כהר"@he .
@@ -2506,11 +2517,20 @@ base:Place_%D7%94%D7%95%D7%9C%D7%A0%D7%93%D7%94 a crm:E53_Place ;
 base:Place_%D7%94%D7%99%D7%9C%D7%93%D7%A1%D7%95%D7%9D a crm:E53_Place ;
     rdfs:label "הילדסום"@he .
 
+base:Place_%D7%95%D7%90%D7%98%D7%99%D7%A7%D7%9F a crm:E53_Place ;
+    rdfs:label "ואטיקן"@he .
+
+base:Place_%D7%95%D7%95%D7%9C%D7%98%D7%99%D7%A8%D7%90 a crm:E53_Place ;
+    rdfs:label "וולטירא"@he .
+
 base:Place_%D7%95%D7%95%D7%A8%D7%9E%D7%99%D7%96%D7%90 a crm:E53_Place ;
     rdfs:label "וורמיזא"@he .
 
 base:Place_%D7%96%D7%95%D7%9C%D7%A6%D7%91%D7%9A a crm:E53_Place ;
     rdfs:label "זולצבך"@he .
+
+base:Place_%D7%98%D7%98%D7%A8%D7%99%D7%AA a crm:E53_Place ;
+    rdfs:label "טטרית"@he .
 
 base:Place_%D7%98%D7%99%D7%A1%D7%9E%D7%A0%D7%99%D7%A6%D7%94 a crm:E53_Place ;
     rdfs:label "טיסמניצה"@he .
@@ -2518,8 +2538,14 @@ base:Place_%D7%98%D7%99%D7%A1%D7%9E%D7%A0%D7%99%D7%A6%D7%94 a crm:E53_Place ;
 base:Place_%D7%9B%D7%A4%D7%A8_%D7%90%D7%9C%D7%90%D7%A2%D7%93%D7%90%D7%9F a crm:E53_Place ;
     rdfs:label "כפר אלאעדאן"@he .
 
+base:Place_%D7%9C%D7%90_%D7%99%D7%93%D7%95%D7%A2 a crm:E53_Place ;
+    rdfs:label "לא ידוע"@he .
+
 base:Place_%D7%9C%D7%99%D7%A9%D7%9C%D7%90%D7%94_%D7%93%D7%99%D7%95%D7%95%D7%A0%D7%99%D7%A6%D7%95 a crm:E53_Place ;
     rdfs:label "לישלאה דיווניצו"@he .
+
+base:Place_%D7%9C%D7%A9%D7%9C%D7%90%D7%94_%D7%93%D7%95%D7%99%D7%A0%D7%99%D7%96%D7%95_%D7%9E%D7%9E%D7%97%D7%95%D7%96_%D7%90%D7%95%D7%99%D7%92%D7%A0%D7%99%D7%95%D7%9F a crm:E53_Place ;
+    rdfs:label "לשלאה דויניזו ממחוז אויגניון"@he .
 
 base:Place_%D7%9E%D7%90%D7%AA%D7%90_%D7%90%D7%9C%D7%A6%D7%91%D7%99%D7%A8%D7%94 a crm:E53_Place ;
     rdfs:label "מאתא אלצ'בירה"@he .
@@ -2545,17 +2571,20 @@ base:Place_%D7%9E%D7%95%D7%93%D7%99%D7%A0%D7%94 a crm:E53_Place ;
 base:Place_%D7%9E%D7%95%D7%A0%D7%98%D7%A8%D7%99%D7%90%D7%95%D7%9C a crm:E53_Place ;
     rdfs:label "מונטריאול"@he .
 
-base:Place_%D7%9E%D7%99%D7%9C%D7%99%D7%90%D7%91 a crm:E53_Place ;
-    rdfs:label "מיליאב"@he .
+base:Place_%D7%9E%D7%95%D7%A0%D7%A6%D7%99%D7%9C%D7%99%D7%A1%D7%99 a crm:E53_Place ;
+    rdfs:label "מונציליסי"@he .
 
-base:Place_%D7%9E%D7%9E%D7%99%D7%A5 a crm:E53_Place ;
-    rdfs:label "ממיץ"@he .
+base:Place_%D7%9E%D7%99%D7%9C%D7%99%D7%99%D7%90%D7%91 a crm:E53_Place ;
+    rdfs:label "מילייאב"@he .
 
 base:Place_%D7%9E%D7%A1%D7%99%D7%A0%D7%99%D7%92%D7%90%D7%9C%D7%99%D7%99%D7%90 a crm:E53_Place ;
     rdfs:label "מסיניגאלייא"@he .
 
 base:Place_%D7%9E%D7%A4%D7%A8%D7%90%D7%92 a crm:E53_Place ;
     rdfs:label "מפראג"@he .
+
+base:Place_%D7%9E%D7%A5 a crm:E53_Place ;
+    rdfs:label "מץ"@he .
 
 base:Place_%D7%9E%D7%A8%D7%95%D7%93%D7%99%D7%A9 a crm:E53_Place ;
     rdfs:label "מרודיש"@he .
@@ -2569,9 +2598,6 @@ base:Place_%D7%A0%D7%99%D7%95-%D7%99%D7%95%D7%A8%D7%A7 a crm:E53_Place ;
 base:Place_%D7%A1%D7%90%D7%93%D7%90%D7%92%D7%95%D7%A8%D7%90 a crm:E53_Place ;
     rdfs:label "סאדאגורא"@he .
 
-base:Place_%D7%A1%D7%91%D7%99%D7%95%D7%A0%D7%99%D7%98%D7%94 a crm:E53_Place ;
-    rdfs:label "סביוניטה"@he .
-
 base:Place_%D7%A1%D7%A4%D7%A8%D7%99%D7%AA_%D7%90%D7%95%D7%A0%D7%99%D7%91%D7%A8%D7%A1%D7%99%D7%98%D7%AA_%D7%91%D7%A8_%D7%90%D7%99%D7%9C%D7%9F a crm:E53_Place ;
     rdfs:label "ספרית אוניברסיטת בר אילן"@he .
 
@@ -2584,8 +2610,17 @@ base:Place_%D7%A2%D7%99%D7%A8_%D7%91%D7%A8%D7%96%D7%9C_%D7%94%D7%A7%D7%A8%D7%95%
 base:Place_%D7%A2%D7%99%D7%A8_%D7%97%D7%93%D7%A9 a crm:E53_Place ;
     rdfs:label "עיר חדש"@he .
 
+base:Place_%D7%A2%D7%9C%D7%A7%D7%98%D7%99%D7%A2%D7%99 a crm:E53_Place ;
+    rdfs:label "עלקטיעי"@he .
+
+base:Place_%D7%A2%D7%9C%D7%A7%D7%A8%D7%90%D7%99 a crm:E53_Place ;
+    rdfs:label "עלקראי"@he .
+
 base:Place_%D7%A2%D7%A1%D7%98%D7%A8%D7%99%D7%99%D7%9A a crm:E53_Place ;
     rdfs:label "עסטרייך"@he .
+
+base:Place_%D7%A2%D7%A8%D7%90%D7%A7%D7%99 a crm:E53_Place ;
+    rdfs:label "עראקי"@he .
 
 base:Place_%D7%A4%D7%90%D7%A1%D7%A1%D7%90%D7%A0%D7%95 a crm:E53_Place ;
     rdfs:label "פאססאנו"@he .
@@ -2598,6 +2633,9 @@ base:Place_%D7%A4%D7%95%D7%A6%D7%90%D7%A0%D7%95 a crm:E53_Place ;
 
 base:Place_%D7%A4%D7%95%D7%A8%D7%98%D7%95%D7%92%D7%90%D7%9C a crm:E53_Place ;
     rdfs:label "פורטוגאל"@he .
+
+base:Place_%D7%A4%D7%95%D7%A8%D7%9C%D7%99 a crm:E53_Place ;
+    rdfs:label "פורלי"@he .
 
 base:Place_%D7%A4%D7%99%D7%A0%D7%98%D7%A9%D7%91 a crm:E53_Place ;
     rdfs:label "פינטשב"@he .
@@ -2620,9 +2658,6 @@ base:Place_%D7%A4%D7%A4%D7%90%D7%9C%D7%A5 a crm:E53_Place ;
 base:Place_%D7%A4%D7%A8%D7%A0%D7%A7%D7%A4%D7%95%D7%A8%D7%98_%D7%93%D7%9E%D7%99%D7%99%D7%9F a crm:E53_Place ;
     rdfs:label "פרנקפורט דמיין"@he .
 
-base:Place_%D7%A6%D7%99%D7%A0%D7%92%D7%95%D7%9C%D7%99 a crm:E53_Place ;
-    rdfs:label "צ'ינגולי"@he .
-
 base:Place_%D7%A6%D7%A4%D7%AA a crm:E53_Place ;
     rdfs:label "צפת"@he .
 
@@ -2638,6 +2673,9 @@ base:Place_%D7%A7%D7%90%D7%A8%D7%90%D7%A5 a crm:E53_Place ;
 base:Place_%D7%A7%D7%95%D7%A1%D7%98%D7%A0%D7%98%D7%99%D7%A0%D7%94 a crm:E53_Place ;
     rdfs:label "קוסטנטינה"@he .
 
+base:Place_%D7%A7%D7%95%D7%A8%D7%98%D7%95%D7%91%D7%94 a crm:E53_Place ;
+    rdfs:label "קורטובה"@he .
+
 base:Place_%D7%A7%D7%95%D7%A9%D7%98%D7%90%D7%A0%D7%93%D7%99%D7%A0%D7%94 a crm:E53_Place ;
     rdfs:label "קושטאנדינה"@he .
 
@@ -2650,26 +2688,20 @@ base:Place_%D7%A7%D7%A0%D7%93%D7%99%D7%90%D7%94 a crm:E53_Place ;
 base:Place_%D7%A7%D7%A0%D7%93%D7%99%D7%94 a crm:E53_Place ;
     rdfs:label "קנדיה"@he .
 
-base:Place_%D7%A7%D7%A0%D7%93%D7%A2%D7%9C_%D7%91%D7%99%D7%A8%D7%90_%D7%93%D7%9E%D7%99%D7%90 a crm:E53_Place ;
-    rdfs:label "קנדעל בירא דמיא"@he .
-
 base:Place_%D7%A7%D7%A6%D7%A0%D7%98%D7%99%D7%A0%D7%90 a crm:E53_Place ;
     rdfs:label "קצנטינא"@he .
 
 base:Place_%D7%A7%D7%A7_%D7%91%D7%92%D7%93%D7%90%D7%93 a crm:E53_Place ;
     rdfs:label "ק\"ק בגדאד"@he .
 
-base:Place_%D7%A7%D7%A8%D7%99%D7%99%D7%AA_%D7%93%D7%94%D7%A9%D7%9F_%D7%90%D7%9C%D7%A7%D7%99%D7%95%D7%9F a crm:E53_Place ;
-    rdfs:label "קריית דהשן אלקיון"@he .
+base:Place_%D7%A7%D7%A8%D7%99%D7%AA_%D7%93%D7%94%D7%A9%D7%9F_%D7%90%D7%9C%D7%A7%D7%99%D7%95%D7%9F a crm:E53_Place ;
+    rdfs:label "קרית דהשן אלקיון"@he .
 
 base:Place_%D7%A7%D7%A8%D7%99%D7%AA_%D7%A1%D7%93%D7%9D a crm:E53_Place ;
     rdfs:label "קרית סדם"@he .
 
 base:Place_%D7%A7%D7%A8%D7%99%D7%AA_%D7%A4%D7%99%D7%A8%D7%90%D7%A8%D7%94 a crm:E53_Place ;
     rdfs:label "קרית פירארה"@he .
-
-base:Place_%D7%A7%D7%A8%D7%A4%D7%99%D7%A0%D7%98%D7%A8%D7%90%D7%A5 a crm:E53_Place ;
-    rdfs:label "קרפינטראץ"@he .
 
 base:Place_%D7%A8%D7%90%D7%91%D7%99%D7%A0%D7%95%D7%95%D7%A6%D7%A8 a crm:E53_Place ;
     rdfs:label "ראבינווצר"@he .
@@ -2707,26 +2739,20 @@ base:Place_%D7%AA%D7%A0%D7%A2%D7%9D a crm:E53_Place ;
 base:Place_ANCONA a crm:E53_Place ;
     rdfs:label "ANCONA"@he .
 
+base:Place_CINGOLI a crm:E53_Place ;
+    rdfs:label "CINGOLI"@he .
+
 base:TimeSpan_%D7%90%D7%91_%D7%A9%D7%A1%D7%93 a crm:E52_Time_Span ;
     rdfs:label "אב שס\"ד" .
 
 base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%99 a crm:E52_Time_Span ;
     rdfs:label "אתתקי" .
 
-base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%9C a crm:E52_Time_Span ;
-    rdfs:label "אתתק\"ל" .
-
-base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%9C%D7%92 a crm:E52_Time_Span ;
-    rdfs:label "אתתקלג" .
-
 base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%9C%D7%93 a crm:E52_Time_Span ;
     rdfs:label "אתתקל\"ד" .
 
 base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%A0%D7%93 a crm:E52_Time_Span ;
     rdfs:label "אתתקנ\"ד" .
-
-base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%A0%D7%95 a crm:E52_Time_Span ;
-    rdfs:label "אתתקנו" .
 
 base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%A1%D7%97 a crm:E52_Time_Span ;
     rdfs:label "אתתקסח" .
@@ -2740,12 +2766,6 @@ base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%A4%D7%96 a crm:E52_Time_Span ;
 base:TimeSpan_%D7%94%D7%99%D7%97_%D7%99%D7%98 a crm:E52_Time_Span ;
     rdfs:label "הי\"ח-י\"ט" .
 
-base:TimeSpan_%D7%94%D7%A9%D7%A6%D7%94 a crm:E52_Time_Span ;
-    rdfs:label "השצ\"ה" .
-
-base:TimeSpan_%D7%94%D7%AA%D7%91 a crm:E52_Time_Span ;
-    rdfs:label "הת''ב" .
-
 base:TimeSpan_%D7%94%D7%AA%D7%9B%D7%90 a crm:E52_Time_Span ;
     rdfs:label "ה'תכ\"א" .
 
@@ -2755,14 +2775,11 @@ base:TimeSpan_%D7%94%D7%AA%D7%9C%D7%90 a crm:E52_Time_Span ;
 base:TimeSpan_%D7%94%D7%AA%D7%9C%D7%94 a crm:E52_Time_Span ;
     rdfs:label "התל\"ה" .
 
-base:TimeSpan_%D7%94%D7%AA%D7%9E%D7%96 a crm:E52_Time_Span ;
-    rdfs:label "התמ\"ז" .
-
 base:TimeSpan_%D7%94%D7%AA%D7%A0%D7%97 a crm:E52_Time_Span ;
     rdfs:label "ה'תנ\"ח" .
 
-base:TimeSpan_%D7%94%D7%AA%D7%A0%D7%98 a crm:E52_Time_Span ;
-    rdfs:label "התנ\"ט" .
+base:TimeSpan_%D7%94%D7%AA%D7%A7%D7%99%D7%92 a crm:E52_Time_Span ;
+    rdfs:label "ה'תקי''ג" .
 
 base:TimeSpan_%D7%94%D7%AA%D7%A8%D7%98 a crm:E52_Time_Span ;
     rdfs:label "ה'תר\"ט" .
@@ -2770,8 +2787,11 @@ base:TimeSpan_%D7%94%D7%AA%D7%A8%D7%98 a crm:E52_Time_Span ;
 base:TimeSpan_%D7%94_%D7%90%D7%9C%D7%95%D7%9C_%D7%AA%D7%9C%D7%93 a crm:E52_Time_Span ;
     rdfs:label "ה' אלול תלד" .
 
-base:TimeSpan_%D7%98%D7%91%D7%AA a crm:E52_Time_Span ;
-    rdfs:label "טבת" .
+base:TimeSpan_%D7%97%D7%9E%D7%A9%D7%94_%D7%9C%D7%97%D7%93%D7%A9_%D7%AA%D7%A9%D7%A8%D7%99_%D7%A9%D7%A0%D7%AA_%D7%97%D7%9E%D7%A9%D7%AA_%D7%90%D7%9C%D7%A4%D7%99%D7%9D_%D7%90%D7%A8%D7%91%D7%A2_%D7%9E%D7%90%D7%95%D7%AA_%D7%95%D7%A9%D7%A9%D7%99%D7%9D_%D7%9C%D7%91%D7%A8%D7%99%D7%90%D7%AA_%D7%A2%D7%95%D7%9C%D7%9D a crm:E52_Time_Span ;
+    rdfs:label "חמשה לחדש תשרי שנת חמשת אלפים ארבע מאות וששים לבריאת עולם" .
+
+base:TimeSpan_%D7%98%D7%91%D7%AA%D7%90 a crm:E52_Time_Span ;
+    rdfs:label "טבת'א" .
 
 base:TimeSpan_%D7%98%D7%95_%D7%90%D7%91 a crm:E52_Time_Span ;
     rdfs:label "טו אב" .
@@ -2779,38 +2799,29 @@ base:TimeSpan_%D7%98%D7%95_%D7%90%D7%91 a crm:E52_Time_Span ;
 base:TimeSpan_%D7%98%D7%95_%D7%9C%D7%9E%D7%A0%D7%97%D7%9D_%D7%A6%D7%94%D7%9C%D7%99_%D7%95%D7%A8%D7%A0%D7%99_%D7%94_%D7%95%D7%A9%D7%91%D7%AA_%D7%A6%D7%99%D7%95%D7%9F a crm:E52_Time_Span ;
     rdfs:label "טו למנחם צ'ה'ל'י' ו'ר'נ'י' ה' ושבת ציון" .
 
-base:TimeSpan_%D7%98_%D7%90%D7%93%D7%A8_%D7%94%D7%A9%D7%A6%D7%96 a crm:E52_Time_Span ;
-    rdfs:label "ט אדר השצ\"ז" .
-
 base:TimeSpan_%D7%99%D7%97_%D7%99%D7%98 a crm:E52_Time_Span ;
     rdfs:label "י\"ח-י\"ט" .
 
 base:TimeSpan_%D7%9B%D7%93_%D7%90%D7%9C%D7%95%D7%9C_%D7%AA%D7%9C%D7%93 a crm:E52_Time_Span ;
-    rdfs:label "כ\"ד אלול תל\"ד" .
+    rdfs:label "כד אלול תלד" .
 
 base:TimeSpan_%D7%9B%D7%94%D7%99 a crm:E52_Time_Span ;
     rdfs:label "כה\"י" .
 
-base:TimeSpan_%D7%9B%D7%94_%D7%9C%D7%9E%D7%A0%D7%97%D7%9D a crm:E52_Time_Span ;
-    rdfs:label "כ\"ה למנחם" .
-
-base:TimeSpan_%D7%9B%D7%95_%D7%98%D7%91%D7%AA a crm:E52_Time_Span ;
-    rdfs:label "כו טבת" .
+base:TimeSpan_%D7%9B%D7%95_%D7%9C%D7%97%D7%93%D7%A9_%D7%98%D7%91%D7%AA a crm:E52_Time_Span ;
+    rdfs:label "כו לחדש טבת" .
 
 base:TimeSpan_%D7%A0%D7%A9%D7%91%D7%A2%D7%94 a crm:E52_Time_Span ;
     rdfs:label "נ'ש'ב'ע'ה'" .
 
-base:TimeSpan_%D7%A2%D7%A8%D7%94_%D7%AA%D7%9D a crm:E52_Time_Span ;
-    rdfs:label "ער\"ה ת\"ם" .
-
-base:TimeSpan_%D7%A9%D7%9E%D7%A2%D7%94 a crm:E52_Time_Span ;
-    rdfs:label "שמעה" .
-
 base:TimeSpan_%D7%A9%D7%A0%D7%92_%D7%A9%D7%A4%D7%96 a crm:E52_Time_Span ;
     rdfs:label "שנג-שפז" .
 
-base:TimeSpan_%D7%A9%D7%A0%D7%94_%D7%90%D7%97%D7%AA a crm:E52_Time_Span ;
-    rdfs:label "שנה אחת" .
+base:TimeSpan_%D7%A9%D7%A0%D7%AA_%D7%95%D7%9C%D7%A9%D7%9E%D7%97%D7%94_%D7%9C%D7%A4%D7%A7_%5B%3D%D7%A9%D7%A4%D7%98%5D a crm:E52_Time_Span ;
+    rdfs:label "שנת ו'ל'ש'מ'ח'ה' לפ''ק [=שפ''ט]" .
+
+base:TimeSpan_%D7%A9%D7%A0%D7%AA_%D7%97%D7%9E%D7%A9%D7%AA_%D7%90%D7%9C%D7%A4%D7%99%D7%9D_%D7%90%D7%A8%D7%91%D7%A2_%D7%9E%D7%90%D7%95%D7%AA_%D7%A9%D7%9C%D7%A9%D7%94_%D7%95%D7%A9%D7%9C%D7%99%D7%9D_%D7%9C%D7%99%D7%A6%D7%99%D7%A8%D7%94 a crm:E52_Time_Span ;
+    rdfs:label "שנת חמשת אלפים ארבע מאות שלשה ושלים ליצירה" .
 
 base:TimeSpan_%D7%A9%D7%A1%D7%92 a crm:E52_Time_Span ;
     rdfs:label "שס\"ג" .
@@ -2830,20 +2841,17 @@ base:TimeSpan_%D7%A9%D7%A4%D7%92 a crm:E52_Time_Span ;
 base:TimeSpan_%D7%A9%D7%A4%D7%93 a crm:E52_Time_Span ;
     rdfs:label "שפ\"ד" .
 
+base:TimeSpan_%D7%A9%D7%A4%D7%98 a crm:E52_Time_Span ;
+    rdfs:label "שפט" .
+
+base:TimeSpan_%D7%A9%D7%A6%D7%96 a crm:E52_Time_Span ;
+    rdfs:label "שצ\"ז" .
+
 base:TimeSpan_%D7%AA%D7%91%D7%A0%D7%94 a crm:E52_Time_Span ;
-    rdfs:label "ת'ב'נ'ה" .
+    rdfs:label "ת'ב'נ'ה'" .
 
 base:TimeSpan_%D7%AA%D7%92 a crm:E52_Time_Span ;
     rdfs:label "ת\"ג" .
-
-base:TimeSpan_%D7%AA%D7%94_%D7%AA%D7%A6%D7%90 a crm:E52_Time_Span ;
-    rdfs:label "ת\"ה-תצ\"א" .
-
-base:TimeSpan_%D7%AA%D7%94_%D7%AA%D7%A7%D7%99 a crm:E52_Time_Span ;
-    rdfs:label "ת\"ה-תק\"י" .
-
-base:TimeSpan_%D7%AA%D7%98%D7%95 a crm:E52_Time_Span ;
-    rdfs:label "תט\"ו" .
 
 base:TimeSpan_%D7%AA%D7%98%D7%96 a crm:E52_Time_Span ;
     rdfs:label "תטז" .
@@ -2860,8 +2868,8 @@ base:TimeSpan_%D7%AA%D7%99%D7%92 a crm:E52_Time_Span ;
 base:TimeSpan_%D7%AA%D7%99%D7%93 a crm:E52_Time_Span ;
     rdfs:label "תי\"ד" .
 
-base:TimeSpan_%D7%AA%D7%99_%D7%AA%D7%92 a crm:E52_Time_Span ;
-    rdfs:label "ת\"י-ת\"ג" .
+base:TimeSpan_%D7%AA%D7%99_%D7%AA%D7%A0%D7%92 a crm:E52_Time_Span ;
+    rdfs:label "ת\"י-תנ\"ג" .
 
 base:TimeSpan_%D7%AA%D7%9B%D7%90 a crm:E52_Time_Span ;
     rdfs:label "תכ\"א" .
@@ -2875,8 +2883,8 @@ base:TimeSpan_%D7%AA%D7%9B%D7%92 a crm:E52_Time_Span ;
 base:TimeSpan_%D7%AA%D7%9B%D7%95 a crm:E52_Time_Span ;
     rdfs:label "תכ\"ו" .
 
-base:TimeSpan_%D7%AA%D7%9B%D7%98 a crm:E52_Time_Span ;
-    rdfs:label "תכ\"ט" .
+base:TimeSpan_%D7%AA%D7%9B%D7%98%D7%99 a crm:E52_Time_Span ;
+    rdfs:label "תכטי" .
 
 base:TimeSpan_%D7%AA%D7%9C%D7%90 a crm:E52_Time_Span ;
     rdfs:label "תל''א" .
@@ -2884,8 +2892,8 @@ base:TimeSpan_%D7%AA%D7%9C%D7%90 a crm:E52_Time_Span ;
 base:TimeSpan_%D7%AA%D7%9C%D7%94_%D7%AA%D7%9C%D7%95 a crm:E52_Time_Span ;
     rdfs:label "תלה-תלו" .
 
-base:TimeSpan_%D7%AA%D7%9E a crm:E52_Time_Span ;
-    rdfs:label "ת\"מ" .
+base:TimeSpan_%D7%AA%D7%9D_%D7%9C%D7%A4%D7%A7 a crm:E52_Time_Span ;
+    rdfs:label "ת\"ם לפ\"ק" .
 
 base:TimeSpan_%D7%AA%D7%9E%D7%94 a crm:E52_Time_Span ;
     rdfs:label "תמ\"ה" .
@@ -2893,8 +2901,8 @@ base:TimeSpan_%D7%AA%D7%9E%D7%94 a crm:E52_Time_Span ;
 base:TimeSpan_%D7%AA%D7%9E%D7%95 a crm:E52_Time_Span ;
     rdfs:label "תמ\"ו" .
 
-base:TimeSpan_%D7%AA%D7%9E%D7%95%D7%96_%D7%91%D7%90%D7%9E%D7%AA_%D7%9C%D7%A4%D7%A7 a crm:E52_Time_Span ;
-    rdfs:label "תמוז באמ''ת לפ''ק" .
+base:TimeSpan_%D7%AA%D7%9E%D7%95%D7%96_%D7%91%D7%90%D7%9E%D7%AA a crm:E52_Time_Span ;
+    rdfs:label "תמוז באמ''ת" .
 
 base:TimeSpan_%D7%AA%D7%9E%D7%95%D7%96_%D7%A9%D7%A1%D7%93 a crm:E52_Time_Span ;
     rdfs:label "תמוז שס\"ד" .
@@ -2902,17 +2910,20 @@ base:TimeSpan_%D7%AA%D7%9E%D7%95%D7%96_%D7%A9%D7%A1%D7%93 a crm:E52_Time_Span ;
 base:TimeSpan_%D7%AA%D7%9F a crm:E52_Time_Span ;
     rdfs:label "ת\"ן" .
 
-base:TimeSpan_%D7%AA%D7%A0%D7%91 a crm:E52_Time_Span ;
-    rdfs:label "תנ\"ב" .
-
-base:TimeSpan_%D7%AA%D7%A0%D7%91_%D7%AA%D7%A7%D7%9B%D7%98 a crm:E52_Time_Span ;
-    rdfs:label "תנ\"ב-תקכ\"ט" .
-
 base:TimeSpan_%D7%AA%D7%A0%D7%94_%D7%9C%D7%99%D7%A6%D7%99%D7%A8%D7%94 a crm:E52_Time_Span ;
     rdfs:label "תנה ליצירה" .
 
 base:TimeSpan_%D7%AA%D7%A0%D7%98 a crm:E52_Time_Span ;
     rdfs:label "תנ\"ט" .
+
+base:TimeSpan_%D7%AA%D7%A6%D7%90 a crm:E52_Time_Span ;
+    rdfs:label "תצ\"א" .
+
+base:TimeSpan_%D7%AA%D7%A7%D7%99 a crm:E52_Time_Span ;
+    rdfs:label "תק\"י" .
+
+base:TimeSpan_%D7%AA%D7%A7%D7%9B%D7%98 a crm:E52_Time_Span ;
+    rdfs:label "תקכ\"ט" .
 
 base:TimeSpan_%D7%AA%D7%A7%D7%9C%D7%97 a crm:E52_Time_Span ;
     rdfs:label "תקל\"ח" .
@@ -2922,9 +2933,6 @@ base:TimeSpan_%D7%AA%D7%A7%D7%9E%D7%91 a crm:E52_Time_Span ;
 
 base:TimeSpan_%D7%AA%D7%A7%D7%A0%D7%90 a crm:E52_Time_Span ;
     rdfs:label "תקנ\"א" .
-
-base:TimeSpan_%D7%AA%D7%A8%D7%95 a crm:E52_Time_Span ;
-    rdfs:label "תר\"ו" .
 
 base:TimeSpan_%D7%AA%D7%A8%D7%97 a crm:E52_Time_Span ;
     rdfs:label "תר\"ח" .
@@ -2944,17 +2952,8 @@ base:TimeSpan_%D7%AA%D7%A8%D7%A2%D7%96 a crm:E52_Time_Span ;
 base:TimeSpan_%D7%AA%D7%A8%D7%A4%D7%91 a crm:E52_Time_Span ;
     rdfs:label "תרפ\"ב" .
 
-base:TimeSpan_%D7%AA%D7%A9%D7%92 a crm:E52_Time_Span ;
-    rdfs:label "תש\"ג" .
-
-base:TimeSpan_%D7%AA%D7%A9%D7%99%D7%92 a crm:E52_Time_Span ;
-    rdfs:label "תשי''ג" .
-
 base:TimeSpan_%D7%AA%D7%A9%D7%99%D7%98 a crm:E52_Time_Span ;
     rdfs:label "תשי\"ט" .
-
-base:TimeSpan_%D7%AA%D7%A9%D7%9B%D7%95 a crm:E52_Time_Span ;
-    rdfs:label "תשכ\"ו" .
 
 base:TimeSpan_%D7%AA%D7%A9%D7%9C a crm:E52_Time_Span ;
     rdfs:label "תש\"ל" .
@@ -2965,9 +2964,6 @@ base:TimeSpan_%D7%AA%D7%A9%D7%A2 a crm:E52_Time_Span ;
 base:TimeSpan_%D7%AA%D7%AA%D7%99%D7%91 a crm:E52_Time_Span ;
     rdfs:label "תתי\"ב" .
 
-base:TimeSpan_%D7%AA%D7%AA%D7%A7%D7%A0%D7%95 a crm:E52_Time_Span ;
-    rdfs:label "תתקנ\"ו" .
-
 base:TimeSpan_10.08.1964 a crm:E52_Time_Span ;
     rdfs:label "10.08.1964" .
 
@@ -2977,17 +2973,23 @@ base:TimeSpan_1294 a crm:E52_Time_Span ;
 base:TimeSpan_1347 a crm:E52_Time_Span ;
     rdfs:label "1347" .
 
+base:TimeSpan_1349 a crm:E52_Time_Span ;
+    rdfs:label "1349" .
+
+base:TimeSpan_1364 a crm:E52_Time_Span ;
+    rdfs:label "1364" .
+
+base:TimeSpan_1368 a crm:E52_Time_Span ;
+    rdfs:label "1368" .
+
 base:TimeSpan_1417 a crm:E52_Time_Span ;
     rdfs:label "1417" .
 
 base:TimeSpan_1450 a crm:E52_Time_Span ;
     rdfs:label "1450" .
 
-base:TimeSpan_1539 a crm:E52_Time_Span ;
-    rdfs:label "1539" .
-
-base:TimeSpan_1549 a crm:E52_Time_Span ;
-    rdfs:label "1549" .
+base:TimeSpan_1540 a crm:E52_Time_Span ;
+    rdfs:label "1540" .
 
 base:TimeSpan_1569 a crm:E52_Time_Span ;
     rdfs:label "1569" .
@@ -3004,6 +3006,9 @@ base:TimeSpan_1607 a crm:E52_Time_Span ;
 base:TimeSpan_1620 a crm:E52_Time_Span ;
     rdfs:label "1620" .
 
+base:TimeSpan_1635 a crm:E52_Time_Span ;
+    rdfs:label "1635" .
+
 base:TimeSpan_1644 a crm:E52_Time_Span ;
     rdfs:label "1644" .
 
@@ -3012,6 +3017,9 @@ base:TimeSpan_1652 a crm:E52_Time_Span ;
 
 base:TimeSpan_1653 a crm:E52_Time_Span ;
     rdfs:label "1653" .
+
+base:TimeSpan_1663 a crm:E52_Time_Span ;
+    rdfs:label "1663" .
 
 base:TimeSpan_1676 a crm:E52_Time_Span ;
     rdfs:label "1676" .
@@ -3024,6 +3032,9 @@ base:TimeSpan_1690 a crm:E52_Time_Span ;
 
 base:TimeSpan_1698_1707 a crm:E52_Time_Span ;
     rdfs:label "1698-1707" .
+
+base:TimeSpan_17 a crm:E52_Time_Span ;
+    rdfs:label "17" .
 
 base:TimeSpan_1731 a crm:E52_Time_Span ;
     rdfs:label "1731" .
@@ -3039,9 +3050,6 @@ base:TimeSpan_1905 a crm:E52_Time_Span ;
 
 base:TimeSpan_5361 a crm:E52_Time_Span ;
     rdfs:label "5361" .
-
-base:TimeSpan_5403 a crm:E52_Time_Span ;
-    rdfs:label "5403" .
 
 base:TimeSpan_5419 a crm:E52_Time_Span ;
     rdfs:label "5419" .
@@ -3064,23 +3072,20 @@ base:TimeSpan_5455 a crm:E52_Time_Span ;
 base:TimeSpan_5459 a crm:E52_Time_Span ;
     rdfs:label "5459" .
 
-base:TimeSpan_5460 a crm:E52_Time_Span ;
-    rdfs:label "5460" .
+base:TimeSpan_5519 a crm:E52_Time_Span ;
+    rdfs:label "5519" .
 
-base:TimeSpan_5555 a crm:E52_Time_Span ;
-    rdfs:label "5555" .
-
-base:TimeSpan_5556 a crm:E52_Time_Span ;
-    rdfs:label "5556" .
+base:TimeSpan_5587 a crm:E52_Time_Span ;
+    rdfs:label "5587" .
 
 base:TimeSpan_5595 a crm:E52_Time_Span ;
     rdfs:label "5595" .
 
+base:TimeSpan_5596 a crm:E52_Time_Span ;
+    rdfs:label "5596" .
+
 base:TimeSpan_5600 a crm:E52_Time_Span ;
     rdfs:label "5600" .
-
-base:TimeSpan_5_%D7%AA%D7%A9%D7%A8%D7%99 a crm:E52_Time_Span ;
-    rdfs:label "5 תשרי" .
 
 base:Work_%D7%90%D7%92%D7%A8%D7%95%D7%AA a lrmoo:F1_Work ;
     rdfs:label "אגרות"@he ;
@@ -3102,9 +3107,9 @@ base:Work_%D7%93%D7%A8%D7%A9%D7%95%D7%AA_%D7%A8%D7%91%D7%99%D7%A0%D7%95_%D7%A9%D
     rdfs:label "דרשות רבינו שלמה מולכו"@he ;
     hm:has_title "דרשות רבינו שלמה מולכו"@he .
 
-base:Work_%D7%94%D7%9C%D7%9B%D7%95%D7%AA_%D7%94%D7%A9%D7%99%D7%99%D7%9B%D7%95%D7%AA_%D7%9C%D7%97%D7%9C%D7%A7_%D7%90%D7%94_%D7%A2_%D7%9B%D7%95%D7%9C%D7%9C_%D7%94%D7%95%D7%A1%D7%A4%D7%95%D7%AA a lrmoo:F1_Work ;
-    rdfs:label "הלכות השייכות לחלק אה ע כולל הוספות"@he ;
-    hm:has_title "הלכות השייכות לחלק אה ע כולל הוספות"@he .
+base:Work_%D7%94%D7%9C%D7%9B%D7%95%D7%AA_%D7%94%D7%A9%D7%99%D7%99%D7%9B%D7%95%D7%AA_%D7%9C%D7%97%D7%9C%D7%A7_%D7%90%D7%94_%D7%A2 a lrmoo:F1_Work ;
+    rdfs:label "הלכות השייכות לחלק אה ע"@he ;
+    hm:has_title "הלכות השייכות לחלק אה ע"@he .
 
 base:Work_%D7%94%D7%9C%D7%9B%D7%95%D7%AA_%D7%9E%D7%AA%D7%A0%D7%AA_%D7%A2%D7%A0%D7%99%D7%99%D7%9D a lrmoo:F1_Work ;
     rdfs:label "הלכות מתנת עניים"@he ;
@@ -3154,6 +3159,10 @@ base:Work_%D7%9B%D7%AA%D7%A0%D7%95%D7%AA_%D7%90%D7%95%D7%A8 a lrmoo:F1_Work ;
     rdfs:label "כתנות אור"@he ;
     hm:has_title "כתנות אור"@he .
 
+base:Work_%D7%9C%D7%99%D7%95%D7%9D_%D7%90_%D7%A9%D7%9C_%D7%A1%D7%95%D7%9B%D7%95%D7%AA_%D7%94%D7%A9%D7%A6%D7%94 a lrmoo:F1_Work ;
+    rdfs:label "ליום א' של סוכות השצ\"ה"@he ;
+    hm:has_title "ליום א' של סוכות השצ\"ה"@he .
+
 base:Work_%D7%9E%D7%92%D7%99%D7%93_%D7%9E%D7%99%D7%A9%D7%A8%D7%99%D7%9D a lrmoo:F1_Work ;
     rdfs:label "מגיד מישרים"@he ;
     hm:has_title "מגיד מישרים"@he .
@@ -3162,6 +3171,10 @@ base:Work_%D7%9E%D7%92%D7%99%D7%9C%D7%AA_%D7%A9%D7%99%D7%A8_%D7%94%D7%A9%D7%99%D
     rdfs:label "מגילת שיר השירים"@he ;
     hm:has_title "מגילת שיר השירים"@he .
 
+base:Work_%D7%9E%D7%92%D7%9C%D7%95%D7%AA_%D7%90%D7%99%D7%9B%D7%94 a lrmoo:F1_Work ;
+    rdfs:label "מגלות איכה"@he ;
+    hm:has_title "מגלות איכה"@he .
+
 base:Work_%D7%9E%D7%92%D7%9C%D7%AA_%D7%A8%D7%95%D7%AA a lrmoo:F1_Work ;
     rdfs:label "מגלת רות"@he ;
     hm:has_title "מגלת רות"@he .
@@ -3169,6 +3182,10 @@ base:Work_%D7%9E%D7%92%D7%9C%D7%AA_%D7%A8%D7%95%D7%AA a lrmoo:F1_Work ;
 base:Work_%D7%9E%D7%93%D7%A8%D7%A9 a lrmoo:F1_Work ;
     rdfs:label "מדרש"@he ;
     hm:has_title "מדרש"@he .
+
+base:Work_%D7%9E%D7%93%D7%A8%D7%A9_%D7%90%D7%92%D7%93%D7%94 a lrmoo:F1_Work ;
+    rdfs:label "מדרש אגדה"@he ;
+    hm:has_title "מדרש אגדה"@he .
 
 base:Work_%D7%9E%D7%93%D7%A8%D7%A9_%D7%94%D7%92%D7%93%D7%95%D7%9C a lrmoo:F1_Work ;
     rdfs:label "מדרש הגדול"@he ;
@@ -3186,9 +3203,9 @@ base:Work_%D7%9E%D7%96%D7%9B%D7%94_%D7%94%D7%A8%D7%91%D7%99%D7%9D a lrmoo:F1_Wor
     rdfs:label "מזכה הרבים"@he ;
     hm:has_title "מזכה הרבים"@he .
 
-base:Work_%D7%9E%D7%97%D7%96%D7%95%D7%A8%D7%99%D7%9D a lrmoo:F1_Work ;
-    rdfs:label "מחזורים"@he ;
-    hm:has_title "מחזורים"@he .
+base:Work_%D7%9E%D7%9C%D7%95%D7%9F_%D7%9C%D7%97%D7%A8%D7%95%D7%96%D7%99%D7%9D a lrmoo:F1_Work ;
+    rdfs:label "מלון לחרוזים"@he ;
+    hm:has_title "מלון לחרוזים"@he .
 
 base:Work_%D7%9E%D7%9C%D7%95%D7%9F_%D7%A2%D7%91%D7%A8%D7%99-%D7%90%D7%99%D7%98%D7%9C%D7%A7%D7%99_%D7%A9%D7%9C_%D7%9E%D7%9C%D7%99%D7%9D_%D7%9E%D7%A7%D7%A8%D7%90%D7%99%D7%95%D7%AA a lrmoo:F1_Work ;
     rdfs:label "מלון עברי-איטלקי של מלים מקראיות"@he ;
@@ -3197,10 +3214,6 @@ base:Work_%D7%9E%D7%9C%D7%95%D7%9F_%D7%A2%D7%91%D7%A8%D7%99-%D7%90%D7%99%D7%98%D
 base:Work_%D7%9E%D7%A2%D7%99%D7%A8%D7%99_%D7%A9%D7%97%D7%A8 a lrmoo:F1_Work ;
     rdfs:label "מעירי שחר"@he ;
     hm:has_title "מעירי שחר"@he .
-
-base:Work_%D7%9E%D7%A7%D7%A8%D7%90_%D7%A4%D7%A8%D7%A9%D7%A0%D7%95%D7%AA_%D7%9B%D7%AA%D7%95%D7%91%D7%99%D7%9D_%D7%9E%D7%92%D7%9C%D7%95%D7%AA_%D7%90%D7%99%D7%9B%D7%94 a lrmoo:F1_Work ;
-    rdfs:label "מקרא פרשנות כתובים מגלות איכה"@he ;
-    hm:has_title "מקרא פרשנות כתובים מגלות איכה"@he .
 
 base:Work_%D7%9E%D7%A7%D7%A8%D7%90_%D7%A4%D7%A8%D7%A9%D7%A0%D7%95%D7%AA_%D7%A0%D7%91%D7%99%D7%90%D7%99%D7%9D a lrmoo:F1_Work ;
     rdfs:label "מקרא פרשנות נביאים"@he ;
@@ -3218,13 +3231,13 @@ base:Work_%D7%A0%D7%A4%D7%A9_%D7%94%D7%92%D7%A8 a lrmoo:F1_Work ;
     rdfs:label "נפש הגר"@he ;
     hm:has_title "נפש הגר"@he .
 
-base:Work_%D7%A1%D7%93%D7%A8_%D7%94%D7%90%D7%A9%D7%9E%D7%95%D7%A8%D7%95%D7%AA_%D7%9E%D7%9B%D7%9C_%D7%97%D7%93%D7%A9_%D7%90%D7%9C%D7%95%D7%9C_%D7%95%D7%A2%D7%A9%D7%A8%D7%AA_%D7%99%D7%9E%D7%99_%D7%AA%D7%A9%D7%95%D7%91%D7%94 a lrmoo:F1_Work ;
-    rdfs:label "סדר האשמורות מכל חדש אלול ועשרת ימי תשובה"@he ;
-    hm:has_title "סדר האשמורות מכל חדש אלול ועשרת ימי תשובה"@he .
-
 base:Work_%D7%A1%D7%93%D7%A8_%D7%94%D7%90%D7%A9%D7%9E%D7%95%D7%A8%D7%95%D7%AA_%D7%9E%D7%A2%D7%A9%D7%A8%D7%AA_%D7%99%D7%9E%D7%99_%D7%AA%D7%A9%D7%95%D7%91%D7%94 a lrmoo:F1_Work ;
     rdfs:label "סדר האשמורות מעשרת ימי תשובה"@he ;
     hm:has_title "סדר האשמורות מעשרת ימי תשובה"@he .
+
+base:Work_%D7%A1%D7%93%D7%A8_%D7%94%D7%90%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%9E%D7%9B%D7%9C_%D7%97%D7%93%D7%A9_%D7%90%D7%9C%D7%95%D7%9C_%D7%95%D7%A2%D7%A9%D7%A8%D7%AA_%D7%99%D7%9E%D7%99_%D7%AA%D7%A9%D7%95%D7%91%D7%94 a lrmoo:F1_Work ;
+    rdfs:label "סדר האשמורת מכל חדש אלול ועשרת ימי תשובה"@he ;
+    hm:has_title "סדר האשמורת מכל חדש אלול ועשרת ימי תשובה"@he .
 
 base:Work_%D7%A1%D7%93%D7%A8_%D7%94%D7%AA%D7%A4%D7%9C%D7%95%D7%AA_%D7%9B%D7%9E%D7%A0%D7%94%D7%92_%D7%94%D7%A1%D7%A4%D7%A8%D7%93%D7%99%D7%9D a lrmoo:F1_Work ;
     rdfs:label "סדר התפלות כמנהג הספרדים"@he ;
@@ -3290,10 +3303,6 @@ base:Work_%D7%A2%D7%A5_%D7%97%D7%99%D7%99%D7%9D a lrmoo:F1_Work ;
     rdfs:label "עץ חיים"@he ;
     hm:has_title "עץ חיים"@he .
 
-base:Work_%D7%A2%D7%A8%D7%9E%D7%AA_%D7%97%D7%98%D7%99%D7%9D a lrmoo:F1_Work ;
-    rdfs:label "ערמת חטים"@he ;
-    hm:has_title "ערמת חטים"@he .
-
 base:Work_%D7%A4%D7%99%D7%9C%D7%95%D7%A1%D7%95%D7%A4%D7%99%D7%94_%D7%99%D7%94%D7%95%D7%93%D7%99%D7%AA a lrmoo:F1_Work ;
     rdfs:label "פילוסופיה יהודית"@he ;
     hm:has_title "פילוסופיה יהודית"@he .
@@ -3313,10 +3322,6 @@ base:Work_%D7%A4%D7%A8%D7%A9%D7%A0%D7%95%D7%AA_%D7%AA%D7%95%D7%A8%D7%94_%28%D7%A
 base:Work_%D7%A6%D7%9E%D7%97_%D7%93%D7%95%D7%93 a lrmoo:F1_Work ;
     rdfs:label "צמח דוד"@he ;
     hm:has_title "צמח דוד"@he .
-
-base:Work_%D7%A7%D7%91%D7%9C%D7%94 a lrmoo:F1_Work ;
-    rdfs:label "קבלה"@he ;
-    hm:has_title "קבלה"@he .
 
 base:Work_%D7%A9%D7%99%D7%A8_%D7%94%D7%99%D7%97%D7%95%D7%93 a lrmoo:F1_Work ;
     rdfs:label "שיר היחוד"@he ;
@@ -3395,8 +3400,15 @@ base:MS_990000788440205171 a lrmoo:F4_Manifestation_Singleton,
     rdfs:label "Manuscript \"990000788440205171\""@en,
         "כתב יד \"990000788440205171\""@he ;
     lrmoo:R4_embodies base:Expression_%D7%A1%D7%A4%D7%A8_%D7%90%D7%9C%D7%A4%D7%96%D7%A8%D7%99%D7%99%D7%90_%D7%94%D7%97%D7%9B%D7%9D_MS_990000788440205171 ;
-    crm:P1_is_identified_by "\"990000788440205171\""^^xsd:string ;
-    hm:has_colophon base:MS_990000788440205171_Colophon .
+    crm:P1_is_identified_by "\"990000788440205171\""^^xsd:string .
+
+base:MS_990000829170205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990000829170205171\""@en,
+        "כתב יד \"990000829170205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%A4%D7%A8%D7%A7%D7%99_%D7%9E%D7%A9%D7%94_MS_990000829170205171 ;
+    crm:P1_is_identified_by "\"990000829170205171\""^^xsd:string ;
+    hm:has_colophon base:MS_990000829170205171_Colophon .
 
 base:MS_990000893610205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -3430,6 +3442,13 @@ base:MS_990001039990205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990001039990205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001039990205171_Colophon .
 
+base:MS_990001084690205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990001084690205171\""@en,
+        "כתב יד \"990001084690205171\""@he ;
+    crm:P1_is_identified_by "\"990001084690205171\""^^xsd:string ;
+    hm:has_colophon base:MS_990001084690205171_Colophon .
+
 base:MS_990001085960205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
     rdfs:label "Manuscript \"990001085960205171\""@en,
@@ -3450,6 +3469,21 @@ base:MS_990001119980205171 a lrmoo:F4_Manifestation_Singleton,
     rdfs:label "Manuscript \"990001119980205171\""@en,
         "כתב יד \"990001119980205171\""@he ;
     crm:P1_is_identified_by "\"990001119980205171\""^^xsd:string .
+
+base:MS_990001121720205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990001121720205171\""@en,
+        "כתב יד \"990001121720205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%9E%D7%93%D7%A8%D7%A9_%D7%90%D7%92%D7%93%D7%94_MS_990001121720205171 ;
+    crm:P1_is_identified_by "\"990001121720205171\""^^xsd:string ;
+    hm:has_colophon base:MS_990001121720205171_Colophon .
+
+base:MS_990001326670205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990001326670205171\""@en,
+        "כתב יד \"990001326670205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%9B%D7%A0%D7%A3_%D7%A8%D7%A0%D7%A0%D7%99%D7%9D_%D7%A2%D7%9C_%D7%A9%D7%99%D7%A8_%D7%94%D7%A9%D7%99%D7%A8%D7%99%D7%9D_MS_990001326670205171 ;
+    crm:P1_is_identified_by "\"990001326670205171\""^^xsd:string .
 
 base:MS_990001376840205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -3475,6 +3509,13 @@ base:MS_990001679060205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990001679060205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001679060205171_Colophon .
 
+base:MS_990001831070205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990001831070205171\""@en,
+        "כתב יד \"990001831070205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%A1%D7%93%D7%A8_%D7%94%D7%90%D7%A9%D7%9E%D7%95%D7%A8%D7%95%D7%AA_%D7%9E%D7%A2%D7%A9%D7%A8%D7%AA_%D7%99%D7%9E%D7%99_%D7%AA%D7%A9%D7%95%D7%91%D7%94_MS_990001831070205171 ;
+    crm:P1_is_identified_by "\"990001831070205171\""^^xsd:string .
+
 base:MS_990025916610205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
     rdfs:label "Manuscript \"990025916610205171\""@en,
@@ -3496,9 +3537,6 @@ base:MS_990032575610205171 a lrmoo:F4_Manifestation_Singleton,
         "כתב יד \"990032575610205171\""@he ;
     crm:P1_is_identified_by "\"990032575610205171\""^^xsd:string ;
     hm:has_colophon base:MS_990032575610205171_Colophon .
-
-base:Place_%D7%90%D7%95%D7%99%D7%92%D7%A0%D7%99%D7%95%D7%9F a crm:E53_Place ;
-    rdfs:label "אויגניון"@he .
 
 base:Place_%D7%91%D7%95%D7%93%D7%A4%D7%A9%D7%98 a crm:E53_Place ;
     rdfs:label "בודפשט"@he .
@@ -3530,34 +3568,39 @@ base:Place_%D7%A4%D7%A8%D7%90%D7%92 a crm:E53_Place ;
 base:Place_Amsterdam a crm:E53_Place ;
     rdfs:label "Amsterdam"@he .
 
+base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%9C a crm:E52_Time_Span ;
+    rdfs:label "אתתק\"ל",
+        "אתתקל" .
+
+base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%A0%D7%95 a crm:E52_Time_Span ;
+    rdfs:label "א'תתקנ\"ו",
+        "אתתקנו" .
+
 base:TimeSpan_%D7%90%D7%AA%D7%AA%D7%A7%D7%A1%D7%91 a crm:E52_Time_Span ;
     rdfs:label "א'תתקס\"ב" .
+
+base:TimeSpan_%D7%94%D7%AA%D7%9E%D7%96 a crm:E52_Time_Span ;
+    rdfs:label "התמ\"ז" .
 
 base:TimeSpan_%D7%A9%D7%A2%D7%96 a crm:E52_Time_Span ;
     rdfs:label "ש'ע'ז'",
         "שעז" .
 
-base:TimeSpan_%D7%A9%D7%A4%D7%98 a crm:E52_Time_Span ;
-    rdfs:label "שפ\"ט",
-        "שפט" .
+base:TimeSpan_%D7%AA%D7%98%D7%95 a crm:E52_Time_Span ;
+    rdfs:label "תט\"ו" .
 
-base:TimeSpan_%D7%AA%D7%94 a crm:E52_Time_Span ;
-    rdfs:label "ת\"ה" .
-
-base:TimeSpan_%D7%AA%D7%9B%D7%99%D7%98 a crm:E52_Time_Span ;
-    rdfs:label "תכיט" .
+base:TimeSpan_%D7%AA%D7%9B%D7%98 a crm:E52_Time_Span ;
+    rdfs:label "תכ\"ט",
+        "תכט" .
 
 base:TimeSpan_%D7%AA%D7%9E%D7%96 a crm:E52_Time_Span ;
     rdfs:label "תמ\"ז" .
 
+base:TimeSpan_%D7%AA%D7%A0%D7%91 a crm:E52_Time_Span ;
+    rdfs:label "תנ\"ב" .
+
 base:TimeSpan_%D7%AA%D7%A9%D7%A1%D7%97 a crm:E52_Time_Span ;
     rdfs:label "תשס\"ח" .
-
-base:TimeSpan_1368 a crm:E52_Time_Span ;
-    rdfs:label "1368" .
-
-base:TimeSpan_1618 a crm:E52_Time_Span ;
-    rdfs:label "1618" .
 
 base:TimeSpan_1662 a crm:E52_Time_Span ;
     rdfs:label "1662" .
@@ -3578,8 +3621,10 @@ base:Work_%D7%A1%D7%93%D7%95%D7%A8 a lrmoo:F1_Work ;
     hm:has_title "סדור"@he .
 
 base:Work_%D7%A4%D7%99%D7%A8%D7%95%D7%A9_%D7%A8%D7%A9%D7%99_%D7%A2%D7%9C_%D7%97%D7%9E%D7%A9%D7%94_%D7%97%D7%95%D7%9E%D7%A9%D7%99_%D7%AA%D7%95%D7%A8%D7%94 a lrmoo:F1_Work ;
-    rdfs:label "פירוש רש\"י על חמשה חומשי תורה"@he ;
-    hm:has_title "פירוש רש\"י על חמשה חומשי תורה"@he .
+    rdfs:label "פירוש רש\"י על חמשה חומשי תורה"@he,
+        "פירוש רשי על חמשה חומשי תורה"@he ;
+    hm:has_title "פירוש רש\"י על חמשה חומשי תורה"@he,
+        "פירוש רשי על חמשה חומשי תורה"@he .
 
 base:MS_990000633510205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -3634,12 +3679,21 @@ base:MS_990001022860205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990001022860205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001022860205171_Colophon .
 
-base:MS_990001084690205171 a lrmoo:F4_Manifestation_Singleton,
+base:MS_990001022880205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990001084690205171\""@en,
-        "כתב יד \"990001084690205171\""@he ;
-    crm:P1_is_identified_by "\"990001084690205171\""^^xsd:string ;
-    hm:has_colophon base:MS_990001084690205171_Colophon .
+    rdfs:label "Manuscript \"990001022880205171\""@en,
+        "כתב יד \"990001022880205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%9E%D7%93%D7%A8%D7%A9_%D7%A8%D7%A9%D7%99_MS_990001022880205171 ;
+    crm:P1_is_identified_by "\"990001022880205171\""^^xsd:string ;
+    hm:has_colophon base:MS_990001022880205171_Colophon .
+
+base:MS_990001065130205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990001065130205171\""@en,
+        "כתב יד \"990001065130205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%A1%D7%93%D7%A8_%D7%94%D7%90%D7%A9%D7%9E%D7%95%D7%A8%D7%AA_%D7%9E%D7%9B%D7%9C_%D7%97%D7%93%D7%A9_%D7%90%D7%9C%D7%95%D7%9C_%D7%95%D7%A2%D7%A9%D7%A8%D7%AA_%D7%99%D7%9E%D7%99_%D7%AA%D7%A9%D7%95%D7%91%D7%94_MS_990001065130205171 ;
+    crm:P1_is_identified_by "\"990001065130205171\""^^xsd:string ;
+    hm:has_colophon base:MS_990001065130205171_Colophon .
 
 base:MS_990001248200205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -3676,7 +3730,6 @@ base:MS_990001709250205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
     rdfs:label "Manuscript \"990001709250205171\""@en,
         "כתב יד \"990001709250205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%A7%D7%91%D7%9C%D7%94_MS_990001709250205171 ;
     crm:P1_is_identified_by "\"990001709250205171\""^^xsd:string .
 
 base:MS_990001785380205171 a lrmoo:F4_Manifestation_Singleton,
@@ -3711,14 +3764,14 @@ base:MS_990025934540205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990025934540205171\""^^xsd:string ;
     hm:has_colophon base:MS_990025934540205171_Colophon .
 
-base:Place_%D7%9C%D7%95%D7%A0%D7%93%D7%95%D7%9F a crm:E53_Place ;
-    rdfs:label "לונדון"@he .
-
-base:TimeSpan_%D7%A9%D7%A6%D7%95 a crm:E52_Time_Span ;
-    rdfs:label "שצ\"ו" .
+base:TimeSpan_%D7%AA%D7%94 a crm:E52_Time_Span ;
+    rdfs:label "ת\"ה" .
 
 base:TimeSpan_%D7%AA%D7%A8%D7%A1%D7%95 a crm:E52_Time_Span ;
     rdfs:label "תרס\"ו" .
+
+base:TimeSpan_1618 a crm:E52_Time_Span ;
+    rdfs:label "1618" .
 
 base:Work_%D7%9E%D7%92%D7%99%D7%9C%D7%AA_%D7%90%D7%A1%D7%AA%D7%A8 a lrmoo:F1_Work ;
     rdfs:label "מגילת אסתר"@he ;
@@ -3760,14 +3813,6 @@ base:MS_990000828230205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990000828230205171\""^^xsd:string ;
     hm:has_colophon base:MS_990000828230205171_Colophon .
 
-base:MS_990001065130205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990001065130205171\""@en,
-        "כתב יד \"990001065130205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%A1%D7%93%D7%A8_%D7%94%D7%90%D7%A9%D7%9E%D7%95%D7%A8%D7%95%D7%AA_%D7%9E%D7%9B%D7%9C_%D7%97%D7%93%D7%A9_%D7%90%D7%9C%D7%95%D7%9C_%D7%95%D7%A2%D7%A9%D7%A8%D7%AA_%D7%99%D7%9E%D7%99_%D7%AA%D7%A9%D7%95%D7%91%D7%94_MS_990001065130205171 ;
-    crm:P1_is_identified_by "\"990001065130205171\""^^xsd:string ;
-    hm:has_colophon base:MS_990001065130205171_Colophon .
-
 base:MS_990001078470205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
     rdfs:label "Manuscript \"990001078470205171\""@en,
@@ -3776,12 +3821,13 @@ base:MS_990001078470205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990001078470205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001078470205171_Colophon .
 
-base:MS_990001800810205171 a lrmoo:F4_Manifestation_Singleton,
+base:MS_990001189730205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990001800810205171\""@en,
-        "כתב יד \"990001800810205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%90%D7%92%D7%A8%D7%AA_%D7%9E%D7%A2%D7%9C%D7%AA_%D7%94%D7%97%D7%9B%D7%9D_MS_990001800810205171 ;
-    crm:P1_is_identified_by "\"990001800810205171\""^^xsd:string .
+    rdfs:label "Manuscript \"990001189730205171\""@en,
+        "כתב יד \"990001189730205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%9E%D7%A4%D7%AA%D7%97%D7%95%D7%AA_%D7%94%D7%96%D7%95%D7%94%D7%A8_MS_990001189730205171 ;
+    crm:P1_is_identified_by "\"990001189730205171\""^^xsd:string ;
+    hm:has_colophon base:MS_990001189730205171_Colophon .
 
 base:MS_990001983850205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -3790,6 +3836,14 @@ base:MS_990001983850205171 a lrmoo:F4_Manifestation_Singleton,
     lrmoo:R4_embodies base:Expression_%D7%A1%D7%93%D7%A8_%D7%A9%D7%9C_%D7%A9%D7%9C%D7%95%D7%A9_%D7%A8%D7%92%D7%9C%D7%99%D7%9D_MS_990001983850205171 ;
     crm:P1_is_identified_by "\"990001983850205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001983850205171_Colophon .
+
+base:MS_990035044030205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990035044030205171\""@en,
+        "כתב יד \"990035044030205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%A1%D7%A4%D7%A8_%D7%94%D7%97%D7%A8%D7%95%D7%96%D7%99%D7%9D_MS_990035044030205171 ;
+    crm:P1_is_identified_by "\"990035044030205171\""^^xsd:string ;
+    hm:has_colophon base:MS_990035044030205171_Colophon .
 
 base:MS_990035802410205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -3807,11 +3861,17 @@ base:MS_990036191450205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990036191450205171\""^^xsd:string ;
     hm:has_colophon base:MS_990036191450205171_Colophon .
 
+base:Place_%D7%9C%D7%95%D7%A0%D7%93%D7%95%D7%9F a crm:E53_Place ;
+    rdfs:label "לונדון"@he .
+
 base:Place_%D7%9E%D7%A0%D7%98%D7%95%D7%91%D7%94 a crm:E53_Place ;
     rdfs:label "מנטובה"@he .
 
 base:Place_%D7%A7%D7%A8%D7%A4%D7%A0%D7%98%D7%A8%D7%A5 a crm:E53_Place ;
     rdfs:label "קרפנטרץ"@he .
+
+base:TimeSpan_%D7%A9%D7%A6%D7%95 a crm:E52_Time_Span ;
+    rdfs:label "שצ\"ו" .
 
 base:MS_990000666370205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -3829,12 +3889,12 @@ base:MS_990001188700205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990001188700205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001188700205171_Colophon .
 
-base:MS_990001780340205171 a lrmoo:F4_Manifestation_Singleton,
+base:MS_990001800810205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990001780340205171\""@en,
-        "כתב יד \"990001780340205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%97%D7%93%D7%95%D7%A9%D7%99%D7%9F_MS_990001780340205171 ;
-    crm:P1_is_identified_by "\"990001780340205171\""^^xsd:string .
+    rdfs:label "Manuscript \"990001800810205171\""@en,
+        "כתב יד \"990001800810205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%90%D7%92%D7%A8%D7%AA_%D7%9E%D7%A2%D7%9C%D7%AA_%D7%94%D7%97%D7%9B%D7%9D_MS_990001800810205171 ;
+    crm:P1_is_identified_by "\"990001800810205171\""^^xsd:string .
 
 base:MS_990001827620205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -3852,6 +3912,22 @@ base:MS_990000667860205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990000667860205171\""^^xsd:string ;
     hm:has_colophon base:MS_990000667860205171_Colophon .
 
+base:MS_990000856010205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990000856010205171\""@en,
+        "כתב יד \"990000856010205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%AA%D7%99%D7%A7%D7%95%D7%9F_%D7%A2%D7%96%D7%A8%D7%90_MS_990000856010205171 ;
+    crm:P1_is_identified_by "\"990000856010205171\""^^xsd:string ;
+    hm:has_colophon base:MS_990000856010205171_Colophon .
+
+base:MS_990000885660205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990000885660205171\""@en,
+        "כתב יד \"990000885660205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%A6%D7%9E%D7%97_%D7%93%D7%95%D7%93_MS_990000885660205171 ;
+    crm:P1_is_identified_by "\"990000885660205171\""^^xsd:string ;
+    hm:has_colophon base:MS_990000885660205171_Colophon .
+
 base:MS_990000825080205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
     rdfs:label "Manuscript \"990000825080205171\""@en,
@@ -3866,35 +3942,11 @@ base:MS_990000831830205171 a lrmoo:F4_Manifestation_Singleton,
         "כתב יד \"990000831830205171\""@he ;
     crm:P1_is_identified_by "\"990000831830205171\""^^xsd:string .
 
-base:MS_990000885660205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990000885660205171\""@en,
-        "כתב יד \"990000885660205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%A6%D7%9E%D7%97_%D7%93%D7%95%D7%93_MS_990000885660205171 ;
-    crm:P1_is_identified_by "\"990000885660205171\""^^xsd:string ;
-    hm:has_colophon base:MS_990000885660205171_Colophon .
-
-base:MS_990035044030205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990035044030205171\""@en,
-        "כתב יד \"990035044030205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%A1%D7%A4%D7%A8_%D7%94%D7%97%D7%A8%D7%95%D7%96%D7%99%D7%9D_MS_990035044030205171 ;
-    crm:P1_is_identified_by "\"990035044030205171\""^^xsd:string ;
-    hm:has_colophon base:MS_990035044030205171_Colophon .
-
-base:MS_990000856010205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990000856010205171\""@en,
-        "כתב יד \"990000856010205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%AA%D7%99%D7%A7%D7%95%D7%9F_%D7%A2%D7%96%D7%A8%D7%90_MS_990000856010205171 ;
-    crm:P1_is_identified_by "\"990000856010205171\""^^xsd:string ;
-    hm:has_colophon base:MS_990000856010205171_Colophon .
-
 base:MS_990001124870205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
     rdfs:label "Manuscript \"990001124870205171\""@en,
         "כתב יד \"990001124870205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%94%D7%9C%D7%9B%D7%95%D7%AA_%D7%94%D7%A9%D7%99%D7%99%D7%9B%D7%95%D7%AA_%D7%9C%D7%97%D7%9C%D7%A7_%D7%90%D7%94_%D7%A2_%D7%9B%D7%95%D7%9C%D7%9C_%D7%94%D7%95%D7%A1%D7%A4%D7%95%D7%AA_MS_990001124870205171 ;
+    lrmoo:R4_embodies base:Expression_%D7%94%D7%9C%D7%9B%D7%95%D7%AA_%D7%94%D7%A9%D7%99%D7%99%D7%9B%D7%95%D7%AA_%D7%9C%D7%97%D7%9C%D7%A7_%D7%90%D7%94_%D7%A2_MS_990001124870205171 ;
     crm:P1_is_identified_by "\"990001124870205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001124870205171_Colophon .
 
@@ -3914,14 +3966,6 @@ base:MS_990000792030205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990000792030205171\""^^xsd:string ;
     hm:has_colophon base:MS_990000792030205171_Colophon .
 
-base:MS_990000958680205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990000958680205171\""@en,
-        "כתב יד \"990000958680205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%A1%D7%A4%D7%A8_%D7%94%D7%A9%D7%A0%D7%95%D7%99%D7%99%D7%9D_%D7%94%D7%A0%D7%9E%D7%A6%D7%90%D7%99%D7%9D_%D7%91%D7%AA%D7%A8%D7%92%D7%95%D7%9D_%D7%9E%D7%A9%D7%9C%D7%A9%D7%94_%D7%9E%D7%A7%D7%A8%D7%90%D7%95%D7%AA_%D7%92%D7%93%D7%95%D7%9C%D7%95%D7%AA_MS_990000958680205171 ;
-    crm:P1_is_identified_by "\"990000958680205171\""^^xsd:string ;
-    hm:has_colophon base:MS_990000958680205171_Colophon .
-
 base:MS_990001197830205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
     rdfs:label "Manuscript \"990001197830205171\""@en,
@@ -3930,16 +3974,27 @@ base:MS_990001197830205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990001197830205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001197830205171_Colophon .
 
+base:MS_990001780340205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990001780340205171\""@en,
+        "כתב יד \"990001780340205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%97%D7%93%D7%95%D7%A9%D7%99%D7%9F_MS_990001780340205171 ;
+    crm:P1_is_identified_by "\"990001780340205171\""^^xsd:string .
+
+base:MS_990000958680205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990000958680205171\""@en,
+        "כתב יד \"990000958680205171\""@he ;
+    lrmoo:R4_embodies base:Expression_%D7%A1%D7%A4%D7%A8_%D7%94%D7%A9%D7%A0%D7%95%D7%99%D7%99%D7%9D_%D7%94%D7%A0%D7%9E%D7%A6%D7%90%D7%99%D7%9D_%D7%91%D7%AA%D7%A8%D7%92%D7%95%D7%9D_%D7%9E%D7%A9%D7%9C%D7%A9%D7%94_%D7%9E%D7%A7%D7%A8%D7%90%D7%95%D7%AA_%D7%92%D7%93%D7%95%D7%9C%D7%95%D7%AA_MS_990000958680205171 ;
+    crm:P1_is_identified_by "\"990000958680205171\""^^xsd:string ;
+    hm:has_colophon base:MS_990000958680205171_Colophon .
+
 base:MS_990001855990205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
     rdfs:label "Manuscript \"990001855990205171\""@en,
         "כתב יד \"990001855990205171\""@he ;
-    lrmoo:R4_embodies base:Expression_%D7%9E%D7%97%D7%96%D7%95%D7%A8%D7%99%D7%9D_MS_990001855990205171 ;
     crm:P1_is_identified_by "\"990001855990205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001855990205171_Colophon .
-
-base:Place_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D a crm:E53_Place ;
-    rdfs:label "ירושלים"@he .
 
 base:MS_990001361140205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -3948,6 +4003,9 @@ base:MS_990001361140205171 a lrmoo:F4_Manifestation_Singleton,
     lrmoo:R4_embodies base:Expression_%D7%A1%D7%93%D7%95%D7%A8_MS_990001361140205171 ;
     crm:P1_is_identified_by "\"990001361140205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001361140205171_Colophon .
+
+base:Place_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D a crm:E53_Place ;
+    rdfs:label "ירושלים"@he .
 
 base:MS_990027840460205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;

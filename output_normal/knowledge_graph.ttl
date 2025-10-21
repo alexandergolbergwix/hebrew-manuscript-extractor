@@ -5,11 +5,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-base:MS_990000463550205171_active_Event a crm:E7_Activity ;
-    rdfs:label "active of MS \"990000463550205171\""@en ;
-    crm:P16_used_specific_object base:MS_990000463550205171 ;
-    crm:P7_took_place_at base:Place_%D7%A4%D7%95%D7%9C%D7%99%D7%9F .
-
 base:MS_990000463550205171_preserved_Event a crm:E7_Activity ;
     rdfs:label "preserved of MS \"990000463550205171\""@en ;
     crm:P16_used_specific_object base:MS_990000463550205171 ;
@@ -17,6 +12,11 @@ base:MS_990000463550205171_preserved_Event a crm:E7_Activity ;
 
 base:MS_990000463550205171_production_place_Event a crm:E12_Production ;
     rdfs:label "production place of MS \"990000463550205171\""@en ;
+    crm:P16_used_specific_object base:MS_990000463550205171 ;
+    crm:P7_took_place_at base:Place_%D7%A4%D7%95%D7%9C%D7%99%D7%9F .
+
+base:MS_990000463550205171_resided_Event a crm:E7_Activity ;
+    rdfs:label "resided of MS \"990000463550205171\""@en ;
     crm:P16_used_specific_object base:MS_990000463550205171 ;
     crm:P7_took_place_at base:Place_%D7%A4%D7%A8%D7%A0%D7%A7%D7%A4%D7%95%D7%A8%D7%98_%D7%93%D7%9E%D7%99%D7%99%D7%9F .
 
@@ -87,12 +87,12 @@ base:MS_990000634000205171_mentioned_place_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990000634000205171 ;
     crm:P7_took_place_at base:Place_%D7%AA%D7%99%D7%9E%D7%9F .
 
-base:MS_990000653720205171_production_place_Event a crm:E12_Production ;
-    rdfs:label "production place of MS \"990000653720205171\""@en ;
+base:MS_990000653720205171_mentioned_place_Event a crm:E7_Activity ;
+    rdfs:label "mentioned place of MS \"990000653720205171\""@en ;
     crm:P16_used_specific_object base:MS_990000653720205171 ;
     crm:P7_took_place_at base:Place_%D7%90%D7%9C%D7%99%D7%A7%D7%99%D7%9D .
 
-base:MS_990000653720205171_production_place_Event_1 a crm:E12_Production ;
+base:MS_990000653720205171_production_place_Event a crm:E12_Production ;
     rdfs:label "production place of MS \"990000653720205171\""@en ;
     crm:P16_used_specific_object base:MS_990000653720205171 ;
     crm:P7_took_place_at base:Place_%D7%A4%D7%A8%D7%90%D7%92 .
@@ -104,8 +104,8 @@ base:MS_990000655210205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990000655210205171\""^^xsd:string ;
     hm:has_colophon base:MS_990000655210205171_Colophon .
 
-base:MS_990000666370205171_preserved_Event a crm:E7_Activity ;
-    rdfs:label "preserved of MS \"990000666370205171\""@en ;
+base:MS_990000666370205171_press_location_Event a crm:E7_Activity ;
+    rdfs:label "press location of MS \"990000666370205171\""@en ;
     crm:P16_used_specific_object base:MS_990000666370205171 ;
     crm:P7_took_place_at base:Place_%D7%90%D7%95%D7%A7%D7%A1%D7%A4%D7%95%D7%A8%D7%93 .
 
@@ -157,18 +157,18 @@ base:MS_990000788440205171_published_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990000788440205171 ;
     crm:P7_took_place_at base:Place_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D .
 
-base:MS_990000792030205171_mentioned_place_Event a crm:E7_Activity ;
-    rdfs:label "mentioned place of MS \"990000792030205171\""@en ;
-    crm:P16_used_specific_object base:MS_990000792030205171 ;
-    crm:P7_took_place_at base:Place_%D7%95%D7%99%D7%A0%D7%94 .
-
 base:MS_990000792030205171_production_place_Event a crm:E12_Production ;
     rdfs:label "production place of MS \"990000792030205171\""@en ;
     crm:P16_used_specific_object base:MS_990000792030205171 ;
     crm:P7_took_place_at base:Place_%D7%A4%D7%A8%D7%90%D7%92 .
 
-base:MS_990000792030205171_traveled_to_Event a crm:E7_Activity ;
-    rdfs:label "traveled to of MS \"990000792030205171\""@en ;
+base:MS_990000792030205171_production_place_Event_1 a crm:E12_Production ;
+    rdfs:label "production place of MS \"990000792030205171\""@en ;
+    crm:P16_used_specific_object base:MS_990000792030205171 ;
+    crm:P7_took_place_at base:Place_%D7%95%D7%99%D7%A0%D7%94 .
+
+base:MS_990000792030205171_resided_Event a crm:E7_Activity ;
+    rdfs:label "resided of MS \"990000792030205171\""@en ;
     crm:P16_used_specific_object base:MS_990000792030205171 ;
     crm:P7_took_place_at base:Place_%D7%94%D7%95%D7%9C%D7%A0%D7%93 .
 
@@ -198,8 +198,8 @@ base:MS_990000829170205171 a lrmoo:F4_Manifestation_Singleton,
         "כתב יד \"990000829170205171\""@he ;
     crm:P1_is_identified_by "\"990000829170205171\""^^xsd:string .
 
-base:MS_990000831830205171_active_Event a crm:E7_Activity ;
-    rdfs:label "active of MS \"990000831830205171\""@en ;
+base:MS_990000831830205171_mentioned_place_Event a crm:E7_Activity ;
+    rdfs:label "mentioned place of MS \"990000831830205171\""@en ;
     crm:P16_used_specific_object base:MS_990000831830205171 ;
     crm:P7_took_place_at base:Place_%D7%A4%D7%95%D7%A8%D7%9C%D7%99 .
 
@@ -213,15 +213,20 @@ base:MS_990000856010205171_active_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990000856010205171 ;
     crm:P7_took_place_at base:Place_%D7%9E%D7%A6%D7%A8%D7%99%D7%9D .
 
-base:MS_990000856010205171_cited_place_Event a crm:E7_Activity ;
-    rdfs:label "cited place of MS \"990000856010205171\""@en ;
+base:MS_990000856010205171_mentioned_place_Event a crm:E7_Activity ;
+    rdfs:label "mentioned place of MS \"990000856010205171\""@en ;
     crm:P16_used_specific_object base:MS_990000856010205171 ;
     crm:P7_took_place_at base:Place_%D7%97%D7%91%D7%A8%D7%95%D7%9F .
+
+base:MS_990000856010205171_mentioned_place_Event_1 a crm:E7_Activity ;
+    rdfs:label "mentioned place of MS \"990000856010205171\""@en ;
+    crm:P16_used_specific_object base:MS_990000856010205171 ;
+    crm:P7_took_place_at base:Place_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D .
 
 base:MS_990000885660205171_mentioned_place_Event a crm:E7_Activity ;
     rdfs:label "mentioned place of MS \"990000885660205171\""@en ;
     crm:P16_used_specific_object base:MS_990000885660205171 ;
-    crm:P7_took_place_at base:Place_%D7%90%D7%A8%D7%A5_%D7%99%D7%A9%D7%A8%D7%90%D7%9C .
+    crm:P7_took_place_at base:Place_%D7%90%D7%99%D7%A8%D7%95%D7%A4%D7%94 .
 
 base:MS_990000885660205171_mentioned_place_Event_1 a crm:E7_Activity ;
     rdfs:label "mentioned place of MS \"990000885660205171\""@en ;
@@ -231,7 +236,7 @@ base:MS_990000885660205171_mentioned_place_Event_1 a crm:E7_Activity ;
 base:MS_990000885660205171_mentioned_place_Event_2 a crm:E7_Activity ;
     rdfs:label "mentioned place of MS \"990000885660205171\""@en ;
     crm:P16_used_specific_object base:MS_990000885660205171 ;
-    crm:P7_took_place_at base:Place_%D7%90%D7%99%D7%A8%D7%95%D7%A4%D7%94 .
+    crm:P7_took_place_at base:Place_%D7%90%D7%A8%D7%A5_%D7%99%D7%A9%D7%A8%D7%90%D7%9C .
 
 base:MS_990000885660205171_preserved_Event a crm:E7_Activity ;
     rdfs:label "preserved of MS \"990000885660205171\""@en ;
@@ -255,25 +260,25 @@ base:MS_990000913260205171_resided_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990000913260205171 ;
     crm:P7_took_place_at base:Place_%D7%A4%D7%A8%D7%90%D7%92 .
 
-base:MS_990000943910205171_intellectual_creation_Event a crm:E7_Activity ;
-    rdfs:label "intellectual creation of MS \"990000943910205171\""@en ;
+base:MS_990000943910205171_work_creation_Event a crm:E7_Activity ;
+    rdfs:label "work creation of MS \"990000943910205171\""@en ;
     crm:P16_used_specific_object base:MS_990000943910205171 ;
     crm:P4_has_time_span base:TimeSpan_1600 .
+
+base:MS_990000958680205171_brought_from_Event a crm:E7_Activity ;
+    rdfs:label "brought from of MS \"990000958680205171\""@en ;
+    crm:P16_used_specific_object base:MS_990000958680205171 ;
+    crm:P7_took_place_at base:Place_%D7%90%D7%95%D7%A8%D7%91%D7%99%D7%A0%D7%95 .
 
 base:MS_990000958680205171_censorship_Event a crm:E7_Activity ;
     rdfs:label "censorship of MS \"990000958680205171\""@en ;
     crm:P16_used_specific_object base:MS_990000958680205171 ;
     crm:P4_has_time_span base:TimeSpan_1597 .
 
-base:MS_990000958680205171_print_Event a crm:E7_Activity ;
-    rdfs:label "print of MS \"990000958680205171\""@en ;
+base:MS_990000958680205171_printing_Event a crm:E7_Activity ;
+    rdfs:label "printing of MS \"990000958680205171\""@en ;
     crm:P16_used_specific_object base:MS_990000958680205171 ;
     crm:P4_has_time_span base:TimeSpan_1569 .
-
-base:MS_990000958680205171_production_place_Event a crm:E12_Production ;
-    rdfs:label "production place of MS \"990000958680205171\""@en ;
-    crm:P16_used_specific_object base:MS_990000958680205171 ;
-    crm:P7_took_place_at base:Place_%D7%90%D7%95%D7%A8%D7%91%D7%99%D7%A0%D7%95 .
 
 base:MS_990001003390205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -292,8 +297,8 @@ base:MS_990001022440205171_production_place_Event a crm:E12_Production ;
     crm:P16_used_specific_object base:MS_990001022440205171 ;
     crm:P7_took_place_at base:Place_%D7%A7%D7%90%D7%9C%D7%99 .
 
-base:MS_990001022860205171_acquisition_Event a crm:E8_Acquisition ;
-    rdfs:label "acquisition of MS \"990001022860205171\""@en ;
+base:MS_990001022860205171_purchase_Event a crm:E8_Acquisition ;
+    rdfs:label "purchase of MS \"990001022860205171\""@en ;
     crm:P16_used_specific_object base:MS_990001022860205171 ;
     crm:P4_has_time_span base:TimeSpan_1676 .
 
@@ -312,8 +317,8 @@ base:MS_990001022920205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990001022920205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001022920205171_Colophon .
 
-base:MS_990001039990205171_citation_Event a crm:E7_Activity ;
-    rdfs:label "citation of MS \"990001039990205171\""@en ;
+base:MS_990001039990205171_cataloging_Event a crm:Reference_Event ;
+    rdfs:label "cataloging of MS \"990001039990205171\""@en ;
     crm:P16_used_specific_object base:MS_990001039990205171 ;
     crm:P4_has_time_span base:TimeSpan_1731 .
 
@@ -356,8 +361,8 @@ base:MS_990001085960205171 a lrmoo:F4_Manifestation_Singleton,
     lrmoo:R4_embodies base:Expression_%D7%AA%D7%95%D7%A8%D7%94_MS_990001085960205171 ;
     crm:P1_is_identified_by "\"990001085960205171\""^^xsd:string .
 
-base:MS_990001086690205171_production_place_Event a crm:E12_Production ;
-    rdfs:label "production place of MS \"990001086690205171\""@en ;
+base:MS_990001086690205171_mentioned_place_Event a crm:E7_Activity ;
+    rdfs:label "mentioned place of MS \"990001086690205171\""@en ;
     crm:P16_used_specific_object base:MS_990001086690205171 ;
     crm:P7_took_place_at base:Place_%D7%9C%D7%99%D7%90%D7%95%D7%9F .
 
@@ -377,8 +382,8 @@ base:MS_990001121720205171_colophon_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990001121720205171 ;
     crm:P4_has_time_span base:TimeSpan_1662 .
 
-base:MS_990001124870205171_died_Event a crm:E69_Death ;
-    rdfs:label "died of MS \"990001124870205171\""@en ;
+base:MS_990001124870205171_death_place_Event a crm:E7_Activity ;
+    rdfs:label "death place of MS \"990001124870205171\""@en ;
     crm:P16_used_specific_object base:MS_990001124870205171 ;
     crm:P7_took_place_at base:Place_%D7%9E%D7%A6%D7%A8%D7%99%D7%9D .
 
@@ -388,15 +393,15 @@ base:MS_990001167130205171 a lrmoo:F4_Manifestation_Singleton,
         "כתב יד \"990001167130205171\""@he ;
     crm:P1_is_identified_by "\"990001167130205171\""^^xsd:string .
 
-base:MS_990001188700205171_traveled_to_Event a crm:E7_Activity ;
-    rdfs:label "traveled to of MS \"990001188700205171\""@en ;
-    crm:P16_used_specific_object base:MS_990001188700205171 ;
-    crm:P7_took_place_at base:Place_%D7%93%D7%9E%D7%A9%D7%A7 .
-
-base:MS_990001188700205171_traveled_to_Event_1 a crm:E7_Activity ;
-    rdfs:label "traveled to of MS \"990001188700205171\""@en ;
+base:MS_990001188700205171_moved_from_Event a crm:E7_Activity ;
+    rdfs:label "moved from of MS \"990001188700205171\""@en ;
     crm:P16_used_specific_object base:MS_990001188700205171 ;
     crm:P7_took_place_at base:Place_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D .
+
+base:MS_990001188700205171_resided_Event a crm:E7_Activity ;
+    rdfs:label "resided of MS \"990001188700205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001188700205171 ;
+    crm:P7_took_place_at base:Place_%D7%93%D7%9E%D7%A9%D7%A7 .
 
 base:MS_990001189730205171_mentioned_place_Event a crm:E7_Activity ;
     rdfs:label "mentioned place of MS \"990001189730205171\""@en ;
@@ -444,8 +449,8 @@ base:MS_990001252810205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990001252810205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001252810205171_Colophon .
 
-base:MS_990001273190205171_preserved_Event a crm:E7_Activity ;
-    rdfs:label "preserved of MS \"990001273190205171\""@en ;
+base:MS_990001273190205171_production_place_Event a crm:E12_Production ;
+    rdfs:label "production place of MS \"990001273190205171\""@en ;
     crm:P16_used_specific_object base:MS_990001273190205171 ;
     crm:P7_took_place_at base:Place_%D7%90%D7%A4%D7%92%D7%A0%D7%99%D7%A1%D7%98%D7%9F .
 
@@ -457,12 +462,12 @@ base:MS_990001313900205171_preserved_Event a crm:E7_Activity ;
 base:MS_990001326670205171_censorship_Event a crm:E7_Activity ;
     rdfs:label "censorship of MS \"990001326670205171\""@en ;
     crm:P16_used_specific_object base:MS_990001326670205171 ;
-    crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A0%D7%AA_1618 .
+    crm:P4_has_time_span base:TimeSpan_1618 .
 
 base:MS_990001326670205171_censorship_Event_1 a crm:E7_Activity ;
     rdfs:label "censorship of MS \"990001326670205171\""@en ;
     crm:P16_used_specific_object base:MS_990001326670205171 ;
-    crm:P4_has_time_span base:TimeSpan_1618 .
+    crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A0%D7%AA_1618 .
 
 base:MS_990001338440205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -497,8 +502,8 @@ base:MS_990001376840205171 a lrmoo:F4_Manifestation_Singleton,
         "כתב יד \"990001376840205171\""@he ;
     crm:P1_is_identified_by "\"990001376840205171\""^^xsd:string .
 
-base:MS_990001399370205171_colophon_Event a crm:E7_Activity ;
-    rdfs:label "colophon of MS \"990001399370205171\""@en ;
+base:MS_990001399370205171_colophon_completion_Event a crm:E7_Activity ;
+    rdfs:label "colophon completion of MS \"990001399370205171\""@en ;
     crm:P16_used_specific_object base:MS_990001399370205171 ;
     crm:P4_has_time_span base:TimeSpan_1652 .
 
@@ -521,25 +526,25 @@ base:MS_990001510630205171_birth_Event a crm:E67_Birth ;
 base:MS_990001510630205171_birth_Event_1 a crm:E67_Birth ;
     rdfs:label "birth of MS \"990001510630205171\""@en ;
     crm:P16_used_specific_object base:MS_990001510630205171 ;
-    crm:P4_has_time_span base:TimeSpan_1707_1698 .
+    crm:P4_has_time_span base:TimeSpan_1707 .
 
 base:MS_990001510630205171_birth_Event_2 a crm:E67_Birth ;
     rdfs:label "birth of MS \"990001510630205171\""@en ;
     crm:P16_used_specific_object base:MS_990001510630205171 ;
-    crm:P4_has_time_span base:TimeSpan_1707 .
+    crm:P4_has_time_span base:TimeSpan_1698_1707 .
 
 base:MS_990001510630205171_birth_Event_3 a crm:E67_Birth ;
     rdfs:label "birth of MS \"990001510630205171\""@en ;
     crm:P16_used_specific_object base:MS_990001510630205171 ;
-    crm:P4_has_time_span base:TimeSpan_1698_1707 .
+    crm:P4_has_time_span base:TimeSpan_1707_1698 .
 
 base:MS_990001510630205171_mentioned_place_Event a crm:E7_Activity ;
     rdfs:label "mentioned place of MS \"990001510630205171\""@en ;
     crm:P16_used_specific_object base:MS_990001510630205171 ;
     crm:P7_took_place_at base:Place_%D7%95%D7%99%D7%98%D7%95%D7%A8%D7%99%D7%94 .
 
-base:MS_990001510630205171_mentioned_place_Event_1 a crm:E7_Activity ;
-    rdfs:label "mentioned place of MS \"990001510630205171\""@en ;
+base:MS_990001510630205171_production_place_Event a crm:E12_Production ;
+    rdfs:label "production place of MS \"990001510630205171\""@en ;
     crm:P16_used_specific_object base:MS_990001510630205171 ;
     crm:P7_took_place_at base:Place_%D7%A2%D7%9E%D7%A0%D7%95%D7%90%D7%9C .
 
@@ -560,8 +565,8 @@ base:MS_990001625330205171 a lrmoo:F4_Manifestation_Singleton,
         "כתב יד \"990001625330205171\""@he ;
     crm:P1_is_identified_by "\"990001625330205171\""^^xsd:string .
 
-base:MS_990001625570205171_production_place_Event a crm:E12_Production ;
-    rdfs:label "production place of MS \"990001625570205171\""@en ;
+base:MS_990001625570205171_mentioned_place_Event a crm:E7_Activity ;
+    rdfs:label "mentioned place of MS \"990001625570205171\""@en ;
     crm:P16_used_specific_object base:MS_990001625570205171 ;
     crm:P7_took_place_at base:Place_%D7%90%D7%95%D7%A4%D7%A0%D7%94%D7%99%D7%99%D7%9D .
 
@@ -572,15 +577,15 @@ base:MS_990001642250205171 a lrmoo:F4_Manifestation_Singleton,
     lrmoo:R4_embodies base:Expression_%D7%94%D7%96%D7%94_%D7%91%D7%99%D7%95%D7%9D_%D7%91_MS_990001642250205171 ;
     crm:P1_is_identified_by "\"990001642250205171\""^^xsd:string .
 
+base:MS_990001679060205171_mentioned_place_Event a crm:E7_Activity ;
+    rdfs:label "mentioned place of MS \"990001679060205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001679060205171 ;
+    crm:P7_took_place_at base:Place_%D7%A1%D7%A4%D7%A8%D7%93 .
+
 base:MS_990001679060205171_production_place_Event a crm:E12_Production ;
     rdfs:label "production place of MS \"990001679060205171\""@en ;
     crm:P16_used_specific_object base:MS_990001679060205171 ;
     crm:P7_took_place_at base:Place_%D7%91%D7%92%D7%93%D7%90%D7%93 .
-
-base:MS_990001679060205171_production_place_Event_1 a crm:E12_Production ;
-    rdfs:label "production place of MS \"990001679060205171\""@en ;
-    crm:P16_used_specific_object base:MS_990001679060205171 ;
-    crm:P7_took_place_at base:Place_%D7%A1%D7%A4%D7%A8%D7%93 .
 
 base:MS_990001680850205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -588,8 +593,8 @@ base:MS_990001680850205171 a lrmoo:F4_Manifestation_Singleton,
         "כתב יד \"990001680850205171\""@he ;
     crm:P1_is_identified_by "\"990001680850205171\""^^xsd:string .
 
-base:MS_990001709250205171_published_Event a crm:E7_Activity ;
-    rdfs:label "published of MS \"990001709250205171\""@en ;
+base:MS_990001709250205171_press_location_Event a crm:E7_Activity ;
+    rdfs:label "press location of MS \"990001709250205171\""@en ;
     crm:P16_used_specific_object base:MS_990001709250205171 ;
     crm:P7_took_place_at base:Place_%D7%96%D7%95%D7%9C%D7%A6%D7%91%D7%9A .
 
@@ -603,13 +608,8 @@ base:MS_990001775480205171_colophon_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990001775480205171 ;
     crm:P4_has_time_span base:TimeSpan_%D7%A9%D7%A0%D7%AA_1653 .
 
-base:MS_990001780340205171_preserved_Event a crm:E7_Activity ;
-    rdfs:label "preserved of MS \"990001780340205171\""@en ;
-    crm:P16_used_specific_object base:MS_990001780340205171 ;
-    crm:P7_took_place_at base:Place_%D7%9E%D7%95%D7%A0%D7%98%D7%A8%D7%99%D7%90%D7%95%D7%9C .
-
-base:MS_990001780340205171_production_place_Event a crm:E12_Production ;
-    rdfs:label "production place of MS \"990001780340205171\""@en ;
+base:MS_990001780340205171_mentioned_place_Event a crm:E7_Activity ;
+    rdfs:label "mentioned place of MS \"990001780340205171\""@en ;
     crm:P16_used_specific_object base:MS_990001780340205171 ;
     crm:P7_took_place_at base:Place_%D7%AA%D7%99%D7%9E%D7%9F .
 
@@ -636,25 +636,25 @@ base:MS_990001827620205171_colophon_completion_Event a crm:E7_Activity ;
     crm:P16_used_specific_object base:MS_990001827620205171 ;
     crm:P4_has_time_span base:TimeSpan_1644 .
 
-base:MS_990001827620205171_sale_Event a crm:E8_Acquisition ;
-    rdfs:label "sale of MS \"990001827620205171\""@en ;
+base:MS_990001827620205171_purchase_Event a crm:E8_Acquisition ;
+    rdfs:label "purchase of MS \"990001827620205171\""@en ;
     crm:P16_used_specific_object base:MS_990001827620205171 ;
     crm:P4_has_time_span base:TimeSpan_1771 .
 
-base:MS_990001831070205171_worked_Event a crm:E7_Activity ;
-    rdfs:label "worked of MS \"990001831070205171\""@en ;
+base:MS_990001831070205171_mentioned_place_Event a crm:E7_Activity ;
+    rdfs:label "mentioned place of MS \"990001831070205171\""@en ;
     crm:P16_used_specific_object base:MS_990001831070205171 ;
     crm:P7_took_place_at base:Place_%D7%A2%D7%9E%D7%A0%D7%95%D7%90%D7%9C .
 
 base:MS_990001855990205171_preserved_Event a crm:E7_Activity ;
     rdfs:label "preserved of MS \"990001855990205171\""@en ;
     crm:P16_used_specific_object base:MS_990001855990205171 ;
-    crm:P7_took_place_at base:Place_%D7%A2%D7%9E%D7%A0%D7%95%D7%90%D7%9C .
-
-base:MS_990001855990205171_repository_Event a crm:E7_Activity ;
-    rdfs:label "repository of MS \"990001855990205171\""@en ;
-    crm:P16_used_specific_object base:MS_990001855990205171 ;
     crm:P7_took_place_at base:Place_%D7%A1%D7%99%D7%A0%D7%A1%D7%99%D7%A0%D7%98%D7%99 .
+
+base:MS_990001855990205171_resided_Event a crm:E7_Activity ;
+    rdfs:label "resided of MS \"990001855990205171\""@en ;
+    crm:P16_used_specific_object base:MS_990001855990205171 ;
+    crm:P7_took_place_at base:Place_%D7%A2%D7%9E%D7%A0%D7%95%D7%90%D7%9C .
 
 base:MS_990001876060205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -693,13 +693,13 @@ base:MS_990002078620205171_production_place_Event a crm:E12_Production ;
     crm:P16_used_specific_object base:MS_990002078620205171 ;
     crm:P7_took_place_at base:Place_%D7%AA%D7%99%D7%9E%D7%9F .
 
-base:MS_990025630180205171_preserved_Event a crm:E7_Activity ;
-    rdfs:label "preserved of MS \"990025630180205171\""@en ;
+base:MS_990025630180205171_collection_location_Event a crm:E7_Activity ;
+    rdfs:label "collection location of MS \"990025630180205171\""@en ;
     crm:P16_used_specific_object base:MS_990025630180205171 ;
     crm:P7_took_place_at base:Place_%D7%90%D7%9C%D7%95%D7%A0%D7%99 .
 
-base:MS_990025630180205171_production_place_Event a crm:E12_Production ;
-    rdfs:label "production place of MS \"990025630180205171\""@en ;
+base:MS_990025630180205171_mentioned_place_Event a crm:E7_Activity ;
+    rdfs:label "mentioned place of MS \"990025630180205171\""@en ;
     crm:P16_used_specific_object base:MS_990025630180205171 ;
     crm:P7_took_place_at base:Place_%D7%AA%D7%99%D7%9E%D7%9F .
 
@@ -710,45 +710,50 @@ base:MS_990025916610205171 a lrmoo:F4_Manifestation_Singleton,
     crm:P1_is_identified_by "\"990025916610205171\""^^xsd:string ;
     hm:has_colophon base:MS_990025916610205171_Colophon .
 
-base:MS_990025934540205171_active_Event a crm:E7_Activity ;
-    rdfs:label "active of MS \"990025934540205171\""@en ;
-    crm:P16_used_specific_object base:MS_990025934540205171 ;
-    crm:P7_took_place_at base:Place_%D7%90%D7%99%D7%98%D7%9C%D7%99%D7%94 .
-
-base:MS_990025934540205171_publication_Event a crm:E7_Activity ;
-    rdfs:label "publication of MS \"990025934540205171\""@en ;
+base:MS_990025934540205171_citation_Event a crm:E7_Activity ;
+    rdfs:label "citation of MS \"990025934540205171\""@en ;
     crm:P16_used_specific_object base:MS_990025934540205171 ;
     crm:P4_has_time_span base:TimeSpan_1886 .
+
+base:MS_990025934540205171_mentioned_place_Event a crm:E7_Activity ;
+    rdfs:label "mentioned place of MS \"990025934540205171\""@en ;
+    crm:P16_used_specific_object base:MS_990025934540205171 ;
+    crm:P7_took_place_at base:Place_%D7%90%D7%99%D7%98%D7%9C%D7%99%D7%94 .
 
 base:MS_990026973440205171_production_place_Event a crm:E12_Production ;
     rdfs:label "production place of MS \"990026973440205171\""@en ;
     crm:P16_used_specific_object base:MS_990026973440205171 ;
     crm:P7_took_place_at base:Place_%D7%93%D7%9E%D7%A9%D7%A7 .
 
+base:MS_990027840460205171_active_Event a crm:E7_Activity ;
+    rdfs:label "active of MS \"990027840460205171\""@en ;
+    crm:P16_used_specific_object base:MS_990027840460205171 ;
+    crm:P7_took_place_at base:Place_%D7%97%D7%91%D7%A8%D7%95%D7%9F .
+
 base:MS_990027840460205171_mentioned_place_Event a crm:E7_Activity ;
     rdfs:label "mentioned place of MS \"990027840460205171\""@en ;
     crm:P16_used_specific_object base:MS_990027840460205171 ;
     crm:P7_took_place_at base:Place_%D7%93%D7%95%D7%A8%D7%90 .
 
-base:MS_990027840460205171_resided_Event a crm:E7_Activity ;
-    rdfs:label "resided of MS \"990027840460205171\""@en ;
+base:MS_990027840460205171_preserved_Event a crm:E7_Activity ;
+    rdfs:label "preserved of MS \"990027840460205171\""@en ;
     crm:P16_used_specific_object base:MS_990027840460205171 ;
     crm:P7_took_place_at base:Place_%D7%A8%D7%93%D7%95%D7%9E%D7%A1%D7%A7 .
 
-base:MS_990027840460205171_worked_Event a crm:E7_Activity ;
-    rdfs:label "worked of MS \"990027840460205171\""@en ;
+base:MS_990027840460205171_preserved_Event_1 a crm:E7_Activity ;
+    rdfs:label "preserved of MS \"990027840460205171\""@en ;
     crm:P16_used_specific_object base:MS_990027840460205171 ;
     crm:P7_took_place_at base:Place_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D .
-
-base:MS_990027840460205171_worked_Event_1 a crm:E7_Activity ;
-    rdfs:label "worked of MS \"990027840460205171\""@en ;
-    crm:P16_used_specific_object base:MS_990027840460205171 ;
-    crm:P7_took_place_at base:Place_%D7%97%D7%91%D7%A8%D7%95%D7%9F .
 
 base:MS_990032575610205171_colophon_Event a crm:E7_Activity ;
     rdfs:label "colophon of MS \"990032575610205171\""@en ;
     crm:P16_used_specific_object base:MS_990032575610205171 ;
     crm:P4_has_time_span base:TimeSpan_1690 .
+
+base:MS_990035044030205171_possession_Event a crm:E7_Activity ;
+    rdfs:label "possession of MS \"990035044030205171\""@en ;
+    crm:P16_used_specific_object base:MS_990035044030205171 ;
+    crm:P7_took_place_at base:Place_%D7%95%D7%99%D7%98%D7%A8%D7%91%D7%95 .
 
 base:MS_990035044030205171_preserved_Event a crm:E7_Activity ;
     rdfs:label "preserved of MS \"990035044030205171\""@en ;
@@ -759,11 +764,6 @@ base:MS_990035044030205171_preserved_Event_1 a crm:E7_Activity ;
     rdfs:label "preserved of MS \"990035044030205171\""@en ;
     crm:P16_used_specific_object base:MS_990035044030205171 ;
     crm:P7_took_place_at base:Place_%D7%90%D7%A0%D7%A7%D7%95%D7%A0%D7%94 .
-
-base:MS_990035044030205171_preserved_Event_2 a crm:E7_Activity ;
-    rdfs:label "preserved of MS \"990035044030205171\""@en ;
-    crm:P16_used_specific_object base:MS_990035044030205171 ;
-    crm:P7_took_place_at base:Place_%D7%95%D7%99%D7%98%D7%A8%D7%91%D7%95 .
 
 base:MS_990035802410205171_preserved_Event a crm:E7_Activity ;
     rdfs:label "preserved of MS \"990035802410205171\""@en ;
@@ -790,8 +790,8 @@ base:MS_990036191450205171_production_place_Event a crm:E12_Production ;
     crm:P16_used_specific_object base:MS_990036191450205171 ;
     crm:P7_took_place_at base:Place_%D7%A1%D7%90%D7%9C%D7%9D .
 
-base:MS_990036191450205171_sale_Event a crm:E8_Acquisition ;
-    rdfs:label "sale of MS \"990036191450205171\""@en ;
+base:MS_990036191450205171_purchase_Event a crm:E8_Acquisition ;
+    rdfs:label "purchase of MS \"990036191450205171\""@en ;
     crm:P16_used_specific_object base:MS_990036191450205171 ;
     crm:P4_has_time_span base:TimeSpan_1662 .
 
@@ -1279,6 +1279,13 @@ base:MS_990001775480205171 a lrmoo:F4_Manifestation_Singleton,
         "כתב יד \"990001775480205171\""@he ;
     crm:P1_is_identified_by "\"990001775480205171\""^^xsd:string .
 
+base:MS_990001780340205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990001780340205171\""@en,
+        "כתב יד \"990001780340205171\""@he ;
+    crm:P1_is_identified_by "\"990001780340205171\""^^xsd:string ;
+    hm:has_colophon base:MS_990001780340205171_Colophon .
+
 base:MS_990001780340205171_Colophon a crm:E73_Information_Object,
         hm:Colophon ;
     hm:colophon_text "\"בלתי שלם, מתחיל בכתר מלכות והסליחות.|עם ניקוד עליון.|עם פרוש \"\"חדושין\"\" [=פעמון זהב ורמון] מאת יצחק ונה.|כולל לוחות לשנים ת\"\"ה-תצ\"\"א ובראשו \"\"שנה זו שהיא שנת אתתקנ\"\"ד\"\" לשטרות [=ת\"\"ג] וכנראה נכתב בשנת ת\"\"ג.|הדפים האחרונים בכתיבה שונה ובהם לוחות לשנים תנ\"\"ב-תקכ\"\"ט ו\"\"פתרון חלומות שחבר הר\"\"ר האיי גאון זצ\"\"ל\"\" (הסוף חסר).|נושא נוסף: פולקלור|נושא נוסף: תפלה סדורים ומחזורים מנהג תימן\" | \"כתב-היד נרכש ע\"\"י ספריית הואטיקן ממוכר ספרים ומספרו עתה הוא Vat. ebr. 696|לפנים מונטריאול - אלברג 44\""@he .
@@ -1416,9 +1423,6 @@ base:Place_%D7%9C%D7%99%D7%90%D7%95%D7%9F a crm:E53_Place ;
 
 base:Place_%D7%9E%D7%95%D7%98%D7%95%D7%9C a crm:E53_Place ;
     rdfs:label "מוטול"@he .
-
-base:Place_%D7%9E%D7%95%D7%A0%D7%98%D7%A8%D7%99%D7%90%D7%95%D7%9C a crm:E53_Place ;
-    rdfs:label "מונטריאול"@he .
 
 base:Place_%D7%A1%D7%99%D7%A0%D7%A1%D7%99%D7%A0%D7%98%D7%99 a crm:E53_Place ;
     rdfs:label "סינסינטי"@he .
@@ -1667,13 +1671,6 @@ base:MS_990000831830205171 a lrmoo:F4_Manifestation_Singleton,
         "כתב יד \"990000831830205171\""@he ;
     crm:P1_is_identified_by "\"990000831830205171\""^^xsd:string .
 
-base:MS_990000856010205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990000856010205171\""@en,
-        "כתב יד \"990000856010205171\""@he ;
-    crm:P1_is_identified_by "\"990000856010205171\""^^xsd:string ;
-    hm:has_colophon base:MS_990000856010205171_Colophon .
-
 base:MS_990001188700205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
     rdfs:label "Manuscript \"990001188700205171\""@en,
@@ -1700,13 +1697,6 @@ base:MS_990001679060205171 a lrmoo:F4_Manifestation_Singleton,
         "כתב יד \"990001679060205171\""@he ;
     crm:P1_is_identified_by "\"990001679060205171\""^^xsd:string ;
     hm:has_colophon base:MS_990001679060205171_Colophon .
-
-base:MS_990001780340205171 a lrmoo:F4_Manifestation_Singleton,
-        hm:Codicological_Unit ;
-    rdfs:label "Manuscript \"990001780340205171\""@en,
-        "כתב יד \"990001780340205171\""@he ;
-    crm:P1_is_identified_by "\"990001780340205171\""^^xsd:string ;
-    hm:has_colophon base:MS_990001780340205171_Colophon .
 
 base:MS_990001855990205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;
@@ -1778,6 +1768,13 @@ base:MS_990000792030205171 a lrmoo:F4_Manifestation_Singleton,
     lrmoo:R4_embodies base:Expression_%D7%91%D7%AA%D7%99_%D7%94%D7%A0%D7%A4%D7%A9_MS_990000792030205171 ;
     crm:P1_is_identified_by "\"990000792030205171\""^^xsd:string ;
     hm:has_colophon base:MS_990000792030205171_Colophon .
+
+base:MS_990000856010205171 a lrmoo:F4_Manifestation_Singleton,
+        hm:Codicological_Unit ;
+    rdfs:label "Manuscript \"990000856010205171\""@en,
+        "כתב יד \"990000856010205171\""@he ;
+    crm:P1_is_identified_by "\"990000856010205171\""^^xsd:string ;
+    hm:has_colophon base:MS_990000856010205171_Colophon .
 
 base:MS_990000958680205171 a lrmoo:F4_Manifestation_Singleton,
         hm:Codicological_Unit ;

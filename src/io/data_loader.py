@@ -14,6 +14,28 @@ from ..models.entities import Manuscript, ExtractionResult, ExtractedEntity, Cla
 # INPUT OPERATIONS
 # ============================================================================
 
+# Define which fields are "note" fields (where new data is found)
+# vs structured MARC fields (where data already exists)
+NOTE_FIELDS = frozenset([
+    "957$a",  # Summary/abstract (Hebrew)
+    "500$a",  # General notes
+    "561$a",  # Provenance notes
+])
+
+# Structured MARC fields (non-note fields)
+STRUCTURED_DATE_FIELDS = frozenset([
+    "046$a", "046$b", "046$d", "260$c", "264$c", "008"
+])
+
+STRUCTURED_LOCATION_FIELDS = frozenset([
+    "651$a", "751$a", "260$a", "264$a", "034$a"
+])
+
+STRUCTURED_PERSON_FIELDS = frozenset([
+    "100$a", "600$a", "700$a", "710$a", "100$e", "700$e"
+])
+
+
 def load_excel_data(
     filepath: str,
     id_column: str = "001",
@@ -30,7 +52,7 @@ def load_excel_data(
         passthrough_columns: Additional columns to preserve
         
     Returns:
-        DataFrame with manuscript data (includes 'combined_notes' column)
+        DataFrame with manuscript data (includes 'combined_notes' column and field maps)
     """
     if notes_columns is None:
         # Expanded to include fields where locations/persons/dates appear
@@ -81,6 +103,18 @@ def load_excel_data(
     
     df['combined_notes'] = df.apply(combine_notes, axis=1)
     
+    # Create field content maps for tracking where entities came from
+    def create_field_map(row):
+        """Create a mapping of field -> content for entity source tracking"""
+        field_map = {}
+        for col in df.columns:
+            value = row.get(col, "")
+            if pd.notna(value) and str(value).strip():
+                field_map[col] = str(value).strip()
+        return field_map
+    
+    df['_field_map'] = df.apply(create_field_map, axis=1)
+    
     # Filter out rows with no notes
     df = df[df['combined_notes'].str.strip() != ""]
     
@@ -124,6 +158,45 @@ def save_csv(df: pd.DataFrame, filepath: str) -> None:
     print(f"✓ Saved: {filepath}")
 
 
+def get_entity_source_field(entity_value: str, source_metadata: Dict, entity_type: str) -> str:
+    """
+    Determine which MARC field an entity came from
+    
+    Args:
+        entity_value: The extracted entity value
+        source_metadata: MARC field data for this manuscript
+        entity_type: Type of entity ('date', 'location', 'person')
+        
+    Returns:
+        Field name if found in non-note field, "new data" if only in note fields
+    """
+    # Determine which structured fields to check based on entity type
+    if entity_type == 'date':
+        structured_fields = STRUCTURED_DATE_FIELDS
+    elif entity_type == 'location':
+        structured_fields = STRUCTURED_LOCATION_FIELDS
+    elif entity_type == 'person':
+        structured_fields = STRUCTURED_PERSON_FIELDS
+    else:
+        return "new data"
+    
+    # Check if entity appears in any non-note (structured) field
+    found_in_fields = []
+    for field in structured_fields:
+        if field in source_metadata:
+            field_value = str(source_metadata[field])
+            # Check if entity value appears in this field
+            if entity_value in field_value or any(part in field_value for part in entity_value.split()):
+                found_in_fields.append(field)
+    
+    if found_in_fields:
+        # Found in structured field(s) - return field name(s)
+        return "; ".join(found_in_fields)
+    else:
+        # Only found in note fields - mark as new data
+        return "new data"
+
+
 def manuscripts_to_dataframe(
     manuscripts: List[Manuscript], 
     classified_map: Optional[Dict[str, List[ClassifiedEntity]]] = None
@@ -147,19 +220,19 @@ def manuscripts_to_dataframe(
             classified_entities = classified_map[ms.manuscript_id]
             classification_map = {ce.value: ce.label for ce in classified_entities}
         
-        # Always use "value | classification" format
+        # Format: "value | classification | source_field"
         dates_str = ", ".join(
-            f"{e.value} | {classification_map.get(e.value, 'unclassified')}" 
+            f"{e.value} | {classification_map.get(e.value, 'unclassified')} | {get_entity_source_field(e.value, ms.source_metadata, 'date')}" 
             for e in ms.dates
         ) if ms.dates else ""
         
         locations_str = ", ".join(
-            f"{e.value} | {classification_map.get(e.value, 'unclassified')}" 
+            f"{e.value} | {classification_map.get(e.value, 'unclassified')} | {get_entity_source_field(e.value, ms.source_metadata, 'location')}" 
             for e in ms.locations
         ) if ms.locations else ""
         
         persons_str = ", ".join(
-            f"{p.full_name} | {classification_map.get(p.name, p.role if p.role else 'extracted_person')}" 
+            f"{p.full_name} | {classification_map.get(p.name, p.role if p.role else 'extracted_person')} | {get_entity_source_field(p.name, ms.source_metadata, 'person')}" 
             for p in ms.persons
         ) if ms.persons else ""
         
@@ -167,7 +240,7 @@ def manuscripts_to_dataframe(
             "manuscript_id": ms.manuscript_id,
             "notes_text": ms.notes_text,
             
-            # Extracted entities with classifications
+            # Extracted entities with classifications AND source fields
             "dates": dates_str,
             "locations": locations_str,
             "persons": persons_str,
@@ -298,63 +371,30 @@ def create_detailed_entities_dataframe(
         # Create a map of entity value -> classification label
         classification_map = {ce.value: ce.label for ce in classified_entities}
         
-        # Process dates - create "value | classification" format
+        # Process dates - create "value | classification | source_field" format
         date_entries = []
-        date_marc_fields = []
         for date_entity in ms.dates:
             date_value = date_entity.value
             classification = classification_map.get(date_value, "unclassified")
-            date_entries.append(f"{date_value} | {classification}")
-            
-            # Check if date appears in MARC fields
-            marc_found = []
-            date_fields = ['046$a', '046$b', '046$d', '260$c', '264$c', '008']
-            for field in date_fields:
-                if field in source_meta and source_meta[field]:
-                    field_value = str(source_meta[field])
-                    if date_value in field_value or any(part in field_value for part in date_value.split()):
-                        marc_found.append(field)
-            if marc_found:
-                date_marc_fields.append(f"{date_value}: {'; '.join(marc_found)}")
+            source_field = get_entity_source_field(date_value, source_meta, 'date')
+            date_entries.append(f"{date_value} | {classification} | {source_field}")
         
-        # Process locations - create "value | classification" format
+        # Process locations - create "value | classification | source_field" format
         location_entries = []
-        location_marc_fields = []
         for loc_entity in ms.locations:
             loc_value = loc_entity.value
             classification = classification_map.get(loc_value, "unclassified")
-            location_entries.append(f"{loc_value} | {classification}")
-            
-            # Check if location appears in MARC fields
-            marc_found = []
-            loc_fields = ['651$a', '751$a', '260$a', '264$a', '034$a']
-            for field in loc_fields:
-                if field in source_meta and source_meta[field]:
-                    field_value = str(source_meta[field])
-                    if loc_value in field_value:
-                        marc_found.append(field)
-            if marc_found:
-                location_marc_fields.append(f"{loc_value}: {'; '.join(marc_found)}")
+            source_field = get_entity_source_field(loc_value, source_meta, 'location')
+            location_entries.append(f"{loc_value} | {classification} | {source_field}")
         
-        # Process persons - create "value | classification" format
+        # Process persons - create "value | classification | source_field" format
         person_entries = []
-        person_marc_fields = []
         for person in ms.persons:
             person_name = person.name
             # Check if person was classified
             classification = classification_map.get(person_name, person.role if person.role else "extracted_person")
-            person_entries.append(f"{person_name} | {classification}")
-            
-            # Check if person appears in MARC fields
-            marc_found = []
-            person_fields = ['100$a', '600$a', '700$a', '710$a', '100$e', '700$e']
-            for field in person_fields:
-                if field in source_meta and source_meta[field]:
-                    field_value = str(source_meta[field])
-                    if person_name in field_value or any(part in field_value for part in person_name.split()):
-                        marc_found.append(field)
-            if marc_found:
-                person_marc_fields.append(f"{person_name}: {'; '.join(marc_found)}")
+            source_field = get_entity_source_field(person_name, source_meta, 'person')
+            person_entries.append(f"{person_name} | {classification} | {source_field}")
         
         # Only add row if there are any entities
         if date_entries or location_entries or person_entries:
@@ -362,10 +402,7 @@ def create_detailed_entities_dataframe(
                 'manuscript_id': ms_id,
                 'dates': ', '.join(date_entries) if date_entries else '',
                 'locations': ', '.join(location_entries) if location_entries else '',
-                'persons': ', '.join(person_entries) if person_entries else '',
-                'dates_in_marc': ', '.join(date_marc_fields) if date_marc_fields else '',
-                'locations_in_marc': ', '.join(location_marc_fields) if location_marc_fields else '',
-                'persons_in_marc': ', '.join(person_marc_fields) if person_marc_fields else ''
+                'persons': ', '.join(person_entries) if person_entries else ''
             })
     
     return pd.DataFrame(rows)
